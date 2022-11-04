@@ -1,0 +1,63 @@
+.beranda-background{
+    position: absolute;
+    z-index:-1;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+}
+
+.cari-panti-section{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    width: 424px;
+    height: 267px;
+    left: 84px;
+    top: 179px;
+    position:absolute;
+}
+
+.cari-panti-section >h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #FAFAFA;
+    margin:0;
+}
+
+.cari-panti-section > p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A1A1AA;
+    padding-bottom:1em;
+}
+
+.cari-panti-section > a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+    width: 400px;
+    height: 48px;
+    text-decoration: none;
+    background: #0185D0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FAFAFA;
+}
+
+.right-side-section{
+    left: 747px;
+    top: 107px;
+    width: 393px;
+    height: 500px;
+    position:absolute;
+}

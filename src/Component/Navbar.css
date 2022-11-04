@@ -1,0 +1,70 @@
+.navbar{
+    display:flex;
+    height:72px;
+    width:100%;
+    align-items: center;
+}
+
+.left-navbar{
+    display:flex;
+    width:23%;
+    align-content: center;
+}
+
+.left-navbar > img{
+    margin:0 12%;
+}
+
+.mid-navbar{
+    display:flex;
+    width:60%;
+    justify-content: space-evenly;
+}
+
+.right-navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    width:17%;
+    height:100%;
+}
+
+.right-navbar > a{
+    color:#FAFAFA;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration:none;
+}
+
+.mid-navbar > a{
+    color: #A1A1AA;
+    font-weight: 600;
+    font-size: 18px;
+    display:flex;
+    align-items: center;
+    text-decoration:none;
+}
+
+
+.mid-navbar > a.active{
+    color: #FAFAFA;
+    transition: .3s ease-in-out;
+}
+
+.mid-navbar > a:hover{
+    color: #FAFAFA;
+    transition: .3s ease-in-out;
+}
+
+.tombol-daftar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0185D0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 88px;
+    height: 48px;
+    gap: 10px;
+}
