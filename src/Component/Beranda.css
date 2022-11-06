@@ -1,0 +1,238 @@
+.beranda-parent{
+ height:43vw;
+ display:flex;
+}
+
+.beranda-background{
+    z-index:-5;
+    left: 0px;
+    width: 100%;
+    position:absolute;
+    top: 0px;
+}
+
+.cari-panti-section{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    width: 424px;
+    height: 267px;
+    left: 84px;
+    top: 179px;
+    position:absolute;
+}
+
+.cari-panti-section >h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #FAFAFA;
+    margin:0;
+}
+
+.cari-panti-section > p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A1A1AA;
+    padding-bottom:1em;
+}
+
+.cari-panti-section > a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+    width: 400px;
+    height: 48px;
+    text-decoration: none;
+    background: #0185D0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FAFAFA;
+}
+
+.right-side-section{
+    left: 747px;
+    top: 107px;
+    width: 393px;
+    height: 500px;
+    z-index:-1;
+    position:absolute;
+}
+
+
+.rectangle-word-left{
+    left: 748px;
+    top: 79px;
+    position:absolute;
+    display:flex;
+    width: 168px;
+    height: 169px;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.rectangle-word-left > img{
+    z-index:-1;
+    position:absolute;
+}
+
+.rectangle-word-left > h4{
+    font-weight: 600;
+    font-size: 24px;
+    margin:0;
+    line-height: 28px;
+    color: #18181B;
+}
+
+.rectangle-word-left > h5{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #004BAE;
+    margin:0;
+}
+
+.rectangle-word-right{
+    left: 1075px;
+    top: 257px;
+    position:absolute;
+    display:flex;
+    width: 168px;
+    height: 169px;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.rectangle-word-right > img{
+    z-index:-1;
+    position:absolute;
+    transform: scaleX(-1);
+}
+
+.rectangle-word-right > h4{
+    font-weight: 600;
+    font-size: 24px;
+    margin:0;
+    line-height: 28px;
+    color: #18181B;
+}
+
+.rectangle-word-right > h5{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #004BAE;
+    margin:0;
+}
+
+
+.tiga-logo{
+    display:flex;
+    gap:80px;
+    justify-content: center;
+    margin:5em 0;
+}
+
+.opsi-beranda{
+    width: 90%;
+    height: 375px;
+    background: #FDFDFD;
+    border-radius: 10px 10px 0px 0px;
+    margin:5em auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opsi-beranda > h3{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.opsi-beranda > .hasil-opsi{
+    width:90%;
+    height: 250px;
+    gap:40px;
+    display:flex;
+}
+
+.hasil-opsi > .the-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    width: 33%;
+    height: 250px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.the-option:hover{
+    background: linear-gradient(126.34deg, #0061E0 0.98%, #001F47 100%);
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
+    color:white;
+    cursor:pointer;
+}
+
+.option-icon{
+    width:72px;
+    height:72px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+.option-icon > .icon-tabler {
+    width:48px;
+    height:48px;
+  }
+
+.the-option:hover .option-icon{
+    background: rgba(217, 217, 217, 0.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2), inset 8.33333px -8.33333px 8.33333px rgba(165, 165, 165, 0.1), inset -8.33333px 8.33333px 8.33333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18.0833px);
+    border-radius: 5px;
+}
+
+.option-word{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.option-word > h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin:0;
+}
+
+.option-word > p{
+    width: 230px;
+    height: 76px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin:0;
+    text-align: center;
+    color: #71717A;
+}
