@@ -4,7 +4,7 @@ import { IconMapPin, IconFriends} from '@tabler/icons';
 import fotoanakyatem from '../images/foto_anak_yatem.png';
 import fotoanakyatemkedua from '../images/foto_anak_yatem_kedua.png';
 import fotoanakyatemketiga from '../images/foto_anak_yatem_ketiga.png';
-import './Beranda.css'
+import '../pages/styles/beranda.css'
 
 function Listpantiasuhan() {
     const [searchTerm, setSearchTerm] = useState('');

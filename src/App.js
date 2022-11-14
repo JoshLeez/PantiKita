@@ -1,25 +1,22 @@
-import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Beranda from './Component/Beranda'
-import Hubungikami from './Component/Hubungikami'
-import Footer from './Component/Footer'
-import Navbar from './Component/Navbar'
-import Pantiasuhankita from './Component/Pantiasuhankita';
+import { Routes, Route } from "react-router-dom";
+import Beranda from "./pages/Beranda";
+import HubungiKami from "./pages/HubungKami";
+import PantiAsuhanKita from "./pages/PantiAsuhanKita";
+import Dashboard from "./pages/Dashboard";
+
+import { BERANDA, HUBUNGI_KAMI, PANTI_ASUHAN_KITA, DASHBOARD } from "./pages/Router";
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<Beranda />}/>
-           <Route path="/hubungikami" element={<Hubungikami />}/>
-           <Route path="/pantiasuhankita" element={<Pantiasuhankita />}/>
-        </Routes>
-        <Footer/>
-      </Router>
-    </div>
-  );
+	return (
+      <>
+         <Routes>
+            <Route path={BERANDA} element={<Beranda />} />
+            <Route path={HUBUNGI_KAMI} element={<HubungiKami />} />
+            <Route path={PANTI_ASUHAN_KITA} element={<PantiAsuhanKita />} />
+            <Route path={BERANDA} element={<Dashboard />} />
+         </Routes>
+      </>
+	);
 }
 
 export default App;

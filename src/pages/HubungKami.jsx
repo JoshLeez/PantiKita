@@ -1,11 +1,12 @@
 import {IconMapPin,IconPhone, IconMail
 , IconBrandTwitter, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok
 , IconQuestionMark } from '@tabler/icons';
-import './Hubungikami.css'
+import './styles/hubungi_kami.css'
+import HOC from '../components/HOC';
 
-function Hubungikami() {
+function HubungiKami() {
   return (
-    <div>
+    <HOC title="Hubungi Kami - Panti Kita">
       <div className="contact-form-page">
         <div className="contact-form-left">
           <div className='contact-form-left-title-page'>
@@ -52,8 +53,8 @@ function Hubungikami() {
             <button>Kirim</button>
           </form>
       </div>
-    </div>
+    </HOC>
   )
 }
 
-export default Hubungikami
+export default HubungiKami

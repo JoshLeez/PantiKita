@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import './Navbar.css'
+import './styles/navbar.css'
 import {NavLink, Link} from 'react-router-dom'
 import logo_panti_kita from '../images/logo_panti_kita.png'
 
@@ -36,9 +36,9 @@ function Navbar() {
       </div> 
       <div className="mid-navbar">
         <NavLink to="/" end>Beranda</NavLink>
-        <NavLink to="/pantiasuhankita">Panti Asuhan Kita</NavLink>
+        <NavLink to="/panti-asuhan-kita">Panti Asuhan Kita</NavLink>
         <NavLink to="/status">Tentang Kami</NavLink>
-        <NavLink to="/hubungikami">Hubungan Kami</NavLink>
+        <NavLink to="/hubungi-kami">Hubungan Kami</NavLink>
       </div>
       <div className="right-navbar">
           <Link>Masuk</Link>

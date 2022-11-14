@@ -1,4 +1,4 @@
-import './Footer.css';
+import './styles/footer.css';
 import logodarklight from '../images/Logo-X-Dark-Panti-Kita.png';
 import {Link} from 'react-router-dom';
 
@@ -13,7 +13,7 @@ function Footer() {
               <Link to="/">Beranda</Link>
               <Link>Panti Asuhan Kita</Link>
               <Link>Tentang Kami</Link>
-              <Link to="/hubungikami">Hubungi Kami</Link>
+              <Link to="/hubungi-kami">Hubungi Kami</Link>
             </div>
             <div className='footer-right-bottom'>
               <Link>Laporan</Link>

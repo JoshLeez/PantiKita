@@ -1,7 +1,8 @@
+import HOC from '../components/HOC';
 import { IconFileDescription,IconMapPin, IconPhone, IconMail
 , IconBrandTwitter, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok
 , IconQuestionMark } from '@tabler/icons';
-import "./Beranda.css";
+import "./styles/beranda.css";
 import {Link} from 'react-router-dom';
 import berandaasuh from '../images/beranda_asuh.png';
 import berandabackground from '../images/beranda_background.png';
@@ -13,12 +14,12 @@ import macbookimg from '../images/macbook.png';
 import tentangkami from '../images/tentang_kami_img.png';
 import linetentangkami from '../images/line_tentang_kami_img.png';
 import dottentangkami from '../images/dot_tentang_kami_img.png';
-import Listpantiasuhan from './Listpantiasuhan';
+import Listpantiasuhan from '../components/Listpantiasuhan';
 
 function Beranda() {
 
   return (
-    <div>
+    <HOC title="Panti Kita">
       <img className="beranda-background" src={berandabackground} alt="background-beranda"/>
       <div className="beranda-parent">
       <section className='cari-panti-section'>
@@ -163,8 +164,8 @@ function Beranda() {
           <button>Kirim</button>
         </form>
     </div>
-  </div>
+  </HOC>
   )
 }
 
-export default Beranda
+export default Beranda;
