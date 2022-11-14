@@ -7,6 +7,7 @@
     z-index:-5;
     left: 0px;
     width: 100%;
+    height: 611px;
     position:absolute;
     top: 0px;
 }
@@ -342,15 +343,15 @@
     width: 300px;
     background: #CBD5E1;
     border-radius: 5px 0px 0px 5px;
-    border:none;
+    border:1px solid transparent;
     outline:none;
     padding:0 1em;
     transition: .3s ease-in-out
 }
 
-.list-panti-navbar-right > input:focus{
-    border-color: #004BAE;
-    border:#004BAE;
+.list-panti-navbar-right > input:focus{ 
+    border:2px solid #004BAE;
+    transition: .3s ease-in-out;
     background-color:whitesmoke;
     color: #111;
 }
@@ -523,6 +524,21 @@
     color: #FAFAFA;
 }
 
+.opsi-user > .tombol-relawan{
+    background: #004BAE;
+     width: 400px;
+    height: 48px;
+    text-decoration: none;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FAFAFA;
+}
+
 .list-panti-asuhan-kita > .page-number{
     width:50%;
     height: 32px;
@@ -600,5 +616,154 @@
     background: linear-gradient(126.34deg, #0061E0 0.98%, #001F47 100%);
     box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin:auto 2em;
+    margin:5em auto;;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-form-left{
+    width: 470px;
+    height: 333px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+.contact-form-left-title{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.contact-form-left-title > h2{
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin:0;
+}
+
+.contact-form-left-title > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A1A1AA;
+}
+
+.contact-form-kontak{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form-kontak > h6{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FAFAFA;
+    margin:0;
+}
+
+.contact-form-kontak > .form-kontak-icon{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.form-kontak-icon > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin:5px 0;
+}
+
+.form-kontak-icon >.icon-tabler {
+    width:24px;
+    height:24px;
+  }
+
+.form-kontak-sosialmedia{
+    display:flex;
+    flex-direction: column;
+}
+
+.form-kontak-sosialmedia > h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FAFAFA;
+    margin:20px 0 5px 0;
+}
+
+.form-kontak-sosialmedia > .contact-icon-img{
+    display:flex;
+    justify-content: space-between;
+    width: 138px;
+    height: 24px;
+}   
+
+.contact-form-right{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width: 470px;
+    height: 333px;
+    background: rgba(217, 217, 217, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15), inset 8.33333px -8.33333px 8.33333px rgba(165, 165, 165, 0.1), inset -8.33333px 8.33333px 8.33333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+}
+
+.contact-form-right > h3{
+    font-weight: 600;
+    font-size: 30px;
+    color: #FAFAFA;
+}
+
+.contact-form-right-container{
+    width: 400px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.contact-form-right-container > .input-pertanyaan{
+    width: 400px;
+    height: 49px;
+    background: #CBD5E1;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+}
+
+.input-pertanyaan > .icon-tabler {
+ margin:0 1em;
+}
+
+.input-pertanyaan > input{
+    border:none;   
+    outline:none;
+    background: none;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #A1A1AA;
+}
+
+.contact-form-right > button{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 400px;
+    height: 48px;
+    background: #0185D0;background: #0185D0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    border:none;
+    color: #FAFAFA;
 }

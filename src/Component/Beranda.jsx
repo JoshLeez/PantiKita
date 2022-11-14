@@ -1,5 +1,7 @@
-import React from 'react';
-import { IconFileDescription,IconMapPin, IconFriends} from '@tabler/icons';
+import {useState} from 'react';
+import { IconFileDescription,IconMapPin, IconFriends, IconPhone, IconMail
+, IconBrandTwitter, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok
+, IconQuestionMark } from '@tabler/icons';
 import "./Beranda.css";
 import {Link} from 'react-router-dom';
 import berandaasuh from '../images/beranda_asuh.png';
@@ -17,6 +19,54 @@ import linetentangkami from '../images/line_tentang_kami_img.png';
 import dottentangkami from '../images/dot_tentang_kami_img.png';
 
 function Beranda() {
+const [searchTerm, setSearchTerm] = useState('');
+
+  const [data, setData]= useState([
+    {
+      nama_panti : "Panti Asuhan Yatim & Dhuafa Tanjung Barat",
+      alamat : "Jl. Nangka Utara Raya No 60, RT 6/RW 5, Tanjung Barat, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12530.",
+      image: fotoanakyatem,
+      jumlah_anak : 20,
+      pendiri : "Muhammad Sumbul",
+      data : "Panti Asuhan Yatim & Dhuafa Tanjung Barat adalah lembaga kesejahteraan sosial yang bergerak dibidang pengasuhan anak yatim/yatim-piatu/dhuafa, didirikan sejak 2017 dengan 6 pengurus. Pada saat ini, Yayasan Panti Yatim & Dhuafa Tanjung Barat mengasuh total 25 anak yang terdiri dari berbagai tingkat pendidikan, mulai dari bayi hingga mahasiswa.",
+      donasi : "570.000,00",
+      orang_donasi : 10,
+      relawan : 3,
+      no_tlp : "0812-2343-7756"
+    },
+    {
+      nama_panti : "Panti asuhan di Jurang Mangu, Tangerang Selatan (Asrama Yatim Piatu Putri)",
+      alamat : "Raya Ceger No. 27, Jurang Mangu Timur-Tangerang Selatan.",
+      image : fotoanakyatemkedua,
+      jumlah_anak : 25,
+      pendiri : "Zain",
+      data : "Panti Asuhan Islam Media Kasih adalah lembaga kesejahteraan sosial yang bergerak dibidang pengasuhan anak yatim/yatim-piatu/dhuafa, didirikan sejak 2004 dengan 6 pengurus. Pada saat ini, Yayasan Panti Asuhan Islam Media Kasih mengasuh total 25 anak yang terdiri dari berbagai tingkat pendidikan, mulai dari bayi hingga mahasiswa.",
+      donasi : "700.000,00",
+      orang_donasi : 10,
+      relawan : 7,
+      no_tlp : "0857-1536-8904"
+    },
+    {
+      nama_panti : "Panti asuhan di Pancoran Mas, Kota Depok, Jawa Barat. (Asrama Putri)",
+      alamat : "Jl. Kartini, RT.3/RW.9, Depok, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16431",
+      image : fotoanakyatemketiga,
+      jumlah_anak : 50,
+      pendiri : "Moh. Saleh", 
+      data : "Panti Asuhan Asrama Putri Yatim & Dhu’afa merupakan panti asuhan yang berlokasi di. Pancoran Mas, Kota Depok. Panti ini berdiri sejak tahun 2016 dan menampung 50 putri berkisar antara TK-SMP dan 4 pengurus. Keseharian anak-anak panti diisi dengan kegiatan belajar formal di pesantren pribadi dan sekolah umum, beribadah, mengaji Alquran...",
+      donasi : "950.000,00",
+      orang_donasi : 13,
+      relawan : 5,
+      no_tlp : "0812-2343-7478" 
+    }
+  ])
+
+  const searchHandler = () =>{
+    if(data.length === 0){
+      return data
+    }
+    setData(data.filter((datas)=> datas.nama_panti.toLowerCase().includes(searchTerm.toLowerCase())))
+  }
+
   return (
     <div>
       <img className="beranda-background" src={berandabackground} alt="background-beranda"/>
@@ -104,8 +154,8 @@ function Beranda() {
         <div className="list-panti-navbar">
           <h2>Panti Asuhan Kita</h2>
           <div className="list-panti-navbar-right">
-            <input placeholder="cari panti asuhan"/>
-            <button>Cari</button>
+            <input value ={searchTerm} onChange={(e) =>setSearchTerm(e.target.value)} placeholder="cari panti asuhan"/>
+            <button onClick={searchHandler}>Cari</button>
             <select>
               <option>1</option>
               <option>2</option>
@@ -113,30 +163,27 @@ function Beranda() {
             </select>
           </div>
         </div>
-        <div className="container-data-panti-asuhan">
+        {data.map((datas, index)=>{
+          return(
+        <div className="container-data-panti-asuhan" key={index}>
             <div className="left-data-panti-asuhan">
               <div className="data-atas-panti">
-                <img src={fotoanakyatem} alt="foto-anak-yatem" />
+                <img src={datas.image} alt="foto-anak-yatem" />
                 <div className="nama-alamat-panti">
-                      <h6>Panti Asuhan Yatim & Dhuafa Tanjung Barat</h6>
+                      <h6>{datas.nama_panti}</h6>
                       <div className='alamat-panti'>
                             <IconMapPin size={48} color="#3AB7FE"/>
-                          <p>Jl. Nangka Utara Raya No 60, RT 6/RW 5, Tanjung Barat, Kec. Jagakarsa, Kota Jakarta Selatan, 
-                            Daerah Khusus Ibukota Jakarta 12530.</p>
+                          <p>{datas.alamat}</p>
                       </div>
                       <div className="jumlah-anak-asuh">
                         <IconFriends size={16} color="#3AB7FE"/>
-                        <p>20 anak</p>
+                        <p>{datas.jumlah_anak} anak</p>
                       </div>
-                      <p>Pendiri : Muhammad Sumbul</p>
+                      <p>Pendiri : {datas.pendiri}</p>
                 </div>
               </div>
               <p>
-                Panti Asuhan Yatim & Dhuafa Tanjung Barat adalah lembaga kesejahteraan 
-                  sosial yang bergerak dibidang pengasuhan anak yatim/yatim-piatu/dhuafa, 
-                  didirikan sejak 2017 dengan 6 pengurus. Pada saat ini, Yayasan Panti 
-                   Yatim & Dhuafa Tanjung Barat mengasuh total 25 anak yang terdiri dari berbagai tingkat 
-                  pendidikan, mulai dari bayi hingga mahasiswa.
+              {datas.data}
               </p>
               <Link>Tentang Panti Asuhan</Link>
             </div>
@@ -145,8 +192,8 @@ function Beranda() {
                   <div className="data-donasi-relawan">
                     <h5>Dana Terkumpul Bulan ini</h5>
                     <h5>Donatur</h5>
-                    <h5 className="data-angka-donasi-relawan">Rp.570.000,00</h5>
-                    <h5 className="data-angka-donasi-relawan">10 Orang</h5>
+                    <h5 className="data-angka-donasi-relawan">Rp. {datas.donasi}</h5>
+                    <h5 className="data-angka-donasi-relawan">{datas.orang_donasi} Orang</h5>
                     </div>
                     <Link>Donasi</Link>
                 </div>
@@ -154,14 +201,16 @@ function Beranda() {
                   <div className="data-donasi-relawan">
                     <h5>Relawan</h5>
                     <h5>Kontak</h5>
-                    <h5 className="data-angka-donasi-relawan">3 Orang</h5>
-                    <h5 className="data-angka-donasi-relawan">0812-2343-7756</h5>
+                    <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
+                    <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                    <Link>Donasi</Link>
+                    <Link className="tombol-relawan">Menjadi Relawan</Link>
                 </div>
             </div>      
         </div>
-        <div className="container-data-panti-asuhan">
+            )
+        })}
+        {/* <div className="container-data-panti-asuhan">
             <div className="left-data-panti-asuhan">
               <div className="data-atas-panti">
                 <img src={fotoanakyatemkedua} alt="foto-anak-yatem" />
@@ -254,6 +303,7 @@ function Beranda() {
                 </div>
             </div>      
         </div>
+         */}
         <div className="page-number">
             <Link>1</Link>
             <Link>2</Link>
@@ -284,7 +334,50 @@ function Beranda() {
         </div>
     </div>
     <div className="contact-form">
-      
+      <div className="contact-form-left">
+        <div className='contact-form-left-title'>
+        <h2>Hubungi kami</h2>
+        <p>Jika anda membutuhkan bantuan, kami siap selalu membantu</p>
+        </div>
+        <div className="contact-form-kontak">
+          <h6>Kontak</h6>
+          <div className="form-kontak-icon">
+          <IconMapPin  color="#3AB7FE"/>
+          <p>6391 Elgin St. Celina, Delaware 10299</p>
+          </div>
+          <div className="form-kontak-icon">
+          <IconPhone  color="#3AB7FE"/>
+          <p>(702) 555-0122</p>
+          </div>
+          <div className="form-kontak-icon">
+          <IconMail  color="#3AB7FE" />
+          <p>(702) 555-0122</p>
+          </div>
+          <div className="form-kontak-sosialmedia">
+            <h5>Sosial Media</h5>
+            <div className='contact-icon-img'>
+                <IconBrandTwitter size={24} color="#3AB7FE" />
+                <IconBrandFacebook size={24} color="#3AB7FE"/>
+                <IconBrandInstagram size={24} color="#3AB7FE"/>
+                <IconBrandTiktok size={24} color="#3AB7FE"/>
+            </div>
+          </div>
+        </div>
+      </div>
+        <form className="contact-form-right">
+          <h3>Ada Pertanyaan?</h3>
+          <div className='contact-form-right-container'>
+          <div className="input-pertanyaan">
+          <IconMail  color="#3AB7FE" />
+            <input placeholder='masukan email anda'/>
+          </div>
+          <div className="input-pertanyaan">
+          <IconQuestionMark  color="#3AB7FE" />
+            <input placeholder='ada pertanyaan?'/>
+          </div>
+          </div>
+          <button>Kirim</button>
+        </form>
     </div>
   </div>
   )

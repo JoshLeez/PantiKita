@@ -1,9 +1,10 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Beranda from './Component/Beranda'
-import About from './Component/About'
-import Status from './Component/Status'
+import Hubungikami from './Component/Hubungikami'
+import Footer from './Component/Footer'
 import Navbar from './Component/Navbar'
+import Pantiasuhankita from './Component/Pantiasuhankita';
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Beranda />}/>
-           <Route path="/about" element={<About />}/>
-           <Route path="/status" element={<Status />}/>
+           <Route path="/hubungikami" element={<Hubungikami />}/>
+           <Route path="/pantiasuhankita" element={<Pantiasuhankita />}/>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

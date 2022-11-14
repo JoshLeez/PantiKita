@@ -6,6 +6,24 @@
     justify-content: space-between;
 }
 
+.navbar.fixed{
+    z-index:10;
+    position:fixed;
+    justify-content: space-between;
+    background-color: #004BAE;
+    animation: top-to-bottom .3s ease-in-out
+}
+
+@keyframes top-to-bottom{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+
+        transform: translateY(0%);
+    }
+}
+
 .left-navbar{
     display:flex;
     width:23%;
