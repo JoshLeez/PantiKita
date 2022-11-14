@@ -16,3 +16,5 @@ function Pantiasuhankita() {
   )
 }
 
+export default Pantiasuhankita
+

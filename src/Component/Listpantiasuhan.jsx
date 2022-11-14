@@ -4,11 +4,15 @@ import { IconMapPin, IconFriends} from '@tabler/icons';
 import fotoanakyatem from '../images/foto_anak_yatem.png';
 import fotoanakyatemkedua from '../images/foto_anak_yatem_kedua.png';
 import fotoanakyatemketiga from '../images/foto_anak_yatem_ketiga.png';
+import './Beranda.css'
 
 function Listpantiasuhan() {
     const [searchTerm, setSearchTerm] = useState('');
 
-    const [data, setData]= useState([
+    const [data, setData]= useState(
+      {
+      searchUser: [],
+      listUser: [
         {
           nama_panti : "Panti Asuhan Yatim & Dhuafa Tanjung Barat",
           alamat : "Jl. Nangka Utara Raya No 60, RT 6/RW 5, Tanjung Barat, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12530.",
@@ -45,11 +49,12 @@ function Listpantiasuhan() {
           relawan : 5,
           no_tlp : "0812-2343-7478" 
         }
-      ])
+      ]
+    })
 
       const searchHandler = () =>{
-            let findData = data.listUser.filter((val) =>
-              val.firstName.toLowerCase().includes(searchTerm.toLowerCase())
+            let findData = data.listUser.filter((datas) =>
+              datas.nama_panti.toLowerCase().includes(searchTerm.toLowerCase())
             );
             setData((prevState) => {
                 return {
@@ -60,10 +65,10 @@ function Listpantiasuhan() {
       }
 
   return (
-    <div className="list-panti-asuhan-kita">
-        <div className="list-panti-navbar">
+    <section className="list-panti-asuhan-kita">
+        <header className="list-panti-navbar">
           <h2>Panti Asuhan Kita</h2>
-          <div className="list-panti-navbar-right">
+          <nav className="list-panti-navbar-right">
             <input value ={searchTerm} onChange={(e) =>setSearchTerm(e.target.value)} placeholder="cari panti asuhan"/>
             <button onClick={searchHandler}>Cari</button>
             <select>
@@ -71,11 +76,12 @@ function Listpantiasuhan() {
               <option>2</option>
               <option>3</option>
             </select>
-          </div>
-        </div>
-        {data.map((datas, index)=>{
+          </nav>
+        </header>
+        {data.searchUser.length === 0 
+        ? data.listUser.map((datas, index)=>{
           return(
-        <div className="container-data-panti-asuhan" key={index}>
+        <article className="container-data-panti-asuhan" key={index}>
             <div className="left-data-panti-asuhan">
               <div className="data-atas-panti">
                 <img src={datas.image} alt="foto-anak-yatem" />
@@ -117,9 +123,58 @@ function Listpantiasuhan() {
                     <Link className="tombol-relawan">Menjadi Relawan</Link>
                 </div>
             </div>      
-        </div>
+        </article>
             )
-        })}
+        }) : 
+        data.searchUser.map((datas, index)=>{
+          return(
+            <article className="container-data-panti-asuhan" key={index}>
+            <div className="left-data-panti-asuhan">
+              <div className="data-atas-panti">
+                <img src={datas.image} alt="foto-anak-yatem" />
+                <div className="nama-alamat-panti">
+                      <h6>{datas.nama_panti}</h6>
+                      <div className='alamat-panti'>
+                            <IconMapPin size={48} color="#3AB7FE"/>
+                          <p>{datas.alamat}</p>
+                      </div>
+                      <div className="jumlah-anak-asuh">
+                        <IconFriends size={16} color="#3AB7FE"/>
+                        <p>{datas.jumlah_anak} anak</p>
+                      </div>
+                      <p>Pendiri : {datas.pendiri}</p>
+                </div>
+              </div>
+              <p>
+              {datas.data}
+              </p>
+              <Link>Tentang Panti Asuhan</Link>
+            </div>
+            <div className="right-data-panti-asuhan">
+                <div className="opsi-user">
+                  <div className="data-donasi-relawan">
+                    <h5>Dana Terkumpul Bulan ini</h5>
+                    <h5>Donatur</h5>
+                    <h5 className="data-angka-donasi-relawan">Rp. {datas.donasi}</h5>
+                    <h5 className="data-angka-donasi-relawan">{datas.orang_donasi} Orang</h5>
+                    </div>
+                    <Link>Donasi</Link>
+                </div>
+                <div className="opsi-user">
+                  <div className="data-donasi-relawan">
+                    <h5>Relawan</h5>
+                    <h5>Kontak</h5>
+                    <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
+                    <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
+                    </div>
+                    <Link className="tombol-relawan">Menjadi Relawan</Link>
+                </div>
+            </div>      
+        </article>
+          )
+        })
+        
+        }
            <div className="page-number">
             <Link>1</Link>
             <Link>2</Link>
@@ -132,7 +187,7 @@ function Listpantiasuhan() {
             <Link>9</Link>
             <Link>10</Link>
         </div>
-    </div>
+    </section>
   )
 }
 

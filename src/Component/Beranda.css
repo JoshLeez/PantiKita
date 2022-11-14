@@ -381,6 +381,20 @@
     background: #FDFDFD;
     box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    animation: search-pop-up .3s ease-in-out
+}
+
+@keyframes search-pop-up{
+    0%{
+        width:0%;
+    }
+    50%{
+       width:50%;
+    }
+    100%{
+      
+        width:100%;
+    }
 }
 
 .left-data-panti-asuhan{
