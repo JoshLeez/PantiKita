@@ -10,7 +10,10 @@ function App() {
   return (
     <div className="App">
       <Router>
+<<<<<<< HEAD
         <Navbar/>
+=======
+>>>>>>> 30530e35d63e49ddcad3b4c111bf63a1bffe379c
         <Routes>
           <Route path="/" element={<Beranda />}/>
            <Route path="/hubungikami" element={<Hubungikami />}/>

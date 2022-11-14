@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer{
     width:100%;
     height:240px;
@@ -57,4 +58,65 @@ footer > p{
     display:flex;
     justify-content: flex-end;
     gap:30px;
+=======
+footer{
+    width:100%;
+    height:240px;
+    background: #00233F;
+    display:flex;
+    flex-direction: column;
+}
+
+footer > p{
+    align-self: center;
+}
+
+.footer-top{
+    height: 190px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-top > img{
+    width: 251.35px;
+    height: 100px;
+}
+
+footer > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FAFAFA;
+}
+
+.footer-top > .footer-right-container{
+    max-width:600px;
+    font-size: 18px;
+    display:flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap:10px;
+}
+
+.footer-right-container > .footer-right-top{
+    display:flex;
+    gap:30px;
+}
+
+.footer-right-bottom > a, .footer-right-top  > a{
+    margin:0;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.footer-right-bottom >a:hover , .footer-right-top > a:hover{
+    color: #71717A;
+}
+
+.footer-right-container > .footer-right-bottom{
+    display:flex;
+    justify-content: flex-end;
+    gap:30px;
+>>>>>>> 30530e35d63e49ddcad3b4c111bf63a1bffe379c
 }
