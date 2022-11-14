@@ -1,0 +1,32 @@
+#pot {
+    width: 300px;
+    height: 72px;
+    display:flex;
+    border:2px solid black;
+    filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+      justify-content:center;
+      align-items:center;
+    }
+    
+    #pot > div{
+      position:relative;
+     animation: linear infinite;
+     animation-name: run;
+     animation-duration: 5s;
+      width: 300px;
+    height: 53px;
+      border:2px solid red;
+    }
+    
+    @keyframes run {
+      0% {
+        left: 0;
+      }
+         50%{
+        left:50%;
+      }
+        100% {
+            left: 100%;
+      }
+    }
