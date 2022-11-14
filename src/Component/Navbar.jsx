@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {useState} from 'react'
 import './Navbar.css'
 import {NavLink, Link} from 'react-router-dom'
