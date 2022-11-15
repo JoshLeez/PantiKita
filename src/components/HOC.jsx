@@ -8,7 +8,7 @@ const HOC = ({children, title = "Panti Kita"}) => {
          <Helmet>
             <title>{title}</title>
          </Helmet>
-         <div>
+         <div className="container">
             <Navbar />
             {children}
             <Footer />

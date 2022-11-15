@@ -14,12 +14,12 @@ import macbookimg from '../images/macbook.png';
 import tentangkami from '../images/tentang_kami_img.png';
 import linetentangkami from '../images/line_tentang_kami_img.png';
 import dottentangkami from '../images/dot_tentang_kami_img.png';
-import Listpantiasuhan from '../components/Listpantiasuhan';
+import ListPantiAsuhan from '../components/ListPantiAsuhan';
 
 function Beranda() {
 
   return (
-    <HOC title="Panti Kita">
+    <HOC title="Panti Kita" >
       <img className="beranda-background" src={berandabackground} alt="background-beranda"/>
       <div className="beranda-parent">
       <section className='cari-panti-section'>
@@ -101,7 +101,7 @@ function Beranda() {
       </div>
       <Link>Mulai Daftar</Link>
     </div>
-    <Listpantiasuhan/>
+    <ListPantiAsuhan/>
     <div className="tentang-kami-section">
         <div className="tentang-kami-left">
           <img src={linetentangkami} alt="line-tentang-kami" className="line-tentang-kami"/>

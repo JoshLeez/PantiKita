@@ -6,7 +6,7 @@ import fotoanakyatemkedua from '../images/foto_anak_yatem_kedua.png';
 import fotoanakyatemketiga from '../images/foto_anak_yatem_ketiga.png';
 import '../pages/styles/beranda.css'
 
-function Listpantiasuhan() {
+function ListPantiAsuhan() {
     const [searchTerm, setSearchTerm] = useState('');
 
     const [data, setData]= useState(
@@ -191,4 +191,4 @@ function Listpantiasuhan() {
   )
 }
 
-export default Listpantiasuhan;
+export default ListPantiAsuhan;
