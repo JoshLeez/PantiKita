@@ -1,7 +1,7 @@
 import HOC from '../components/HOC';
 import { IconFileDescription,IconMapPin, IconPhone, IconMail
 , IconBrandTwitter, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok
-, IconQuestionMark } from '@tabler/icons';
+, IconQuestionMark, IconChevronLeft,IconChevronRight, IconHomeDollar } from '@tabler/icons';
 import "./styles/beranda.css";
 import {Link} from 'react-router-dom';
 import berandaasuh from '../images/beranda_asuh.png';
@@ -53,7 +53,7 @@ function Beranda() {
           <div className='hasil-opsi'>
           <div className="the-option">
                 <div className='option-icon'>
-                 <IconFileDescription/>
+                 <IconHomeDollar />
                 </div>
                  <div className="option-word">
                     <h5>Memberikan Donasi</h5>
@@ -66,9 +66,9 @@ function Beranda() {
                  <IconFileDescription/>
                 </div>
                  <div className="option-word">
-                    <h5>Memberikan Donasi</h5>
-                    <p>Ayo salurkan dana mu sekarang untuk membantu 
-                      meningkatkan kualitas panti asuhan</p>
+                    <h5>Menjadi Relawan</h5>
+                    <p>Ayo tingkatkan peduli kita dengan menjadi relawan untuk 
+                      perkembangan anak-anak di panti asuhan </p>
                  </div>
               </div>        
               <div className="the-option">
@@ -76,9 +76,9 @@ function Beranda() {
                  <IconFileDescription/>
                 </div>
                  <div className="option-word">
-                    <h5>Memberikan Donasi</h5>
-                    <p>Ayo salurkan dana mu sekarang untuk membantu 
-                      meningkatkan kualitas panti asuhan</p>
+                    <h5>Melihat Informasi Panti Asuhan</h5>
+                    <p>Anda dapat melihat berbagai program dan 
+                      informasi yang ada di Panti Asuhan</p>
                  </div>
               </div>                 
           </div>
@@ -86,18 +86,24 @@ function Beranda() {
     <section className="layanan-tersedia">
       <h2>Layanan yang Kami Sediakan</h2>
       <div className="layanan-content-swiper">
-        <div>swiper icon</div>
-        <div className='layanan-content-list'>
-          <img src={macbookimg} alt="mac-book-img"/>
-          <div className="layanan-word">
-                <h2>Pengelolaan Data Panti Asuhan</h2>
-                <p>
-                  Bertekad menjadi lembaga  pengelola dana yang berkhidmat menangani 
-                  anak yatim piatu serta memberdayakannya.
-                </p>
+        <div className='swiper-container-layanan'>
+          <IconChevronLeft size={48} color="#3AB7FE"/>
+        </div>
+        <div id="animation-swiper-layanan-content">
+          <div className='layanan-content-list'>
+            <img src={macbookimg} alt="mac-book-img"/>
+            <div className="layanan-word">
+                  <h2>Pengelolaan Data Panti Asuhan</h2>
+                  <p>
+                    Bertekad menjadi lembaga  pengelola dana yang berkhidmat menangani 
+                    anak yatim piatu serta memberdayakannya.
+                  </p>
+            </div>
           </div>
         </div>
-         <div>swiper icon</div>
+        <div className='swiper-container-layanan'>
+          <IconChevronRight size={48} color="#3AB7FE"/>
+        </div>
       </div>
       <Link>Mulai Daftar</Link>
     </section>

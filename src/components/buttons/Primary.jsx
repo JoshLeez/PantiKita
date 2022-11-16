@@ -2,7 +2,7 @@
 function Primary(props) {
   return (
     <>
-    <button>{props.namanya.type.hello}</button>
+    <button>{props.text}</button>
     </>
   )
 }
