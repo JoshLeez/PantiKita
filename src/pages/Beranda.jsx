@@ -19,7 +19,7 @@ import ListPantiAsuhan from '../components/ListPantiAsuhan';
 function Beranda() {
 
   return (
-    <HOC title="Panti Kita" >
+    <HOC title="Panti Kita">
       <img className="beranda-background" src={berandabackground} alt="background-beranda"/>
       <div className="beranda-parent">
       <section className='cari-panti-section'>
@@ -48,7 +48,7 @@ function Beranda() {
         <img src={msib} alt="MSIB"/>
         <img src={infinitelearning} alt="Infinite_Learning"/>
       </div>
-    <div className="opsi-beranda">
+    <section className="opsi-beranda">
           <h3>Peduli Panti Asuhan Kita</h3>
           <div className='hasil-opsi'>
           <div className="the-option">
@@ -82,8 +82,8 @@ function Beranda() {
                  </div>
               </div>                 
           </div>
-    </div>
-    <div className="layanan-tersedia">
+    </section>
+    <section className="layanan-tersedia">
       <h2>Layanan yang Kami Sediakan</h2>
       <div className="layanan-content-swiper">
         <div>swiper icon</div>
@@ -100,9 +100,9 @@ function Beranda() {
          <div>swiper icon</div>
       </div>
       <Link>Mulai Daftar</Link>
-    </div>
+    </section>
     <ListPantiAsuhan/>
-    <div className="tentang-kami-section">
+    <section className="tentang-kami-section">
         <div className="tentang-kami-left">
           <img src={linetentangkami} alt="line-tentang-kami" className="line-tentang-kami"/>
           <img src={tentangkami} alt="tentang-kami"/>
@@ -117,8 +117,8 @@ function Beranda() {
             asuhannya, membuka layanan donasi untuk umum dan juga relawan yang dapat membantu panti asuhan.
             </p>
         </div>
-    </div>
-    <div className="contact-form">
+    </section>
+    <section className="contact-form">
       <div className="contact-form-left">
         <div className='contact-form-left-title'>
         <h2>Hubungi kami</h2>
@@ -163,7 +163,7 @@ function Beranda() {
           </div>
           <button>Kirim</button>
         </form>
-    </div>
+    </section>
   </HOC>
   )
 }

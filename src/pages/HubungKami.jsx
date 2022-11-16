@@ -3,11 +3,20 @@ import {IconMapPin,IconPhone, IconMail
 , IconQuestionMark } from '@tabler/icons';
 import './styles/hubungi_kami.css'
 import HOC from '../components/HOC';
+import Primary from '../components/buttons/Primary';
 
 function HubungiKami() {
+
+  const obj = {
+    type :{
+      text:"Kirim",
+      hello:"Rezal"
+    }
+  }
+
   return (
     <HOC title="Hubungi Kami - Panti Kita">
-      <div className="contact-form-page">
+      <section className="contact-form-page">
         <div className="contact-form-left">
           <div className='contact-form-left-title-page'>
           <h2>Hubungi kami</h2>
@@ -50,9 +59,9 @@ function HubungiKami() {
               <input placeholder='ada pertanyaan?'/>
             </div>
             </div>
-            <button>Kirim</button>
+            <Primary namanya={obj}/>
           </form>
-      </div>
+      </section>
     </HOC>
   )
 }

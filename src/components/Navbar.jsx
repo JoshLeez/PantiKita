@@ -5,9 +5,9 @@ import logo_panti_kita from '../images/logo_panti_kita.png'
 
 function Navbar() {
   const [fix, setFix] = useState(true)
-  const [fixed, settFixed] = useState(true)
+  const [fixed, setFixed] = useState(true)
 
-  const Fixedhanlder = () =>{
+  const fixedHanlder = () =>{
     if (window.scrollY >= 72){
       setFix(false)
     }
@@ -16,18 +16,18 @@ function Navbar() {
     }
   }
 
-  const Fixedhanlders = () =>{
+  const fixedHanlders = () =>{
     if (window.scrollY >=500){
-    settFixed(false)
+    setFixed(false)
     }
     else{
-   settFixed(true)
+   setFixed(true)
     }
   }
 
-  window.addEventListener("scroll", Fixedhanlder)
+  window.addEventListener("scroll", fixedHanlder)
   
-  window.addEventListener("scroll", Fixedhanlders)
+  window.addEventListener("scroll", fixedHanlders)
   
   return (
     <nav className={fix ? "navbar" :  fixed ? "navbar fixed" : "navbar fixed bottom"}>
