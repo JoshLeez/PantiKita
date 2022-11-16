@@ -13,7 +13,7 @@ function App() {
             <Route path={BERANDA} element={<Beranda />} />
             <Route path={HUBUNGI_KAMI} element={<HubungiKami />} />
             <Route path={PANTI_ASUHAN_KITA} element={<PantiAsuhanKita />} />
-            <Route path={BERANDA} element={<Dashboard />} />
+            <Route path={DASHBOARD} element={<Dashboard />} />
          </Routes>
       </>
 	);

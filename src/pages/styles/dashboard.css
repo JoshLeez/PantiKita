@@ -1,0 +1,152 @@
+body {
+	background-color: #f2f3f6;
+	height: 100%;
+	width: 100%;
+   color: var(--text-bgLight-1);
+}
+
+.header-dashboard {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 18px 32px;
+	margin-left: -64px;
+}
+
+.status {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.notification {
+	position: relative;
+}
+
+.notification span {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ae1e00;
+	border-radius: 8px;
+	color: #fafafa;
+	font-family: "Rubik";
+	font-weight: 400;
+	font-size: 12px;
+	width: 16px;
+	height: 16px;
+	top: -5px;
+	right: -5px;
+}
+
+.welcome {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+.welcome p {
+	color: var(--text-bgLight-3);
+}
+
+.welcome p strong {
+	color: var(--text-bgLight-1);
+	font-weight: 400;
+}
+
+.donate-volunteer {
+	display: flex;
+	padding: 0 32px;
+	margin-left: -64px;
+	justify-content: space-between;
+}
+
+.donate {
+	background: #fdfdfd;
+	box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	width: 448px;
+	height: 145px;
+}
+
+.content-donate {
+	display: flex;
+	gap: 32px;
+	align-items: flex-start;
+}
+
+.donate-volunteer h2 {
+	font-family: "Rubik";
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--pr-color30);
+}
+
+.title {
+	display: flex;
+	gap: 8px;
+}
+
+.title h3 {
+	font-family: "Rubik";
+	font-weight: 600;
+	font-size: 16px;
+	color: var(--text-bgLight-2);
+	transform: translateY(2px);
+}
+
+.content-donate p {
+	font-family: "Rubik";
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.funds-raised {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.title-funds-raised {
+   margin-bottom: 4px;
+}
+
+.target {
+   display: flex;
+   margin-top: 4px;
+}
+
+.target span {
+   font-family: 'Rubik';
+   font-weight: 400;
+   font-size: 10px;
+   color: var(--sc2-color10);
+   width: 42px;
+}
+
+.target-parameter p {
+   font-weight: 400;
+   font-size: 10px;
+   color: var(--text-bgLight-2);
+   padding: 0;
+}
+
+.parameter {
+   position: relative;
+   /* margin-top: -12px; */
+   border-radius: 2px;
+   width: 149px;
+   height: 6px;
+   background-color: var(--bg-ac2);
+}
+
+.parameter::after {
+   content: "";
+   position: absolute;
+   border-radius: 2px;
+   width: 85%;
+   height: 6px;
+   background-color: var(--sc2-color10);
+}
+
