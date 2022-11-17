@@ -1,19 +1,26 @@
-.navbar{
-    display:flex;
-    height:72px;
-    align-items: center;
-    justify-content: space-between;
+.navbar-container{
+    width:100%;
 }
 
-.navbar.fixed{
-    width:1296px;
+.navbar-container.fixed{
+    width:100%;
+    position: fixed;
     z-index:10;
     position:fixed;
     background-color: #004BAE;
     animation: top-to-bottom .3s ease-in-out;
 }
 
-.navbar.fixed.bottom{
+.navbar{
+    display:flex;
+    width:1296px;
+    height:72px;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.navbar-container.fixed.bottom{
     background: #FDFDFD;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
     transition: .2s ease-in-out;
@@ -37,6 +44,8 @@
 
 .left-navbar > img{
     margin:0 12%;
+    width: 120.65px;
+    height: 48px;
 }
 
 .mid-navbar{
@@ -64,10 +73,14 @@
     text-decoration:none;
 }
 
-.right-navbar >a:hover{
-    color: #71717A;
-    transition: .3s ease-in-out;
+.right-navbar > .fixed-color{
+    color:#18181B;
 }
+
+.right-navbar > .fixed-color:hover{
+    color:#71717A;
+}
+
 
 .mid-navbar > a{
     color: #A1A1AA;
@@ -87,6 +100,15 @@
 .mid-navbar > a:hover{
     color: #FAFAFA;
     transition: .3s ease-in-out;
+}
+
+
+.mid-navbar.fixed > a:hover{
+    color: #18181B
+}
+
+.mid-navbar.fixed > a.active{
+    color: #18181B
 }
 
 .tombol-daftar{

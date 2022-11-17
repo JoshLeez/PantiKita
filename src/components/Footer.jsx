@@ -6,6 +6,7 @@ function Footer() {
   return (
     <>
         <footer>
+          <div className='footer-container'>
           <div className='footer-top'>
           <img src={logodarklight} alt="logo"/>
           <div className='footer-right-container'>
@@ -23,6 +24,7 @@ function Footer() {
           </div>
           </div>
           <p>Copyright © 2022 PANTIKITA. All rights reserved.</p>
+          </div>
         </footer>
     </>
   )     

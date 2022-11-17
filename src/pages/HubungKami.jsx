@@ -7,15 +7,8 @@ import Primary from '../components/buttons/Primary';
 
 function HubungiKami() {
 
-  const obj = {
-    type :{
-      text:"Kirim",
-      hello:"Rezal"
-    }
-  }
-
   return (
-    <HOC title="Hubungi Kami - Panti Kita">
+    <HOC title="Hubungi Kami - Panti Kita" status>
       <section className="contact-form-page">
         <div className="contact-form-left">
           <div className='contact-form-left-title-page'>
@@ -59,7 +52,7 @@ function HubungiKami() {
               <input placeholder='ada pertanyaan?'/>
             </div>
             </div>
-            <Primary namanya={obj}/>
+            <Primary text="Kirim"/>
           </form>
       </section>
     </HOC>

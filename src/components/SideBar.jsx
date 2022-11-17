@@ -32,7 +32,7 @@ const SideBar = ()=> {
                <NavLink to="" className="side-bar-link">Data Relawan</NavLink>
             </div>
          </nav>
-         <div className="logout">
+         <div className="logout position-absolute end-0 bottom-0 mb-3">
             <Logout className="icon-nav"/>
             <NavLink to="" className="side-bar-link">Keluar</NavLink>
          </div>
