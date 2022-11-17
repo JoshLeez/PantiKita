@@ -1,0 +1,48 @@
+.header-dashboard {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 18px 32px;
+}
+
+.status {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.notification {
+	position: relative;
+}
+
+.notification span {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ae1e00;
+	border-radius: 8px;
+	color: #fafafa;
+	font-family: "Rubik";
+	font-weight: 400;
+	font-size: 12px;
+	width: 16px;
+	height: 16px;
+	top: -5px;
+	right: -5px;
+}
+
+.welcome {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+.welcome p {
+	color: var(--text-bgLight-3);
+}
+
+.welcome p strong {
+	color: var(--text-bgLight-1);
+	font-weight: 400;
+}

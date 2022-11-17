@@ -1,0 +1,27 @@
+:root {
+   --bg-color60 : #F2F3F6;
+   --pr-color30 : #004BAE;
+   --sc1-color10 : #0185D0;
+   --sc2-color10 : #3AB7FE;
+   --text-bgLight-1 : #18181B;
+   --text-bgLight-2 : #71717A;
+   --text-bgLight-3 : #A1A1AA;
+   --text-bgDark-1 : #FAFAFA;
+   --text-bgDark-2 : #A1A1AA;
+   --text-bgDark-3 : #52525B;
+   --bg-main : #FDFDFD;
+   --bg-ac1 : #E2E8F0;
+   --bg-ac2 : #CBD5E1;;
+}
+
+body {
+  background: #F2F3F6;
+}
+
+*{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

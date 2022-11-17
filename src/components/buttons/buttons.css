@@ -1,0 +1,25 @@
+/* button Edit */
+.button-edit {
+   outline: none;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 150px;
+   height: 32px;
+   color: var(--text-bgDark-1);
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 500;
+   background: #004BAE;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   gap: 8px;
+   transition: all 0.2s ease-in ;
+}
+
+.button-edit:hover {
+   transition: all 0.2s ease-in ;
+   background: #00357A;
+   cursor: pointer;
+}
