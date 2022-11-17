@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Footer from "./Footer";
 import "./styles/hoc.css"
-import Navbar from "./Navbar";
-import Navbars from "./Navbars";
+import Navbar,{Navbars} from "./Navbar";
+
 
 const HOC = ({children, title = "Panti Kita", status=false}) => {
    return (

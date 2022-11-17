@@ -15,7 +15,7 @@ import macbookimg2 from '../images/macbook_2.png';
 import macbookimg3 from '../images/macbook_3.png';
 import tentangkami from '../images/tentang_kami_img.png';
 import linetentangkami from '../images/line_tentang_kami_img.png';
-import dottentangkami from '../images/dot_tentang_kami_img.png';
+import dottentangkami from '../images/dot_tentang_kami_img.svg';
 import ListPantiAsuhan from '../components/ListPantiAsuhan';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {  Navigation } from "swiper";
@@ -175,7 +175,7 @@ function Beranda() {
         <h2>Hubungi kami</h2>
         <p>Jika anda membutuhkan bantuan, kami siap selalu membantu</p>
         </div>
-        <div classN ame="contact-form-kontak">
+        <div className="contact-form-kontak">
           <h6>Kontak</h6>
           <div className="form-kontak-icon">
           <IconMapPin  color="#3AB7FE"/>

@@ -1,6 +1,6 @@
 import "./styles/panti_asuhan_kita.css";
 import HOC from "../components/HOC";
-import { IconAdjustmentsHorizontal } from '@tabler/icons';
+import { IconAdjustmentsHorizontal, IconKey, IconCoin, IconBuildingSkyscraper, IconBuildingCommunity  } from '@tabler/icons';
 
 function PantiAsuhanKita() {
 	return (
@@ -26,6 +26,10 @@ function PantiAsuhanKita() {
 										<h5><span>107</span> Panti Asuhan</h5>
 									</div>
 									<div>
+										<h6>Donatur yang Terdaftar</h6>
+										<h5><span>1.080 </span> Donatur</h5>
+									</div>
+									<div>
 										<h6>Relawan yang Terdaftar</h6>
 										<h5><span>214</span> Relawan</h5>
 									</div>
@@ -36,14 +40,38 @@ function PantiAsuhanKita() {
 				<div className="right-panti-asuhan-kita-search-filter">
 					<div className="right-panti-asuhan-filter-judul">
 						<IconAdjustmentsHorizontal/>
-						<h2>Filter</h2>
+						<h5>Filter</h5>
 					</div>
-						<p>
-						Memaksimalkan layanan panti asuhan yang sudah terdaftar  yang  bekerjasama 
-						dengan panti kita untuk meningkatkan para donatur dan relawan. Di mana website 
-						ini berfungsi sebagai perantara dengan panti-panti asuhan lainnya dan sangat 
-						bermanfaat untuk anak-anak yatim piatu atau dhuafa.		
-						</p>
+					<div className="right-panti-asuhan-filter-input">
+							<div className="input-filter-panti">
+								<h6>Kata Kunci</h6>
+								<div className="input-layout-filter">
+									<IconKey color="#3AB7FE"/>
+									<input placeholder="kata kunci"/>
+								</div>		
+							</div>
+							<div className="input-filter-panti">
+								<h6>Range Donasi Terkumpul</h6>
+								<div className="input-layout-filter">
+									<IconCoin  color="#3AB7FE"/>
+									<input/>
+								</div>		
+							</div>
+							<div className="input-filter-panti">
+								<h6>Provinsi</h6>
+								<div className="input-layout-filter">
+									<IconBuildingSkyscraper  color="#3AB7FE"/>
+									<input/>
+								</div>		
+							</div>
+							<div className="input-filter-panti">
+								<h6>Kabupaten/Kota</h6>
+								<div className="input-layout-filter">
+									<IconBuildingCommunity color="#3AB7FE"/>
+									<input/>
+								</div>		
+							</div>
+					</div>
 				</div>
 			</section>
 		</HOC>

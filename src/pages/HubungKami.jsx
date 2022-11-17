@@ -3,7 +3,7 @@ import {IconMapPin,IconPhone, IconMail
 , IconQuestionMark } from '@tabler/icons';
 import './styles/hubungi_kami.css'
 import HOC from '../components/HOC';
-import Primary from '../components/buttons/Primary';
+import Primary from '../components/Primary';
 
 function HubungiKami() {
 

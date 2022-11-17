@@ -1,8 +1,8 @@
 .panti-asuhan-kita-search-filter{
-  border:2px solid black;
   display:flex; 
   align-items: center;
   height: 505px;
+  margin:40px 0;
 }
 
 .left-panti-asuhan-kita-search-filter{
@@ -62,7 +62,6 @@
 }
 
 .right-panti-asuhan-kita-search-filter{
-  border:2px solid yellow;
   display:flex;
   flex-direction: column;
   width: 664px;
@@ -71,6 +70,8 @@
   border-radius: 5px;
   justify-self: flex-end;
   margin-left:auto;
+  align-items: center;
+  gap:5px;
 }
 
 .container-animation-data-panti{
@@ -127,4 +128,54 @@
 
 .right-panti-asuhan-kita-search-filter > .right-panti-asuhan-filter-judul{
   display:flex;
+  color:#FAFAFA;
+  align-items: center;
+  margin:20px 0;
 }
+
+.right-panti-asuhan-filter-judul{
+  font-size: 20px;
+  color: #FAFAFA; 
+}
+
+.right-panti-asuhan-filter-input{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+}
+
+.input-filter-panti{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height:100px; 
+  margin:0 auto;
+}
+
+.input-filter-panti> h6{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FAFAFA;
+}
+
+.input-layout-filter{
+  display:flex;
+  align-items: center;
+  gap:5px;
+  width: 300px;
+  height: 48px;
+  background: #CBD5E1;
+  border-radius: 5px;
+}
+
+.input-layout-filter > .icon-tabler{
+  margin:0 5px;
+}
+
+.input-layout-filter > input{
+  border:none;
+  outline:none;
+  background: none;
+}
+

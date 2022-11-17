@@ -630,7 +630,6 @@
     z-index:-1;
     width: 134px;
     height: 156px;
-    transform: rotate(-90deg);
     top:400px;
     left:-60px;
 }
@@ -699,11 +698,10 @@
 }
 
 .contact-form-kontak > h6{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: #FAFAFA;
-    margin:0;
 }
 
 .contact-form-kontak > .form-kontak-icon{

@@ -1,5 +1,5 @@
 import { Edit } from "tabler-icons-react";
-import "./buttons.css";
+import "./styles/buttons.css";
 
 function Primary(props) {
   return (

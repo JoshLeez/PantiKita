@@ -1,6 +1,6 @@
 import SideBar from "../components/SideBar";
 import {ChevronUp,ZoomMoney,User,Hearts,Users,Man,Woman,MapPin,Phone,Friends} from "tabler-icons-react";
-import { ButtonEdit } from "../components/buttons/Primary";
+import { ButtonEdit } from "../components/Primary";
 import "./styles/dashboard.css";
 import HeaderDashboard from "../components/HeaderDashboard";
 
