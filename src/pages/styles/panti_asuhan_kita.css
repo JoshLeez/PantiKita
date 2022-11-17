@@ -6,14 +6,13 @@
 }
 
 .left-panti-asuhan-kita-search-filter{
-  border:2px solid red;
   display:flex;
   flex-direction: column;
   justify-content: center;
   width: 415px;
   height: 351px;
   margin:0 auto;
-  gap:10px;
+  gap:15px;
 }
 
 .left-panti-asuhan-kita-search-filter > h2{
@@ -37,6 +36,7 @@
   width: 400px;
   height: 48px;
   align-self: center;
+  margin:1em auto;
 }
 
 .left-panti-asuhan-kita-search-button > input{
@@ -73,51 +73,58 @@
   margin-left:auto;
 }
 
-.container-anmation-data-panti{
+.container-animation-data-panti{
   width: 300px;
   height: 72px;
   display:flex;
-  border:2px solid black;
-  filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.15));
-  border-radius: 5px;
   justify-content:center;
   align-items:center;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px; 
   align-self: center;   
+  z-index:-5
 }
 
-#animation-data-panti {
-    z-index:-1;
-    width: 932px;
-    height: 53px;
-    display:flex;
-    border:2px solid black;
-    filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.15));
-    border-radius: 5px;
-    justify-content:center;
-    align-items:center;
-    align-self: center;
-    }
-    
-    #animation-data-panti > .container-data-panti{
-      display:flex;
-      flex-direction: column;
+#animation-container-data-panti{
+  width: 300px;
+  height: 53px;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  overflow:hidden;
+}
 
-     animation: linear infinite;
-     transform: trnaslateX(100%);
-     animation-name: run;
-     animation-duration: 5s;
-      width: 300px;
-      height: 53px;
-      border:2px solid red;
-      z-index:-1;
-    }
-    
-    @keyframes run {
-      0% {
-        transform: translateX(100%);
-      }
-        100% {
-          transform: translateX(-300%);
-      }
-    }
+.triple-container-animation{
+  display:flex;
+  height: 53px;
+  gap:300px;
+  justify-content: center;
+  align-items: center;
+}
 
+.triple-container-animation > div > h6{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #18181B;
+}
+
+
+.triple-container-animation > div > h5 > span{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #004BAE;
+}
+
+.triple-container-animation > div > h5{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #71717A;
+}
+
+
+.right-panti-asuhan-kita-search-filter > .right-panti-asuhan-filter-judul{
+  display:flex;
+}

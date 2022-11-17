@@ -11,14 +11,22 @@ import kampusmerdeka from '../images/Kampus_merdeka.png';
 import msib from '../images/MSIB.png';
 import infinitelearning from '../images/Infinite_Learning.png';
 import macbookimg from '../images/macbook.png';
+import macbookimg2 from '../images/macbook_2.png';
+import macbookimg3 from '../images/macbook_3.png';
 import tentangkami from '../images/tentang_kami_img.png';
 import linetentangkami from '../images/line_tentang_kami_img.png';
 import dottentangkami from '../images/dot_tentang_kami_img.png';
 import ListPantiAsuhan from '../components/ListPantiAsuhan';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {  Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 function Beranda() {
 
   return (
+
     <HOC title="Panti Kita">
       <img className="beranda-background" src={berandabackground} alt="background-beranda"/>
       <div className="beranda-parent">
@@ -86,24 +94,61 @@ function Beranda() {
     <section className="layanan-tersedia">
       <h2>Layanan yang Kami Sediakan</h2>
       <div className="layanan-content-swiper">
-        <div className='swiper-container-layanan'>
+        {/* <div className='swiper-container-layanan'>
           <IconChevronLeft size={48} color="#3AB7FE"/>
-        </div>
-        <div id="animation-swiper-layanan-content">
-          <div className='layanan-content-list'>
-            <img src={macbookimg} alt="mac-book-img"/>
-            <div className="layanan-word">
-                  <h2>Pengelolaan Data Panti Asuhan</h2>
-                  <p>
-                    Bertekad menjadi lembaga  pengelola dana yang berkhidmat menangani 
-                    anak yatim piatu serta memberdayakannya.
-                  </p>
-            </div>
+          </div>      */}
+       <Swiper
+             slidesPerView={1}
+             spaceBetween={1}
+             slidesPerGroup={1}
+             loop={true}
+             loopFillGroupWithBlank={false}
+             navigation={true}
+             modules={[Navigation]}
+             className="mySwiper">
+        <div className='swiper-place-layanan'>
+          <SwiperSlide>
+            <div className='layanan-content-list'>
+                <img src={macbookimg} alt="mac-book-img"/>
+                <div className="layanan-word">
+                      <h2>Pengelolaan Data Panti Asuhan</h2>
+                      <p>
+                        Bertekad menjadi lembaga  pengelola dana yang berkhidmat menangani 
+                        anak yatim piatu serta memberdayakannya.
+                      </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className='layanan-content-list'>
+                <img src={macbookimg2} alt="mac-book-img"/>
+                <div className="layanan-word">
+                      <h2>Layanan Donasi Untuk Panti Asuhan</h2>
+                      <p>
+                      Memberikan layanan penggalangan donasi untuk menunjang 
+                      kehidupan yang lebih baik untuk panti asuhan
+                      </p>
+                </div>
+              </div>
+              </SwiperSlide> 
+              <SwiperSlide>
+              <div className='layanan-content-list'>
+                <img src={macbookimg3} alt="mac-book-img"/>
+                <div className="layanan-word">
+                      <h2>Layanan Relawan Untuk Panti Asuhan</h2>
+                      <p>
+                      Relawan dapat lebih mudah mendapatkan akses 
+                      ke panti asuhan untuk membantu anak-anak yang
+                       sedang membutuhkan dengan layanan relawan.
+                      </p>
+                </div>
+              </div>
+              </SwiperSlide> 
           </div>
-        </div>
-        <div className='swiper-container-layanan'>
+          </Swiper>
+        {/* <div className='swiper-container-layanan'>
           <IconChevronRight size={48} color="#3AB7FE"/>
-        </div>
+        </div> */}
       </div>
       <Link>Mulai Daftar</Link>
     </section>
@@ -130,7 +175,7 @@ function Beranda() {
         <h2>Hubungi kami</h2>
         <p>Jika anda membutuhkan bantuan, kami siap selalu membantu</p>
         </div>
-        <div className="contact-form-kontak">
+        <div classN ame="contact-form-kontak">
           <h6>Kontak</h6>
           <div className="form-kontak-icon">
           <IconMapPin  color="#3AB7FE"/>

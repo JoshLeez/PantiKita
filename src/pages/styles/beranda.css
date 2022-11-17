@@ -257,7 +257,6 @@
     display:flex;
     width:100%;
     height: 405px;
-    border:2px solid red;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -284,21 +283,20 @@
     line-height: 45px;
 }
 
-#animation-swiper-layanan-content{
-    border:4px solid green;
-    width: 3056px;
-    height: 279px;
-    position:absolute;
+.swiper-place-layanan{
+    display:flex;
+    margin:0 auto;
 }
 
+.container-swiper{
+    display:flex;
+}
 
 .layanan-content-list{
-    border:2px solid coral;
     display:flex;
     width: 928px;
     height: 279px;
-    position: absolute;
-    overflow:hidden;
+    margin:0 auto;
 }
 
 .layanan-word{
@@ -400,6 +398,7 @@
     font-size: 18px;
     color: #FAFAFA;
     border:none;
+    cursor:pointer;
 }
 
 .container-data-panti-asuhan{
@@ -644,7 +643,7 @@
 .tentang-kami-right > h2{
     font-weight: 600;
     font-size: 38px;
-    line-height: 10px;
+    line-height: 60px;
 }
 
 .tentang-kami-right > p{
@@ -677,7 +676,6 @@
 .contact-form-left-title{
     display:flex;
     flex-direction: column;
-
 }
 
 .contact-form-left-title > h2{
@@ -751,6 +749,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap:20px;
     width: 470px;
     height: 333px;
@@ -806,7 +805,7 @@
     background: #0185D0;background: #0185D0;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     border:none;
     color: #FAFAFA;

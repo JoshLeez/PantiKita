@@ -11,7 +11,7 @@ function Navbars() {
       <div className="mid-navbar fixed">
         <NavLink to="/" end>Beranda</NavLink>
         <NavLink to="/panti-asuhan-kita">Panti Asuhan Kita</NavLink>
-        <NavLink to="/status">Tentang Kami</NavLink>
+        <NavLink to="/tentang-kami">Tentang Kami</NavLink>
         <NavLink to="/hubungi-kami">Hubungan Kami</NavLink>
       </div>
       <div className="right-navbar">
