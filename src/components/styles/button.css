@@ -1,0 +1,126 @@
+/* button deafault*/
+.button-primary, .button-donasi, .button-relawan, .button-secondary, .button-medium-tutup, .button-medium-buka-donasi, .button-medium-buka-relawan, .button-medium-simpan, .button-small-simpan , .button-small-edit, .button-small-delete,.button-small-create, .button-edit, .button-delete,.button-create{
+   outline: none;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   color: var(--text-bgDark-1);
+   font-family: 'Rubik';
+   font-weight: 500;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   transition: all 0.3s ease-in ;
+}
+
+.button-primary:hover, .button-donasi:hover, .button-relawan:hover, .button-secondary:hover, .button-medium-tutup:hover, .button-medium-buka-donasi:hover, .button-medium-buka-relawan:hover, .button-medium-simpan:hover, .button-edit:hover, .button-delete:hover,.button-create:hover {
+   transition: all 0.3s ease-in ;
+   cursor: pointer;
+}
+
+/* button long */
+.button-primary,.button-donasi, .button-relawan {
+   width: 400px;
+   height: 48px;
+   font-size: 20px;
+}
+
+.button-primary {
+   background: var(--sc1-color10);
+}
+
+.button-donasi {
+   background: #14AE00;
+}
+
+.button-relawan {
+   background: var(--pr-color30);
+}
+
+.button-primary:hover {
+   background: #0168A2;
+   box-shadow: 0px 0px 25px rgba(1, 133, 208, 0.5);
+}
+
+.button-donasi:hover {
+   background: #0E7A00;
+   box-shadow: 0px 0px 25px rgba(20, 174, 0, 0.5);
+}
+
+.button-relawan:hover {
+   background: #00357A;
+   box-shadow: 0px 0px 25px rgba(0, 75, 174, 0.5);
+}
+
+/* button secondary */
+.button-secondary {
+   width: 100px;
+   height: 48px;
+   background-color: var(--sc1-color10);
+   font-size: 18px;
+}
+
+.button-secondary:hover {
+   background-color: #0168A2;
+}
+
+/* button medium */
+.button-medium-tutup, .button-medium-buka-donasi, .button-medium-buka-relawan, .button-medium-simpan {
+   width: 300px;
+   height: 48px;
+   font-size: 18px;
+}
+
+.button-medium-tutup, .button-medium-simpan, .button-small-simpan {
+   background: var(--sc1-color10);
+}
+
+.button-medium-buka-donasi {
+   background: #14AE00;
+}
+
+.button-medium-buka-relawan, .button-small-edit, .button-edit {
+   background: var(--pr-color30);
+}
+
+.button-medium-tutup:hover, .button-medium-simpan:hover, .button-small-simpan:hover {
+   background: #0168A2;
+}
+
+.button-medium-buka-donasi:hover {
+   background: #0E7A00;
+}
+
+.button-medium-buka-relawan:hover, .button-small-edit:hover, .button-edit:hover {
+   background: #00357A;
+}
+
+/* button medium */
+.button-small-simpan , .button-small-edit, .button-small-delete, .button-small-create {
+   width: 150px;
+   height: 32px;
+   font-size: 16px;
+}
+
+.button-small-delete, .button-delete {
+   background-color: #AE1E00;
+}
+
+.button-small-create, .button-create {
+   background-color: var(--sc2-color10);
+}
+
+.button-small-delete:hover, .button-delete:hover {
+   background-color: #7A1500;
+}
+
+.button-small-create:hover, .button-create:hover {
+   background-color: #06A4FE;
+}
+
+/* button action */
+.button-edit, .button-delete, .button-create {
+   width: 34px;
+   height: 32px;
+}

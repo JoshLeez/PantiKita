@@ -371,7 +371,7 @@ body {
    width: 100%;
 }
 
-.button-edit {
+.button-small-edit {
    left: 50%;
    transform: translate(-50%);
    position: relative;

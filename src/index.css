@@ -18,6 +18,7 @@
 
 body {
   background: #F2F3F6;
+  color: var(--text-bgLight-1);
 }
 
 *{

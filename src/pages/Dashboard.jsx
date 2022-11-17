@@ -1,6 +1,6 @@
 import SideBar from "../components/SideBar";
-import {ChevronUp,ZoomMoney,User,Hearts,Users,Man,Woman,MapPin,Phone,Friends} from "tabler-icons-react";
-import { ButtonEdit } from "../components/Primary";
+import {ChevronUp,ZoomMoney,User,Hearts,Users,Man,Woman,MapPin,Phone,Friends,Edit} from "tabler-icons-react";
+import { Button } from "../components/Button";
 import "./styles/dashboard.css";
 import HeaderDashboard from "../components/HeaderDashboard";
 
@@ -161,7 +161,10 @@ const Dashboard = () => {
 							</div>
 							<p>Pendiri : Muhammad Sumbul</p>
 						</div>
-                  <ButtonEdit />
+                  <Button type="SM_EDIT" >
+                     <Edit color="#FAFAFA" />
+                     <p>Edit</p>
+                  </Button>
 					</section>
 				</div>
             <div className="display-null"></div>

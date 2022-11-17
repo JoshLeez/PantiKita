@@ -1,0 +1,12 @@
+.container {
+   display: flex;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.container-left {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin-left: 280px;
+}
