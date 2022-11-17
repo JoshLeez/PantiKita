@@ -794,17 +794,3 @@
     color: #A1A1AA;
 }
 
-.contact-form-right > button{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    width: 400px;
-    height: 48px;
-    background: #0185D0;background: #0185D0;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 20px;
-    border:none;
-    color: #FAFAFA;
-}

@@ -1,0 +1,33 @@
+.page-tentang-kami-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    border:2px solid black;
+    margin:20px auto;
+}
+
+.page-tentang-kami-right{
+    width: 466px;
+    height: 185px;
+}
+
+.page-tentang-kami-right > h2{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    color: #FAFAFA;
+}
+
+.page-tentang-kami-right > p{
+    color: #FAFAFA;
+        font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.tentang-kami-section-layanan-kami{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}

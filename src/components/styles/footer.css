@@ -53,6 +53,7 @@ footer{
 
 .footer-right-bottom >a:hover , .footer-right-top > a:hover{
     color: #71717A;
+    transition: .2s ease-in-out;
 }
 
 .footer-right-container > .footer-right-bottom{

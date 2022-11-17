@@ -3,6 +3,7 @@ import { IconFileDescription,IconMapPin, IconPhone, IconMail
 , IconBrandTwitter, IconBrandFacebook, IconBrandInstagram, IconBrandTiktok
 , IconQuestionMark, IconChevronLeft,IconChevronRight, IconHomeDollar } from '@tabler/icons';
 import "./styles/beranda.css";
+import Button from '../components/Button';
 import {Link} from 'react-router-dom';
 import berandaasuh from '../images/beranda_asuh.png';
 import berandabackground from '../images/beranda_background.png';
@@ -22,6 +23,7 @@ import {  Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import FormDonasi from '../components/FormDonasi';
 
 function Beranda() {
 
@@ -212,9 +214,12 @@ function Beranda() {
             <input placeholder='ada pertanyaan?'/>
           </div>
           </div>
-          <button>Kirim</button>
+          <Button className="button-primary">
+            Kirim
+          </Button>
         </form>
     </section>
+    <FormDonasi/>
   </HOC>
   )
 }
