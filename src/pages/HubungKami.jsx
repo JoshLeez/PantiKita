@@ -3,12 +3,16 @@ import {IconMapPin,IconPhone, IconMail
 , IconQuestionMark } from '@tabler/icons';
 import './styles/hubungi_kami.css'
 import HOC from '../components/HOC';
-import Primary from '../components/Button';
+import Button from '../components/Button';
+import Footer from '../components/Footer';
+import {Navbars} from '../components/Navbar'
 
 function HubungiKami() {
 
   return (
-    <HOC title="Hubungi Kami - Panti Kita" status>
+    <HOC title="Hubungi Kami - Panti Kita">
+      <Navbars/>
+    <div className='hoc-container'>
       <section className="contact-form-page">
         <div className="contact-form-left">
           <div className='contact-form-left-title-page'>
@@ -52,9 +56,13 @@ function HubungiKami() {
               <input placeholder='ada pertanyaan?'/>
             </div>
             </div>
-            <Primary text="Kirim"/>
+            <Button type="PRIMARY">
+              Kirim
+            </Button>
           </form>
       </section>
+      </div>
+      <Footer/>
     </HOC>
   )
 }

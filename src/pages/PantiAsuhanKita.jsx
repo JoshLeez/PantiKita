@@ -1,10 +1,15 @@
 import "./styles/panti_asuhan_kita.css";
 import HOC from "../components/HOC";
 import { IconAdjustmentsHorizontal, IconKey, IconCoin, IconBuildingSkyscraper, IconBuildingCommunity  } from '@tabler/icons';
+import {Navbars} from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 function PantiAsuhanKita() {
 	return (
-		<HOC title="Panti Asuhan Kita - Panti Kita" status>
+		<HOC title="Panti Asuhan Kita - Panti Kita">
+		<Navbars/>
+		<div className="hoc-container">
 			<section className="panti-asuhan-kita-search-filter">
 				<div className="left-panti-asuhan-kita-search-filter">
 						<h2>Panti Asuhan Kita</h2>
@@ -74,6 +79,8 @@ function PantiAsuhanKita() {
 					</div>
 				</div>
 			</section>
+		</div>
+		<Footer/>
 		</HOC>
 	);
 }

@@ -40,25 +40,6 @@
     padding-bottom:1em;
 }
 
-.cari-panti-section > a{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 10px;
-    gap: 10px;
-    width: 400px;
-    height: 48px;
-    text-decoration: none;
-    background: #0185D0;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
-    color: #FAFAFA;
-}
 
 .right-side-section{
     left: 747px;
@@ -146,6 +127,7 @@
     justify-content: center;
     margin:5em 0;
 }
+
 
 .opsi-beranda{
     width: 90%;
@@ -567,20 +549,6 @@
     color: #FAFAFA;
 }
 
-.opsi-user > .tombol-relawan{
-    background: #004BAE;
-     width: 400px;
-    height: 48px;
-    text-decoration: none;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FAFAFA;
-}
 
 .list-panti-asuhan-kita > .page-number{
     width:50%;

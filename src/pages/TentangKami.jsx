@@ -1,10 +1,14 @@
 import HOC from '../components/HOC'
 import './styles/tentang_kami.css'
 import berandabackground from '../images/beranda_background.png';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function TentangKami() {
   return (
     <HOC  title="Panti Kita - Tentang Kami">
+      <Navbar/>
+    <div className='hoc-container'>
       <img className="beranda-background" src={berandabackground} alt="tentang-kami-background"/>
       <section className="page-tentang-kami-section">
         <div className="tentang-kami-left">
@@ -23,6 +27,8 @@ function TentangKami() {
       <section className='tentang-kami-section-layanan-kami'>
         <h2>Layanan yang Kami Sediakan</h2>
       </section>
+      </div>
+      <Footer/>
     </HOC>
   )
 }

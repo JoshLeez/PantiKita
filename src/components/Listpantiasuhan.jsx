@@ -5,8 +5,9 @@ import fotoanakyatem from '../images/foto_anak_yatem.png';
 import fotoanakyatemkedua from '../images/foto_anak_yatem_kedua.png';
 import fotoanakyatemketiga from '../images/foto_anak_yatem_ketiga.png';
 import '../pages/styles/beranda.css'
+import Button from './Button';
 
-function ListPantiAsuhan() {
+function ListPantiAsuhan({setDonateToggle, donateToggle}) {
     const [searchTerm, setSearchTerm] = useState('');
 
     const [data, setData]= useState(
@@ -111,7 +112,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">Rp. {datas.donasi}</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.orang_donasi} Orang</h5>
                     </div>
-                    <Link>Donasi</Link>
+                    <Button type="DONASI" onClick={()=>console.log("test")}>Donasi</Button>
                 </div>
                 <div className="opsi-user">
                   <div className="data-donasi-relawan">
@@ -120,7 +121,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                    <Link className="tombol-relawan">Menjadi Relawan</Link>
+                    <Button  type="RELAWAN" onClick={()=>setDonateToggle(!donateToggle)}>Menjadi Relawan</Button>
                 </div>
             </div>      
         </article>
