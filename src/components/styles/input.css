@@ -1,0 +1,84 @@
+/* input long & input medium */
+.wrapper-input-long, .wrapper-input-medium {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   font-family: 'Rubik';
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.input-long input, .input-medium input {
+   background: none;
+   outline: none;
+   font-size: 16px;
+   font-family: 'Rubik';
+   font-weight: 400;
+   height: 48px;
+   border: 1px solid #004BAE;
+   border-radius: 5px;
+   padding: 10px;
+   gap: 8px;
+}
+
+.input-long input {
+   width: 400px;
+}
+
+.input-medium input {
+   width: 300px;
+}
+
+.input-long, .input-medium {
+   position: relative;
+}
+
+.input-long input:focus, .input-medium input:focus {
+   border: 2px solid var(--sc2-color10);
+}
+
+.input-long input::placeholder, .input-medium input::placeholder {
+   color: var(--text-bgLight-3);
+}
+
+
+/* input photo */
+.input-photo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   gap: 16px;
+   width: 80px;
+   height: 80px;
+   border: 1px solid #004BAE;
+   border-radius: 5px;
+}
+
+.input-photo input{
+   opacity: 0;
+   position: absolute;
+}
+
+/* input description */
+.input-description textarea {
+   background: none;
+   outline: none;
+   font-size: 16px;
+   font-family: 'Rubik';
+   font-weight: 400;
+   resize: vertical;
+   width: 100%;
+   border: 1px solid #004BAE;
+   border-radius: 5px;
+   padding: 10px;
+   gap: 8px;
+}
+
+.input-description textarea:focus {
+   border: 2px solid var(--sc2-color10);
+}
+
+.input-description textarea::placeholder {
+   color: var(--text-bgLight-3);
+}

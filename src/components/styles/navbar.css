@@ -1,3 +1,4 @@
+/* navbar primary */
 .navbar-container{
     width:100%;
 }
@@ -147,3 +148,108 @@
     text-align: center;
     color: #FAFAFA;
     margin:0;}
+
+
+/* main header dashboard */
+.header-dashboard {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 18px 32px;
+}
+
+.status {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+.notification {
+	position: relative;
+}
+
+.notification span {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ae1e00;
+	border-radius: 8px;
+	color: #fafafa;
+	font-family: "Rubik";
+	font-weight: 400;
+	font-size: 12px;
+	width: 16px;
+	height: 16px;
+	top: -5px;
+	right: -5px;
+}
+
+.welcome {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+.welcome p {
+	color: var(--text-bgLight-3);
+}
+
+.welcome p strong {
+	color: var(--text-bgLight-1);
+	font-weight: 400;
+}
+
+
+/* header navbar kelola profile */
+.wrapper-header-manage-profiles {
+   display: flex;
+   gap: 32px;
+   margin: 0 32px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-nav-manage-profiles {
+   display: flex;
+   padding: 0px 32px;
+   justify-content: space-between;
+   align-items: center;
+   background: #FDFDFD;
+   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   width: 100%;
+}
+
+.nav-manage-profiles {
+   display: flex;
+   gap: 8px;
+   padding: 8px 0px;
+   align-items: center;
+   color: var(--text-bgLight-3);
+   position: relative;
+   height: fit-content;
+}
+
+.detail-link, .donate-link, .volunteer-link {
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 16px;
+   color: var(--text-bgLight-3);
+   position: relative;
+   display: flex;
+   padding: 8px 10px 8px 32px;
+   margin-left: -32px;
+}
+
+.line-active {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   height: 2px;
+   background-color: var(--pr-color30);
+}
+
+.active-link-nav-manage-profiles {
+   color: var(--pr-color30);
+}

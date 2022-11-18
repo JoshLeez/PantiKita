@@ -50,6 +50,7 @@ body {
 	color: var(--pr-color30);
    margin-top: 8px;
    margin-left: 16px;
+   align-self: flex-start;
 }
 
 .title {
@@ -371,10 +372,10 @@ body {
    width: 100%;
 }
 
-.button-small-edit {
-   left: 50%;
-   transform: translate(-50%);
-   position: relative;
+.wrapper-button-small-edit {
+   display: flex;
+   justify-content: center;
+   margin-top: 24px;
 }
 
 .display-null {

@@ -5,6 +5,8 @@ import logo_panti_kita_dark from '../images/Logo-X-Dark-Panti-Kita.png'
 import logo_panti_kita_light from '../images/Logo-X-Light-Panti-Kita.png'
 import './styles/navbars.css'
 
+import { Bell,ChevronUp, FileDescription, HomeDollar, HeartHandshake, DeviceFloppy } from "tabler-icons-react";
+import Button from "./Button";
 
 function Navbar() {
   const [fix, setFix] = useState(true)
@@ -74,6 +76,58 @@ export const Navbars = () => {
     </nav>
   </header>
   )
+}
+
+export const HeaderDashboard = (props) => {
+	return (
+		<>
+			<header className="header-dashboard">
+				<h1>{props.title}</h1>
+				<div className="status">
+					<div className="notification">
+						<Bell color="#3AB7FE" />
+						<span>2</span>
+					</div>
+					<div className="welcome">
+						<p>
+							selamat datang, <strong>AgusSalim01</strong>
+						</p>
+						<ChevronUp color="#3AB7FE" />
+					</div>
+				</div>
+			</header>
+		</>
+	);
+};
+
+export const HeaderNavbarKelolaProfile = (props) => {
+   return (
+      <>
+         <header className="wrapper-header-manage-profiles">
+            <nav className="header-nav-manage-profiles">
+               <div className={"detail-nav nav-manage-profiles " + props.activeDetail}>
+                  <FileDescription />
+                  <NavLink to="/kelola-profile/detail-profile" className={"detail-link " + props.activeDetail}>Detail Panti Asuhan</NavLink>
+                  {props.activeDetail && <div className="line-active"></div> }
+               </div>
+               <div className={"donate-nav nav-manage-profiles " + props.activeDonate}>
+                  <HomeDollar />
+                  <NavLink to="" className={"donate-link " + props.activeDonate}>Donasi Kita</NavLink>
+                  {props.activeDonate && <div className="line-active"></div> }
+               </div>
+               <div className={"volunteer-nav nav-manage-profiles " + props.activeVolunteer}>
+                  <HeartHandshake />
+                  <NavLink to="" className={"volunteer-link " + props.activeVolunteer} >Jadi Relawan</NavLink>
+                  {props.activeVolunteer && <div className="line-active"></div> }
+               </div>
+            </nav>
+            <Button type="MD_SIMPAN"> 
+               <DeviceFloppy />
+               Simpan
+            </Button>
+         </header>
+      </>
+   )
 }
 
 
