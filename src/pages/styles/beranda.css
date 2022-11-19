@@ -424,22 +424,6 @@
     color: #71717A;
 }
 
-.left-data-panti-asuhan > a{
-    width: 400px;
-    height: 48px;
-    font-weight: 600;
-    text-decoration: none;
-    align-self: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #FAFAFA;
-    background: #0185D0;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-}
-
 .right-data-panti-asuhan{
     width:40%;
     height:90%;
@@ -534,20 +518,6 @@
     text-align: center;
 }
 
-.opsi-user > a{
-    width: 400px;
-    height: 48px;
-    text-decoration: none;
-    background: #14AE00;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FAFAFA;
-}
 
 
 .list-panti-asuhan-kita > .page-number{

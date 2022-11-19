@@ -9,6 +9,8 @@
     z-index:10;
     position:fixed;
     background-color: #004BAE;
+    top:0;
+    left:0;
     animation: top-to-bottom .3s ease-in-out;
 }
 

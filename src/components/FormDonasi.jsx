@@ -1,7 +1,7 @@
 import "./styles/form_donasi.css";
 import { IconX } from '@tabler/icons';
 
-const FormDonasi = () => {
+const FormDonasi = ({donateToggle, setDonateToggle}) => {
   return(
   <div className="background-donasi">
       <div className="donasi-form">
@@ -10,7 +10,7 @@ const FormDonasi = () => {
             <h4>Donasi</h4>
             <p>isi profile mu untuk kelengkapan laporan data panti asuhan</p>
           </div>
-          <IconX/>
+          <IconX onClick={()=>{setDonateToggle(!donateToggle)}}/>
         </div>
       </div>
   </div>
