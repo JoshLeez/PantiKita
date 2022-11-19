@@ -1,3 +1,8 @@
+.hoc-container{
+    margin:0 auto;
+    max-width:1320px;
+}
+
 .beranda-parent{
    height: 611px;
    display:flex;
@@ -382,6 +387,8 @@
     border:none;
     cursor:pointer;
 }
+
+
 
 .container-data-panti-asuhan{
     width:100%;

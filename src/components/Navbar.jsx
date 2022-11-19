@@ -4,7 +4,7 @@ import {NavLink, Link} from 'react-router-dom'
 import logo_panti_kita_dark from '../images/Logo-X-Dark-Panti-Kita.png'
 import logo_panti_kita_light from '../images/Logo-X-Light-Panti-Kita.png'
 import './styles/navbars.css'
-
+import { IconArrowLeft } from '@tabler/icons';
 import { Bell,ChevronUp, FileDescription, HomeDollar, HeartHandshake, DeviceFloppy } from "tabler-icons-react";
 import Button from "./Button";
 
@@ -129,6 +129,30 @@ export const HeaderNavbarKelolaProfile = (props) => {
       </>
    )
 }
+
+
+export const NavbarDetailProfilePanti = () => {
+  return (
+    <header className='wrapper-navbar-detail-profile-panti'>
+      <nav className='navbar-detail-profile-panti-container'>
+        <IconArrowLeft color='#004BAE' size={48}/>
+        <NavLink className='detail-profile-panti-link'>
+          <FileDescription/>
+          <p>Detail Profile Panti Asuhan</p>
+        </NavLink>
+        <NavLink to="/beranda" className='detail-profile-panti-link'>
+          <FileDescription/>
+          <p>Detail Profile Panti Asuhan</p>
+        </NavLink>
+        <NavLink to="/beranda" className='detail-profile-panti-link'>
+          <FileDescription/>
+          <p>Detail Profile Panti Asuhan</p>
+        </NavLink>
+      </nav>
+    </header>
+  )
+}
+
 
 
 export default Navbar;
