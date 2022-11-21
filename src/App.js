@@ -9,6 +9,7 @@ import KelolaProfileDetailProfile from "./pages/KelolaProfileDetailProfile";
 import KelolaProfileDonasi from "./pages/KelolaProfileDonasi";
 import KelolaProfileJadiRelawan from "./pages/KelolaProfileJadiRelawan";
 import DetailProfilePanti from "./pages/DetailProfilePanti";
+import DonasiKita from "./pages/DonasiKita";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
             <Route path={KELOLA_PROFILE_DONASI} element={<KelolaProfileDonasi />} />
             <Route path={KELOLA_PROFILE_JADI_RELAWAN} element={<KelolaProfileJadiRelawan />} />
             <Route path="/detail-profile-panti/:string" element={<DetailProfilePanti/>}/>
+            <Route path="/donasi-kita/:string" element={<DonasiKita/>}/>
          </Routes>
       </>
 	);

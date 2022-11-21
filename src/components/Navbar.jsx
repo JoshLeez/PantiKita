@@ -4,7 +4,7 @@ import {NavLink, Link} from 'react-router-dom'
 import logo_panti_kita_dark from '../images/Logo-X-Dark-Panti-Kita.png'
 import logo_panti_kita_light from '../images/Logo-X-Light-Panti-Kita.png'
 import './styles/navbars.css'
-import { IconArrowLeft } from '@tabler/icons';
+import { IconArrowLeft, IconHomeDollar, IconHeartHandshake } from '@tabler/icons';
 import { Bell,ChevronUp, FileDescription, HomeDollar, HeartHandshake, DeviceFloppy } from "tabler-icons-react";
 import Button from "./Button";
 
@@ -133,22 +133,24 @@ export const HeaderNavbarKelolaProfile = (props) => {
 }
 
 
-export const NavbarDetailProfilePanti = () => {
+export const NavbarDetailProfilePanti = (state) => {
   return (
     <header className='wrapper-navbar-detail-profile-panti'>
       <nav className='navbar-detail-profile-panti-container'>
-        <IconArrowLeft color='#004BAE' size={48}/>
-        <NavLink className='detail-profile-panti-link'>
+        <Link to="/">
+          <IconArrowLeft color='#004BAE' size={48}/>   
+        </Link>
+        <NavLink to="/detail-profile-panti" className='detail-profile-panti-link'>
           <FileDescription/>
           <p>Detail Profile Panti Asuhan</p>
         </NavLink>
-        <NavLink to="/beranda" className='detail-profile-panti-link'>
-          <FileDescription/>
-          <p>Detail Profile Panti Asuhan</p>
+        <NavLink to={`/donasi-kita/${state.data.no_tlp}`} className='detail-profile-panti-link'>
+          <IconHomeDollar/>
+          <p>Donasi Kita</p>
         </NavLink>
         <NavLink to="/beranda" className='detail-profile-panti-link'>
-          <FileDescription/>
-          <p>Detail Profile Panti Asuhan</p>
+          <IconHeartHandshake />
+          <p>Jadi Relawan</p>
         </NavLink>
       </nav>
     </header>

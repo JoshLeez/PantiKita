@@ -8,6 +8,7 @@
 }
 
 .data-awal-panti{
+    margin:2em 0;
     width: 999px;
     height: 494px;
     display:flex;
@@ -65,6 +66,9 @@
 }
 
 .data-gambar-panti{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
     width: 719px;
     height: 100%;
     border:2px solid red;
@@ -119,4 +123,41 @@
     text-align: justify;
     color: #71717A;
     padding-bottom: 25px;
+}
+
+.data-gambar-panti > img{
+    width: 591px;
+    height: 100%;
+}
+
+.section-dokumentasi{
+    width: 999px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.section-dokumentasi > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.artikel-dokumentasi{
+    display:flex;
+    justify-content: space-between;
+    height: 246px;
+    align-items: center;
+}
+
+.artikel-dokumentasi > p{
+    width: 585px;
+    height: 95px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #71717A;
 }

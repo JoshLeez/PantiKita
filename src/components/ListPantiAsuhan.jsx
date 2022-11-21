@@ -101,7 +101,7 @@ function ListPantiAsuhan() {
               <p>
               {datas.data}
               </p>
-              <Link to={`/detail-profile-panti/${datas.nama_panti}`}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
+              <Link to={`/detail-profile-panti/${datas.no_tlp}`} state={{ data : datas }}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
             </div>
             <div className="right-data-panti-asuhan">
                 <div className="opsi-user">
@@ -148,7 +148,7 @@ function ListPantiAsuhan() {
               <p>
               {datas.data}
               </p>
-              <Link to={`/detail-profile-panti/${datas.nama_panti}`}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
+              <Link to={`/detail-profile-panti/${datas.no_tlp}`} state={{ data : datas }}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
             </div>
             <div className="right-data-panti-asuhan">
                 <div className="opsi-user">

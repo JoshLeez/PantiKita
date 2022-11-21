@@ -2,7 +2,6 @@ import HOC from "../components/HOC";
 import { NavbarDetailProfilePanti } from "../components/Navbar";
 import "./styles/detail_profile_panti.css";
 import { IconMapPin, IconFriends, IconPhone } from "@tabler/icons";
-import program_kami from "../images/program_kami.svg"
 import { useLocation } from 'react-router-dom'
 import Footer from "../components/Footer";
 
@@ -10,8 +9,8 @@ const DetailProfilePanti = () => {
   const {state} = useLocation()
 
   return (
-    <HOC title="Panti Kita - Detail Profile Panti Asuhan">
-      <NavbarDetailProfilePanti state={state} />
+    <HOC title={`Panti Kita = ${state.data.nama_panti}`}>
+      <NavbarDetailProfilePanti state={state}/>
       <div className="hoc-container">
         <article className="profile-detail-panti">
           <div className="data-awal-panti">
@@ -35,7 +34,9 @@ const DetailProfilePanti = () => {
                 <p>Pendiri : Muhammad Sumbul</p>
               </div>
               <div className="data-gambar-panti">
+                <h3>Swiper</h3>
                 <img src={state.data.image} alt={state.data.nama_panti}/>
+                <h3>Swiper</h3>
               </div>
             </div>
             <p>
@@ -50,7 +51,7 @@ const DetailProfilePanti = () => {
             <h3>Program Kami</h3>
             <div className="program-kami-swiper">
               <h3>Swiper</h3>
-              <img src={program_kami} alt="Program-Panti-Asuhan"/>
+              <img src="./assets/program_kami.svg" alt="Program-Panti-Asuhan"/>
               <h3>Swiper</h3>
             </div>
             <div className="program-kami-artikel">
@@ -76,45 +77,21 @@ const DetailProfilePanti = () => {
               </p>
             </div>
           </div>
-          <section className='tentang-kami-section-layanan-kami'>
-            <h2>Dokumentasi</h2>
-            <div className='list-layanan-kami-sediakan'>
-              <article className='article-layanan-kami'>
-                <div className='word-layanan-kami'>
-                  <h3>Pengelolaan Data Panti Asuhan</h3>
-                  <p>
-                  Memberikan layanan pengelolaan data-data di panti 
-                  asuhan mulai dari kelola data profil panti asuhan, 
-                  kelola data anak asuh dan pengurus panti asuhan, 
-                  kelola data keuangan panti asuhan dan kelola data relawan.
-                  </p>
-                </div>
-                 <img src={program_kami} alt="mac-book-img"/> 
-          </article>
-          <article className='article-layanan-kami'>
-                 <img src={program_kami} alt="mac-book-img"/> 
-                 <div className='word-layanan-kami'>
-                  <h3>Layanan Donasi Untuk Panti Asuhan</h3>
-                  <p>
-                  Memberikan layanan penggalangan donasi untuk
-                  menunjang kehidupan 
-                  yang lebih baik untuk panti asuhan
-                  </p>
-                </div>
-          </article>
-          <article className='article-layanan-kami'>
-                <div className='word-layanan-kami'>
-                  <h3>Layanan Relawan Untuk Panti Asuhan</h3>
-                  <p>
-                  Relawan dapat lebih mudah mendapatkan akses ke 
-                  panti asuhan untuk membantu anak-anak 
-                  yang sedang membutuhkan dengan layanan relawan.
-                  </p>
-                </div>
-                 <img src={program_kami} alt="mac-book-img"/> 
-          </article>
-        </div>
-      </section>
+          <section className="section-dokumentasi">
+            <h3>Dokumentasi</h3>
+            <div className="artikel-dokumentasi">
+              <img src="./assets/dokumentasi_1.svg" alt="foto-dokumentasi"/>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, cupiditate, nemo iusto autem nam, incidunt consequuntur odio ipsam dignissimosLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, cupiditate, nemo iusto autem nam, incidunt consequuntur odio ipsam dignissimosLorem ipsum dolor sit amet c.</p>
+            </div>
+            <div className="artikel-dokumentasi">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, cupiditate, nemo iusto autem nam, incidunt consequuntur odio ipsam dignissimosLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi</p>
+              <img src="./assets/dokumentasi_2.svg" alt="foto-dokumentasi"/>
+            </div>
+            <div className="artikel-dokumentasi">
+              <img src="./assets/dokumentasi_3.svg" alt="foto-dokumentasi"/>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, cupiditate, nemo iusto autem nam, incidunt consequuntur odio ipsam dignissimosLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi</p>
+            </div>
+          </section>
         </article>
       </div>
       <Footer/>
