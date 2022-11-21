@@ -1,8 +1,10 @@
 .container-donasi-panti{
-    width: 1280px;
+    width: 1200px;
     height: 360px;
     display:flex;
     background: #FDFDFD;
+    justify-content: space-evenly;
+    align-items: center;
     box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     margin:24px auto;
@@ -14,4 +16,241 @@
     background: linear-gradient(126.34deg, #0061E0 0.98%, #001F47 100%);
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar-dan-data-panti{
+    display: flex;
+    gap:15px;
+    width: 530px;
+    height: 191px;
+}
+
+.gambar-dan-data-panti > .lokasi-panti-asuhan{
+    width: 245px;
+    height: 191px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+}
+
+.lokasi-panti-asuhan > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FAFAFA;
+}
+
+.lokasi-panti-asuhan > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FAFAFA;
+}
+
+.inside-lokasi-panti{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.inside-lokasi-panti > .icon-tabler{
+    color:#3AB7FE;
+}
+
+.inside-lokasi-panti > p{
+    max-width: 211px;
+    max-height: 56px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FAFAFA;
+}
+
+.donasi-terkumpul{
+    width: 400px;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dana-terkumpul-bulan-ini > h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #18181B;
+}
+
+.dana-terkumpul-bulan-ini > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #004BAE;
+}
+
+.dana-terkumpul-bulan-ini > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #71717A;
+}
+
+.target-progressbar{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;  
+    color: #71717A;
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+}
+
+.target-progressbar > .target-nilai{
+    display: flex;       
+    justify-content: space-between;
+}
+
+.target-progressbar > .the-progressbar{
+    width: 400px;
+    height: 18px;
+    background: #CBD5E1;
+    border-radius: 8px;
+}
+
+.the-progressbar > div{
+    width: 365.1px;
+    height: 18px;
+    background: #3AB7FE;
+    border-radius: 8px;
+}
+
+.laporan-terbaru-donasi{
+    width: 1200px;
+    height: 656px;
+    margin:32px auto;
+}
+
+.laporan-terbaru-donasi > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #18181B;
+}
+
+.artikel-pendidikan-anak-asuh{
+    width: 1200px;
+    height: 604px;
+    display:flex;
+    filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 0px 5px 5px 0px;
+    padding:8px;
+}
+
+.left-side-pendidikan-anak-asuh{
+    width: 316px;
+    height: 604px;
+    display:flex;
+    flex-direction: column;
+    padding-top:35px;
+    padding-left: 45px;
+    background: #E2E8F0;
+    gap:30px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.pendidikan-anak-asuh-dropdown{
+    width: 160px;
+    height: 32px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #CBD5E1;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    padding: 5px 10px;
+    gap: 4px;
+}
+
+.pendidikan-anak-asuh-dropdown > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.pendidikan-anak-asuh-dropdown > .icon-tabler{
+    color:#3AB7FE;
+}
+
+.left-side-pendidikan-anak-asuh > h6{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.left-side-progress-donasi{
+    width: 233px;
+    height: 410px;
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+}   
+
+.progress-bola-garis{
+    display:flex;
+    flex-direction: column;
+    width:13%;
+    align-items: center;
+}
+
+.bola-progress-donasi{
+    width: 32px;
+    height: 32px;
+    background: #3AB7FE;
+    border: 4px solid #3AB7FE;
+    border-radius: 30px;
+}
+
+.garis-progress-donasi{
+    width: 3px;
+    height: 90px;
+    border: 4px solid #3AB7FE;
+}
+
+.right-side-pendidikan-anak-asuh{
+    width: 884px;
+    height: 604px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background: #FDFDFD;
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.right-side-pendidikan-anak-asuh > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #18181B;
+}
+
+.right-side-pendidikan-anak-asuh > img{
+    width: 476px;
+    height: 282px;
+}
+
+.right-side-pendidikan-anak-asuh > p{
+    width: 800px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #71717A;
 }

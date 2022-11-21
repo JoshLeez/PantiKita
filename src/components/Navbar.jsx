@@ -140,11 +140,11 @@ export const NavbarDetailProfilePanti = ({state}) => {
         <Link to="/">
           <IconArrowLeft color='#004BAE' size={48}/>   
         </Link>
-        <NavLink to={`/detail-profile-panti/${state.data.no_tlp}`} className='detail-profile-panti-link'>
+        <NavLink to={`/detail-profile-panti`} className='detail-profile-panti-link'>
           <FileDescription/>
           <p>Detail Profile Panti Asuhan</p>
         </NavLink>
-        <NavLink to={`/donasi-kita/${state.data.no_tlp}`} className='detail-profile-panti-link'>
+        <NavLink to='/donasi-kita' className='detail-profile-panti-link'>
           <IconHomeDollar/>
           <p>Donasi Kita</p>
         </NavLink>
