@@ -179,7 +179,11 @@ function Beranda() {
           <IconChevronRight size={48} color="#3AB7FE"/>
         </div> */}
         </div>
-        <Link>Mulai Daftar</Link>
+        <Link>
+          <Button>
+             Mulai Daftar
+          </Button>
+        </Link>
       </section>
       <ListPantiAsuhan />
       <section className="tentang-kami-section">

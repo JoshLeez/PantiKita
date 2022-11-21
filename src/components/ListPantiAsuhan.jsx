@@ -1,14 +1,14 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import { IconMapPin, IconFriends} from '@tabler/icons';
-import fotoanakyatem from '../images/foto_anak_yatem.png';
-import fotoanakyatemkedua from '../images/foto_anak_yatem_kedua.png';
-import fotoanakyatemketiga from '../images/foto_anak_yatem_ketiga.png';
 import '../pages/styles/beranda.css'
+import Button from './Button';
+import FormDonasi from './FormDonasi';
 
 function ListPantiAsuhan() {
-    const [searchTerm, setSearchTerm] = useState('');
-
+    const [searchTerm, setSearchTerm] = useState('');  
+    const [donateToggle, setDonateToggle] = useState(false) 
+    
     const [data, setData]= useState(
       {
       searchUser: [],
@@ -16,7 +16,7 @@ function ListPantiAsuhan() {
         {
           nama_panti : "Panti Asuhan Yatim & Dhuafa Tanjung Barat",
           alamat : "Jl. Nangka Utara Raya No 60, RT 6/RW 5, Tanjung Barat, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12530.",
-          image: fotoanakyatem,
+          image: "./assets/foto_yayasan_panti_asuhan.svg",
           jumlah_anak : 20,
           pendiri : "Muhammad Sumbul",
           data : "Panti Asuhan Yatim & Dhuafa Tanjung Barat adalah lembaga kesejahteraan sosial yang bergerak dibidang pengasuhan anak yatim/yatim-piatu/dhuafa, didirikan sejak 2017 dengan 6 pengurus. Pada saat ini, Yayasan Panti Yatim & Dhuafa Tanjung Barat mengasuh total 25 anak yang terdiri dari berbagai tingkat pendidikan, mulai dari bayi hingga mahasiswa.",
@@ -28,7 +28,7 @@ function ListPantiAsuhan() {
         {
           nama_panti : "Panti asuhan di Jurang Mangu, Tangerang Selatan (Asrama Yatim Piatu Putri)",
           alamat : "Raya Ceger No. 27, Jurang Mangu Timur-Tangerang Selatan.",
-          image : fotoanakyatemkedua,
+          image : "./assets/foto_yayasan_panti_asuhan2.svg",
           jumlah_anak : 25,
           pendiri : "Zain",
           data : "Panti Asuhan Islam Media Kasih adalah lembaga kesejahteraan sosial yang bergerak dibidang pengasuhan anak yatim/yatim-piatu/dhuafa, didirikan sejak 2004 dengan 6 pengurus. Pada saat ini, Yayasan Panti Asuhan Islam Media Kasih mengasuh total 25 anak yang terdiri dari berbagai tingkat pendidikan, mulai dari bayi hingga mahasiswa.",
@@ -40,7 +40,7 @@ function ListPantiAsuhan() {
         {
           nama_panti : "Panti asuhan di Pancoran Mas, Kota Depok, Jawa Barat. (Asrama Putri)",
           alamat : "Jl. Kartini, RT.3/RW.9, Depok, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16431",
-          image : fotoanakyatemketiga,
+          image : "./assets/foto_yayasan_panti_asuhan3.svg",
           jumlah_anak : 50,
           pendiri : "Moh. Saleh", 
           data : "Panti Asuhan Asrama Putri Yatim & Dhu’afa merupakan panti asuhan yang berlokasi di. Pancoran Mas, Kota Depok. Panti ini berdiri sejak tahun 2016 dan menampung 50 putri berkisar antara TK-SMP dan 4 pengurus. Keseharian anak-anak panti diisi dengan kegiatan belajar formal di pesantren pribadi dan sekolah umum, beribadah, mengaji Alquran...",
@@ -101,7 +101,7 @@ function ListPantiAsuhan() {
               <p>
               {datas.data}
               </p>
-              <Link>Tentang Panti Asuhan</Link>
+              <Link to={`/detail-profile-panti/${datas.nama_panti}`}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
             </div>
             <div className="right-data-panti-asuhan">
                 <div className="opsi-user">
@@ -111,7 +111,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">Rp. {datas.donasi}</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.orang_donasi} Orang</h5>
                     </div>
-                    <Link>Donasi</Link>
+                    <Button type="DONASI" onClick={()=>setDonateToggle(!donateToggle)}>Donasi</Button>
                 </div>
                 <div className="opsi-user">
                   <div className="data-donasi-relawan">
@@ -120,7 +120,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                    <Link className="tombol-relawan">Menjadi Relawan</Link>
+                    <Button  type="RELAWAN">Menjadi Relawan</Button>
                 </div>
             </div>      
         </article>
@@ -148,7 +148,7 @@ function ListPantiAsuhan() {
               <p>
               {datas.data}
               </p>
-              <Link>Tentang Panti Asuhan</Link>
+              <Link to={`/detail-profile-panti/${datas.nama_panti}`}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
             </div>
             <div className="right-data-panti-asuhan">
                 <div className="opsi-user">
@@ -158,7 +158,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">Rp. {datas.donasi}</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.orang_donasi} Orang</h5>
                     </div>
-                    <Link>Donasi</Link>
+                    <Button type="DONASI" onClick={()=>setDonateToggle(!donateToggle)}>Donasi</Button>
                 </div>
                 <div className="opsi-user">
                   <div className="data-donasi-relawan">
@@ -167,7 +167,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                    <Link className="tombol-relawan">Menjadi Relawan</Link>
+                     <Button  type="RELAWAN" >Menjadi Relawan</Button>
                 </div>
             </div>      
         </article>
@@ -187,6 +187,7 @@ function ListPantiAsuhan() {
             <Link>9</Link>
             <Link>10</Link>
         </div>
+        {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle} />}
     </section>
   )
 }
