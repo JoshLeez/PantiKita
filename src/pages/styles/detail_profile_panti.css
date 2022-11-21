@@ -1,0 +1,122 @@
+.profile-detail-panti{
+    width: 1200px;
+    background: #FDFDFD;
+    margin:8px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-awal-panti{
+    width: 999px;
+    height: 494px;
+    display:flex;
+    flex-direction: column;
+    border:2px solid black; 
+}
+
+.data-awal-panti > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #18181B;
+}
+
+.data-lokasi-panti{
+    width:100%;
+    height: 350px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid black;
+}
+
+.alamat-profile-panti{
+    width: 222px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: flex-start;
+}
+
+.word-alamat-panti{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.word-alamat-panti > .icon-tabler{
+    color:#3AB7FE;  
+}
+
+.word-alamat-panti > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.alamat-profile-panti > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.data-gambar-panti{
+    width: 719px;
+    height: 100%;
+    border:2px solid red;
+}
+
+.data-awal-panti > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #71717A;
+}
+
+.program-kami{
+    width: 999px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program-kami > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.program-kami-swiper{
+    width: 719px;
+    display: flex;
+    align-items: center;
+}
+
+.program-kami-artikel{
+    width:100%;
+    margin:20px 0;
+}
+
+.program-kami-artikel > h6{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #18181B;
+}
+
+.program-kami-artikel > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #71717A;
+    padding-bottom: 25px;
+}
