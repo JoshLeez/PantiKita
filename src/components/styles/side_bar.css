@@ -84,7 +84,7 @@
    color: #FAFAFA;
 }
 
-.nav-side-twoline:hover::after  {
+.active-side-two-line::after, .nav-side-twoline:hover::after  {
    content: "";
    left: 0;
    position: absolute;
@@ -98,7 +98,7 @@
    cursor: pointer;
 }
 
-.nav-side:hover::after, .logout:hover::after {
+.active-side::after, .nav-side:hover::after, .logout:hover::after {
    content: "";
    left: 0;
    position: absolute;
@@ -118,4 +118,8 @@
    bottom: 0px;
    right: 0px;
    margin-bottom: 32px;
+}
+
+.active-side-color {
+   color: var(--text-bgDark-1);
 }

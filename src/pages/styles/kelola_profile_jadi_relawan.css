@@ -1,0 +1,68 @@
+.content-manage-profile-volunteer {
+   display: flex;
+   gap: 32px;
+   margin: 32px 32px 0 32px;
+}
+
+.open-volunteer {
+   height: 100%;
+   background: #FDFDFD;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-open-volunteer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 24px 32px;
+   gap: 32px;
+}
+
+.content-open-volunteer p:nth-child(1){
+   color: #14AE00;
+}
+
+.form-volunteer-opened {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.volunteer-requirements {
+   width: 100%;
+   height: 100%;
+   background: #FDFDFD;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   position: relative;
+}
+
+.volunteer-requirements span:nth-child(1){
+  color: var(--text-bgLight-3);
+}
+
+.wrapper-volunteer-requirements label {
+   font-family: 'Rubik';
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.wrapper-volunteer-requirements {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.form-volunteer-requirements {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   margin: 24px 32px;
+}
+
+

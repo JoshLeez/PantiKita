@@ -211,14 +211,17 @@
 }
 
 .header-nav-manage-profiles {
+   background: #FDFDFD;
+   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   flex-grow: 1;
+}
+
+.content-nav-manage-profiles {
    display: flex;
    padding: 0px 32px;
    justify-content: space-between;
    align-items: center;
-   background: #FDFDFD;
-   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
-   border-radius: 5px;
-   width: 100%;
 }
 
 .nav-manage-profiles {

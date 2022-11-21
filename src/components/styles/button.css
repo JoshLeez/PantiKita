@@ -14,7 +14,7 @@
    transition: all 0.3s ease-in ;
 }
 
-.button-primary:hover, .button-donasi:hover, .button-relawan:hover, .button-secondary:hover, .button-medium-tutup:hover, .button-medium-buka-donasi:hover, .button-medium-buka-relawan:hover, .button-medium-simpan:hover, .button-edit:hover, .button-delete:hover,.button-create:hover {
+.button-primary:hover, .button-donasi:hover, .button-relawan:hover, .button-secondary:hover, .button-medium-tutup:hover, .button-medium-buka-donasi:hover, .button-medium-buka-relawan:hover, .button-medium-simpan:hover, .button-small-simpan:hover , .button-small-edit:hover, .button-small-delete:hover,.button-small-create:hover, .button-edit:hover, .button-delete:hover,.button-create:hover {
    transition: all 0.3s ease-in ;
    cursor: pointer;
 }

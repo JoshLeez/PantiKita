@@ -41,10 +41,10 @@ function Navbar() {
         <img src={fixed ? logo_panti_kita_dark : logo_panti_kita_light } alt="logo-panti-kita"/>
         </div> 
         <div className={fixed ? "mid-navbar" : "mid-navbar fixed"}>
-          <NavLink to="/" end>Beranda</NavLink>
-          <NavLink to="/panti-asuhan-kita">Panti Asuhan Kita</NavLink>
-          <NavLink to="/tentang-kami">Tentang Kami</NavLink>
-          <NavLink to="/hubungi-kami">Hubungan Kami</NavLink>
+            <NavLink to="/" end>Beranda</NavLink>
+            <NavLink to="/panti-asuhan-kita">Panti Asuhan Kita</NavLink>
+            <NavLink to="/tentang-kami">Tentang Kami</NavLink>
+            <NavLink to="/hubungi-kami">Hubungan Kami</NavLink>
         </div>
         <div className="right-navbar">
             <Link className={fixed ? "" : "fixed-color"}>Masuk</Link>
@@ -105,20 +105,22 @@ export const HeaderNavbarKelolaProfile = (props) => {
       <>
          <header className="wrapper-header-manage-profiles">
             <nav className="header-nav-manage-profiles">
-               <div className={"detail-nav nav-manage-profiles " + props.activeDetail}>
-                  <FileDescription />
-                  <NavLink to="/kelola-profile/detail-profile" className={"detail-link " + props.activeDetail}>Detail Panti Asuhan</NavLink>
-                  {props.activeDetail && <div className="line-active"></div> }
-               </div>
-               <div className={"donate-nav nav-manage-profiles " + props.activeDonate}>
-                  <HomeDollar />
-                  <NavLink to="" className={"donate-link " + props.activeDonate}>Donasi Kita</NavLink>
-                  {props.activeDonate && <div className="line-active"></div> }
-               </div>
-               <div className={"volunteer-nav nav-manage-profiles " + props.activeVolunteer}>
-                  <HeartHandshake />
-                  <NavLink to="" className={"volunteer-link " + props.activeVolunteer} >Jadi Relawan</NavLink>
-                  {props.activeVolunteer && <div className="line-active"></div> }
+               <div className="content-nav-manage-profiles">
+                  <div className={"detail-nav nav-manage-profiles " + props.activeDetail}>
+                     <FileDescription />
+                     <NavLink to="/kelola-profile" className={"detail-link " + props.activeDetail}>Detail Panti Asuhan</NavLink>
+                     {props.activeDetail && <div className="line-active"></div> }
+                  </div>
+                  <div className={"donate-nav nav-manage-profiles " + props.activeDonate}>
+                     <HomeDollar />
+                     <NavLink to="/kelola-profile/donasi" className={"donate-link " + props.activeDonate}>Donasi Kita</NavLink>
+                     {props.activeDonate && <div className="line-active"></div> }
+                  </div>
+                  <div className={"volunteer-nav nav-manage-profiles " + props.activeVolunteer}>
+                     <HeartHandshake />
+                     <NavLink to="/kelola-profile/jadi-relawan" className={"volunteer-link " + props.activeVolunteer} >Jadi Relawan</NavLink>
+                     {props.activeVolunteer && <div className="line-active"></div> }
+                  </div>
                </div>
             </nav>
             <Button type="MD_SIMPAN"> 

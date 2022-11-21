@@ -31,6 +31,9 @@
 
 .input-long, .input-medium {
    position: relative;
+   display: flex;
+   flex-direction: column;
+   gap:8px;
 }
 
 .input-long input:focus, .input-medium input:focus {
@@ -56,8 +59,12 @@
 }
 
 .input-photo input{
+   display: inline-block;
    opacity: 0;
+   width: 100%;
+   height: 100%;
    position: absolute;
+   cursor: pointer;
 }
 
 /* input description */
@@ -69,6 +76,7 @@
    font-weight: 400;
    resize: vertical;
    width: 100%;
+   height: 200px;
    border: 1px solid #004BAE;
    border-radius: 5px;
    padding: 10px;

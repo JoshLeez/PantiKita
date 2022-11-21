@@ -18,7 +18,7 @@
 }
 
 .brief-profile-orphanage {
-   width: 40%;
+   height: 100%;
    background: #FDFDFD;
    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
    border-radius: 5px;
@@ -31,9 +31,8 @@
 .form-brief-profile {
    display: flex;
    flex-direction: column;
-   align-items: center;
    gap: 16px;
-   margin-top: 24px;
+   margin: 24px 32px;
 }
 
 .wrapper-input-poto {
@@ -51,12 +50,73 @@
    align-items: center;
    justify-content: center;
    gap: 32px;
-   margin: 24px 0;
+   margin-bottom: 24px;
 }
 
 .about-orphanage {
-   width: 60%;
+   width: 100%;
+   height: 100%;
    background: #FDFDFD;
    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
    border-radius: 5px;
+}
+
+.form-about-orphanage label {
+   font-family: 'Rubik';
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.form-about-orphanage {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   margin: 24px 32px;
+}
+
+.desctiption-orphanage, .program-orphanage, .documentation-orphanage {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   position: relative;
+}
+
+.action-content {
+   position: absolute;
+   display: flex;
+   gap: 8px;
+   right: 0px;
+   top: -7px;
+}
+
+.input-content-program, .action-per-content {
+   display: flex;
+   gap: 8px;
+   flex-direction: column;
+}
+
+.input-content-documentation {
+   display: flex;
+   gap: 16px;
+   height: 100%;
+   justify-content: space-between;
+}
+
+.input-content-documentation .wrapper-caption .input-description textarea {
+   resize: none;
+   height: 100%;
+}
+
+.input-content-documentation .wrapper-caption .input-description {
+   height: 100%;
+}
+
+.wrapper-caption {
+   flex-grow: 1;
+}
+
+.action-per-content {
+   display: flex;
+   gap: 16px;
+   flex-direction: column;
 }

@@ -9,7 +9,7 @@ const Dashboard = () => {
 	return (
       <HOC title="Dashboard">
          <div className="container">
-            <SideBar />
+            <SideBar activeSideDashboard="active-side-color" activeBgDashboard="active-side"/>
             <div className="container-left">
                <HeaderDashboard title="Dashboard"/>
                <div className="donate-volunteer">

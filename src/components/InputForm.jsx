@@ -15,16 +15,25 @@ const InputLong = ({children, ...props }) => {
    )
 }
 
-export const InputMedium = ({children, ...props }) => {
+export const InputMedium = ({children , ...props }) => {
    return (
       <>
          <div className="wrapper-input-medium">
             <label htmlFor={props.name}>{props.text}</label>
             <div className="input-medium">
-               {children}
                <input {...props}/>
+               {children}
             </div>
          </div>
+      </>
+   )
+}
+
+export const InputMediumNonLabel = ({children, ...props }) => {
+   return (
+      <>
+         <input {...props}/>
+         {children}
       </>
    )
 }

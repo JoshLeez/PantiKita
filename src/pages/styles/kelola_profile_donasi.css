@@ -1,0 +1,206 @@
+.container {
+   display: flex;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.container-left {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin-left: 280px;
+}
+
+.content-manage-profile-donate {
+   display: flex;
+   gap: 32px;
+   margin: 32px 32px 0 32px;
+}
+
+.open-donate {
+   height: 100%;
+   background: #FDFDFD;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-open-donate {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 24px 32px;
+   gap: 32px;
+}
+
+.content-open-donate p:nth-child(1){
+   color: #14AE00;
+}
+
+.form-donate-opened {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.wrapper {
+   position: relative;
+}
+
+.wrapper .wrapper-input-medium {
+   gap: 16px;
+}
+
+.wrapper-button-open-or-closed {
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper-button-open-or-closed p {
+   width: 300px;
+   font-weight: 400;
+   font-size: 12px;
+   color: var(--text-bgLight-3);
+}
+
+.report-donate-orphanage {
+   width: 100%;
+   height: 100%;
+   background: #FDFDFD;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   position: relative;
+}
+
+.dropdown-date-report-donate {
+   position: absolute;
+   top: 8px;
+   right: 16px;
+   align-self: flex-end;
+}
+
+.content-report-donate-orphanage {
+   display: flex;
+   flex-direction: column;
+   margin: 32px 32px 24px 32px;
+   gap: 24px;
+}
+
+.content-report-donate-orphanage label {
+   font-family: 'Rubik';
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.wrapper-create-report {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.table-report-donate .table-title-report-donate {
+   background-color: var(--bg-ac1);
+   height: 40px;
+}
+
+table, th, td {
+   border-collapse: collapse;
+}
+
+table tr:first-child th:first-child {
+   border-radius: 5px 0px 0px 0px;
+}
+
+table tr:first-child th:last-child {
+   border-radius: 0px 5px 0px 0px;
+}
+
+table tr:last-child td:first-child {
+   border-radius: 0px 0px 0px 5px;
+}
+
+table tr:last-child td:last-child {
+   border-radius: 0px 0px 5px 0px;
+}
+
+.table-report-donate tr th:nth-child(1), .table-report-donate tr td:nth-child(1) {
+   width: 20%;
+}
+
+.table-report-donate tr th:nth-child(2), .table-report-donate tr td:nth-child(2) {
+   width: 50%;
+}
+
+.table-report-donate tr th:nth-child(3), .table-report-donate tr td:nth-child(3) {
+   width: 30%;
+}
+
+.table-report-donate tr th:nth-child(4), .table-report-donate tr td:nth-child(4) {
+   width: 89px;
+}
+
+.table-report-donate .table-title-report-donate th {
+   text-align: start;
+   font-family: 'Rubik';
+   font-weight: 600;
+   font-size: 16px;
+   padding: 0 10px;
+}
+
+.table-report-donate .row {
+   height: 40px;
+}
+
+.table-report-donate .row td {
+   text-align: start;
+   font-family: 'Rubik';
+   font-weight: 400;
+   font-size: 14px;
+   padding: 0 10px;
+}
+
+.table-report-donate .row:nth-child(odd) {
+   background-color: var(--bg-main);
+}
+
+.table-report-donate .row:nth-child(odd) {
+   background-color: var(--bg-color60);
+}
+
+.row .table-action-content {
+   display: flex;
+   gap: 8px;
+}
+
+.input-content-description-report {
+   display: flex;
+   gap: 16px;
+   height: 100%;
+   justify-content: space-between;
+}
+
+.wrapper-description-report {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.input-content-description-report .wrapper-caption .input-description textarea {
+   resize: none;
+   height: 100%;
+}
+
+.input-content-description-report .wrapper-caption .input-description {
+   height: 100%;
+}
+
+.content-report-donate-orphanage small {
+   font-weight: 400;
+   font-size: 12px;
+   text-align: justify;
+   margin-top: -16px;
+   color: #AE1E00;
+}
