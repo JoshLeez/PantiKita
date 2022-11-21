@@ -5,13 +5,10 @@ import fotoanakyatem from '../images/foto_anak_yatem.png';
 import fotoanakyatemkedua from '../images/foto_anak_yatem_kedua.png';
 import fotoanakyatemketiga from '../images/foto_anak_yatem_ketiga.png';
 import '../pages/styles/beranda.css'
-import Button from './Button';
-import FormDonasi from './FormDonasi';
 
 function ListPantiAsuhan() {
-    const [searchTerm, setSearchTerm] = useState('');  
-    const [donateToggle, setDonateToggle] = useState(false) 
-    
+    const [searchTerm, setSearchTerm] = useState('');
+
     const [data, setData]= useState(
       {
       searchUser: [],
@@ -104,7 +101,7 @@ function ListPantiAsuhan() {
               <p>
               {datas.data}
               </p>
-              <Link to={`/detail-profile-panti/${datas.nama_panti}`}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
+              <Link>Tentang Panti Asuhan</Link>
             </div>
             <div className="right-data-panti-asuhan">
                 <div className="opsi-user">
@@ -114,7 +111,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">Rp. {datas.donasi}</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.orang_donasi} Orang</h5>
                     </div>
-                    <Button type="DONASI" onClick={()=>setDonateToggle(!donateToggle)}>Donasi</Button>
+                    <Link>Donasi</Link>
                 </div>
                 <div className="opsi-user">
                   <div className="data-donasi-relawan">
@@ -123,7 +120,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                    <Button  type="RELAWAN">Menjadi Relawan</Button>
+                    <Link className="tombol-relawan">Menjadi Relawan</Link>
                 </div>
             </div>      
         </article>
@@ -151,7 +148,7 @@ function ListPantiAsuhan() {
               <p>
               {datas.data}
               </p>
-              <Link to={`/detail-profile-panti/${datas.nama_panti}`}><Button type="PRIMARY">Tentang Panti Asuhan</Button></Link>
+              <Link>Tentang Panti Asuhan</Link>
             </div>
             <div className="right-data-panti-asuhan">
                 <div className="opsi-user">
@@ -161,7 +158,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">Rp. {datas.donasi}</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.orang_donasi} Orang</h5>
                     </div>
-                    <Button type="DONASI" onClick={()=>setDonateToggle(!donateToggle)}>Donasi</Button>
+                    <Link>Donasi</Link>
                 </div>
                 <div className="opsi-user">
                   <div className="data-donasi-relawan">
@@ -170,7 +167,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                     <Button  type="RELAWAN" >Menjadi Relawan</Button>
+                    <Link className="tombol-relawan">Menjadi Relawan</Link>
                 </div>
             </div>      
         </article>
@@ -190,7 +187,6 @@ function ListPantiAsuhan() {
             <Link>9</Link>
             <Link>10</Link>
         </div>
-        {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle} />}
     </section>
   )
 }
