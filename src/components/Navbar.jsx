@@ -133,7 +133,7 @@ export const HeaderNavbarKelolaProfile = (props) => {
 }
 
 
-export const NavbarDetailProfilePanti = (state) => {
+export const NavbarDetailProfilePanti = ({state}) => {
   return (
     <header className='wrapper-navbar-detail-profile-panti'>
       <nav className='navbar-detail-profile-panti-container'>
@@ -144,7 +144,7 @@ export const NavbarDetailProfilePanti = (state) => {
           <FileDescription/>
           <p>Detail Profile Panti Asuhan</p>
         </NavLink>
-        <NavLink to={`/donasi-kita/${state.data.no_tlp}`} className='detail-profile-panti-link'>
+        <NavLink to={`/donasi-kita/${state}`} className='detail-profile-panti-link'>
           <IconHomeDollar/>
           <p>Donasi Kita</p>
         </NavLink>
