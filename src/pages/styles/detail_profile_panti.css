@@ -1,7 +1,8 @@
 .profile-detail-panti{
     width: 1200px;
+    height: 2368px;
     background: #FDFDFD;
-    margin:8px auto;
+    margin:8px  auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +14,7 @@
     height: 494px;
     display:flex;
     flex-direction: column;
-    border:2px solid black; 
+
 }
 
 .data-awal-panti > h3{
@@ -30,7 +31,6 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    border:2px solid black;
 }
 
 .alamat-profile-panti{

@@ -1,12 +1,13 @@
-import React from 'react'
 import HOC from '../components/HOC'
 import { NavbarDetailProfilePanti } from '../components/Navbar'
 
 const DonasiKita = () => {
   return (
-    <HOC>
+    <HOC title='Panti Kita - Donasi'>
       <NavbarDetailProfilePanti/>
-     <div>DonasiKita</div>
+     <div>
+      <h1>Hello</h1>
+     </div>
     </HOC>
  
   )

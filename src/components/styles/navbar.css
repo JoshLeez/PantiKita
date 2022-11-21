@@ -14,6 +14,11 @@
     animation: top-to-bottom .3s ease-in-out;
 }
 
+
+.left-navbar > .logo-kecil{
+    height:40px;
+}
+
 .navbar{
     display:flex;
     width:1296px;
@@ -259,14 +264,33 @@
    color: var(--pr-color30);
 }
 
+/* Navbars untuk Tentang Kami dan Hubungi Kami */
+
+.navbars-container{
+    width:100%;
+    background: #FDFDFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbars{
+    display:flex;
+    width:1296px;
+    height:72px;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+
 /* Navbar Detail Profile Panti */
 
 .wrapper-navbar-detail-profile-panti{
     width:100%;
 }
 
+
 .navbar-detail-profile-panti-container{
-    width: 1400px;  
+    width: 1200px;  
     height: 72px;
     display:flex;
     justify-content:space-evenly;

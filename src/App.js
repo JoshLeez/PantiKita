@@ -24,7 +24,7 @@ function App() {
             <Route path={KELOLA_PROFILE_DONASI} element={<KelolaProfileDonasi />} />
             <Route path={KELOLA_PROFILE_JADI_RELAWAN} element={<KelolaProfileJadiRelawan />} />
             <Route path="/detail-profile-panti/:string" element={<DetailProfilePanti/>}/>
-            <Route path="/donasi-kita/:string" element={<DonasiKita/>}/>
+            <Route path="/donasi-kita" element={<DonasiKita/>}/>
          </Routes>
       </>
 	);

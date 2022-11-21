@@ -10,7 +10,7 @@ const DetailProfilePanti = () => {
 
   return (
     <HOC title={`Panti Kita = ${state.data.nama_panti}`}>
-      <NavbarDetailProfilePanti state={state.data.no_tlp} />
+      <NavbarDetailProfilePanti state={ state } />
       <div className="hoc-container">
         <article className="profile-detail-panti">
           <div className="data-awal-panti">

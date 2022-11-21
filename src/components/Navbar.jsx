@@ -3,7 +3,6 @@ import './styles/navbar.css'
 import {NavLink, Link} from 'react-router-dom'
 import logo_panti_kita_dark from '../images/Logo-X-Dark-Panti-Kita.png'
 import logo_panti_kita_light from '../images/Logo-X-Light-Panti-Kita.png'
-import './styles/navbars.css'
 import { IconArrowLeft, IconHomeDollar, IconHeartHandshake } from '@tabler/icons';
 import { Bell,ChevronUp, FileDescription, HomeDollar, HeartHandshake, DeviceFloppy } from "tabler-icons-react";
 import Button from "./Button";
@@ -34,11 +33,11 @@ function Navbar() {
   
   window.addEventListener("scroll", fixedHanlders)
   
-  return (
+  return (  
     <header className={fix ? "navbar-container" : fixed ? "navbar-container fixed" : "navbar-container fixed bottom"}>
       <nav className="navbar">
         <div className="left-navbar">
-        <img src={fixed ? logo_panti_kita_dark : logo_panti_kita_light } alt="logo-panti-kita"/>
+        <img src={fixed ? logo_panti_kita_dark : logo_panti_kita_light } className={fixed ? "" : "logo-kecil"} alt="logo-panti-kita"/>
         </div> 
         <div className={fixed ? "mid-navbar" : "mid-navbar fixed"}>
             <NavLink to="/" end>Beranda</NavLink>
@@ -134,17 +133,18 @@ export const HeaderNavbarKelolaProfile = (props) => {
 
 
 export const NavbarDetailProfilePanti = ({state}) => {
+
   return (
     <header className='wrapper-navbar-detail-profile-panti'>
       <nav className='navbar-detail-profile-panti-container'>
         <Link to="/">
           <IconArrowLeft color='#004BAE' size={48}/>   
         </Link>
-        <NavLink to="/detail-profile-panti" className='detail-profile-panti-link'>
+        <NavLink to={`/detail-profile-panti/${state.data.no_tlp}`} className='detail-profile-panti-link'>
           <FileDescription/>
           <p>Detail Profile Panti Asuhan</p>
         </NavLink>
-        <NavLink to={`/donasi-kita/${state}`} className='detail-profile-panti-link'>
+        <NavLink to={`/donasi-kita/${state.data.no_tlp}`} className='detail-profile-panti-link'>
           <IconHomeDollar/>
           <p>Donasi Kita</p>
         </NavLink>
