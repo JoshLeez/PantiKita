@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import HOC from "../components/HOC";
 import {
   IconFileDescription,
@@ -20,9 +19,6 @@ import { Link } from "react-router-dom";
 import berandaasuh from "../images/beranda_asuh.png";
 import berandabackground from "../images/beranda_background.png";
 import rectangleword from "../images/rectangle_word.png";
-import macbookimg from "../images/macbook.png";
-import macbookimg2 from "../images/macbook_2.png";
-import macbookimg3 from "../images/macbook_3.png";
 import tentangkami from "../images/tentang_kami_img.png";
 import linetentangkami from "../images/line_tentang_kami_img.png";
 import dottentangkami from "../images/dot_tentang_kami_img.svg";
@@ -32,14 +28,12 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import FormDonasi from "../components/FormDonasi";
 import Navbar from '../components/Navbar';
 import Footer from "../components/Footer";
 import {PANTI_ASUHAN_KITA} from './Router'
 
 function Beranda() {
 
-  const [donateToggle, setDonateToggle] = useState(false) 
 
   return (
     <HOC title="Panti Kita">
@@ -144,7 +138,7 @@ function Beranda() {
             <div className="swiper-place-layanan">
               <SwiperSlide>
                 <div className="layanan-content-list">
-                  <img src={macbookimg} alt="mac-book-img" />
+                  <img src="./assets/macbook.svg" alt="mac-book-img" />
                   <div className="layanan-word">
                     <h2>Pengelolaan Data Panti Asuhan</h2>
                     <p>
@@ -156,7 +150,7 @@ function Beranda() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="layanan-content-list">
-                  <img src={macbookimg2} alt="mac-book-img" />
+                  <img src="./assets/macbook_2.svg" alt="mac-book-img" />
                   <div className="layanan-word">
                     <h2>Layanan Donasi Untuk Panti Asuhan</h2>
                     <p>
@@ -168,7 +162,7 @@ function Beranda() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="layanan-content-list">
-                  <img src={macbookimg3} alt="mac-book-img" />
+                  <img src="./assets/macbook_3.svg" alt="mac-book-img" />
                   <div className="layanan-word">
                     <h2>Layanan Relawan Untuk Panti Asuhan</h2>
                     <p>
@@ -187,7 +181,7 @@ function Beranda() {
         </div>
         <Link>Mulai Daftar</Link>
       </section>
-      <ListPantiAsuhan setDonateToggle={setDonateToggle} donateToggle={donateToggle}/>
+      <ListPantiAsuhan />
       <section className="tentang-kami-section">
         <div className="tentang-kami-left">
           <img
@@ -259,7 +253,7 @@ function Beranda() {
           <Button className="button-primary">Kirim</Button>
         </form>
       </section>
-            {donateToggle && <FormDonasi />}
+           
       </div>
       <Footer/>
     </HOC>

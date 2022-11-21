@@ -130,7 +130,7 @@
   display:flex;
   color:#FAFAFA;
   align-items: center;
-  margin:20px 0;
+  margin: 15px 0;
 }
 
 .right-panti-asuhan-filter-judul{
@@ -141,7 +141,7 @@
 .right-panti-asuhan-filter-input{
   display:grid;
   grid-template-columns: 1fr 1fr;
-  gap:20px;
+  column-gap: 20px;
 }
 
 .input-filter-panti{
@@ -180,3 +180,41 @@
   background: none;
 }
 
+.container-range-slider{
+  width: 616px;
+  height: 148px;
+  border:2px solid black;
+}
+
+.title-range-slider{
+  display:flex;
+  align-items: center;
+  gap:10px;
+}
+
+.title-range-slider > h5{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FAFAFA;
+}
+
+.bottom-filter{
+  width: 507px;
+  height: 48px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset-button{
+  width: 75px;
+  height: 24px;  
+  display:flex;
+  color:#3AB7FE;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;;
+}

@@ -6,8 +6,12 @@ import Dashboard from "./pages/Dashboard";
 import { BERANDA, HUBUNGI_KAMI, PANTI_ASUHAN_KITA, DASHBOARD, TENTANG_KAMI,KELOLA_PROFILE_DETAIL_PROFILE, KELOLA_PROFILE_DONASI,KELOLA_PROFILE_JADI_RELAWAN } from "./pages/Router";
 import TentangKami from "./pages/TentangKami";
 import KelolaProfileDetailProfile from "./pages/KelolaProfileDetailProfile";
+<<<<<<< HEAD
 import KelolaProfileDonasi from "./pages/KelolaProfileDonasi";
 import KelolaProfileJadiRelawan from "./pages/KelolaProfileJadiRelawan";
+=======
+import DetailProfilePanti from "./pages/DetailProfilePanti";
+>>>>>>> 4f7f6fdbe905efd2394d7e681d805a500d16e2e9
 
 function App() {
 	return (
@@ -19,8 +23,12 @@ function App() {
             <Route path={TENTANG_KAMI} element={<TentangKami />} />
             <Route path={DASHBOARD} element={<Dashboard />} />
             <Route path={KELOLA_PROFILE_DETAIL_PROFILE} element={<KelolaProfileDetailProfile />} />
+<<<<<<< HEAD
             <Route path={KELOLA_PROFILE_DONASI} element={<KelolaProfileDonasi />} />
             <Route path={KELOLA_PROFILE_JADI_RELAWAN} element={<KelolaProfileJadiRelawan />} />
+=======
+            <Route path="/detail-profile-panti/:string" element={<DetailProfilePanti/>}/>
+>>>>>>> 4f7f6fdbe905efd2394d7e681d805a500d16e2e9
          </Routes>
       </>
 	);

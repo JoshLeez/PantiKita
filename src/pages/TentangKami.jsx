@@ -4,6 +4,7 @@ import berandabackground from '../images/beranda_background.png';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+
 function TentangKami() {
   return (
     <HOC  title="Panti Kita - Tentang Kami">
@@ -26,6 +27,42 @@ function TentangKami() {
     </section>
       <section className='tentang-kami-section-layanan-kami'>
         <h2>Layanan yang Kami Sediakan</h2>
+        <div className='list-layanan-kami-sediakan'>
+          <article className='article-layanan-kami'>
+                <div className='word-layanan-kami'>
+                  <h3>Pengelolaan Data Panti Asuhan</h3>
+                  <p>
+                  Memberikan layanan pengelolaan data-data di panti 
+                  asuhan mulai dari kelola data profil panti asuhan, 
+                  kelola data anak asuh dan pengurus panti asuhan, 
+                  kelola data keuangan panti asuhan dan kelola data relawan.
+                  </p>
+                </div>
+                 <img src="./assets/macbook.svg" alt="mac-book-img"/> 
+          </article>
+          <article className='article-layanan-kami'>
+                 <img src="./assets/macbook_2.svg" alt="mac-book-img"/> 
+                 <div className='word-layanan-kami'>
+                  <h3>Layanan Donasi Untuk Panti Asuhan</h3>
+                  <p>
+                  Memberikan layanan penggalangan donasi untuk
+                  menunjang kehidupan 
+                  yang lebih baik untuk panti asuhan
+                  </p>
+                </div>
+          </article>
+          <article className='article-layanan-kami'>
+                <div className='word-layanan-kami'>
+                  <h3>Layanan Relawan Untuk Panti Asuhan</h3>
+                  <p>
+                  Relawan dapat lebih mudah mendapatkan akses ke 
+                  panti asuhan untuk membantu anak-anak 
+                  yang sedang membutuhkan dengan layanan relawan.
+                  </p>
+                </div>
+                 <img src="./assets/macbook_3.svg" alt="mac-book-img"/> 
+          </article>
+        </div>
       </section>
       </div>
       <Footer/>

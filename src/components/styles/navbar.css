@@ -9,6 +9,8 @@
     z-index:10;
     position:fixed;
     background-color: #004BAE;
+    top:0;
+    left:0;
     animation: top-to-bottom .3s ease-in-out;
 }
 
@@ -255,4 +257,47 @@
 
 .active-link-nav-manage-profiles {
    color: var(--pr-color30);
+}
+
+/* Navbar Detail Profile Panti */
+
+.wrapper-navbar-detail-profile-panti{
+    width:100%;
+}
+
+.navbar-detail-profile-panti-container{
+    width: 1400px;  
+    height: 72px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin:0 auto;
+    background: #FDFDFD;
+    border-radius: 5px;
+}
+
+
+.detail-profile-panti-link{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#A1A1AA;
+    width: 256px;
+    height:100%;
+}
+
+.detail-profile-panti-link > p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.detail-profile-panti-link:hover{
+    border-bottom: 2px solid #004BAE;
+    transition: .1s ease-in;
+    color:#004BAE;
+}
+
+.detail-profile-panti-link.active{
+    border-bottom: 2px solid #004BAE;
+    color:#004BAE;
 }
