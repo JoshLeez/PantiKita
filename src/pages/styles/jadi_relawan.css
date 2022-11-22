@@ -1,0 +1,185 @@
+.top-jadi-relawan{
+    width: 1200px;
+    height: 427px;
+    background: #FDFDFD;
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin:38px auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-jadi-relawan > div{
+    width: 1021px;
+    height: 320px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-jadi-relawan-left{
+    width: 401px;  
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.jadi-relawan-kontak{
+    width: 401px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-jadi-relawan-left > div > h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #18181B;
+}
+
+.top-jadi-relawan-left > div > p{
+    font-weight: 400;       
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.jadi-relawan-kontak{
+    width: 401px;
+    height: 153px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.jadi-relawan-kontak > h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #18181B;
+}
+
+.bottom-jadi-relawan{
+    width: 1200px;
+    height: 575px;
+    background: #FDFDFD;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yang-kami-butuhkan{
+    width: 1134px;
+    height: 65px;
+    margin:32px 0;
+}
+
+.yang-kami-butuhkan > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+    margin-bottom: 6px;
+}
+
+.yang-kami-butuhkan > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #000000;
+}
+
+.riwayat-relawan-panti-kita{
+    width: 1081px;
+    height: 421px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.riwayat-relawan-panti-kita > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #18181B;
+}
+
+.list-card-relawan{
+    display:flex;
+    width: 1081px;
+    height: 369px;
+    justify-content: space-between;
+}
+
+.card-profile-relawan{
+    width: 333px;
+    height: 369px;
+    background: linear-gradient(126.34deg, #0061E0 0.98%, #001F47 100%);
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:23px;
+}
+
+.card-profile-relawan > img{
+    width: 150px;
+    height: 150px;
+}
+
+.data-lengkap-relawan{
+    display:flex;
+}
+
+.data-relawan-kanan, .data-relawan-kiri, .titik-dua-relawan{
+    color: #FAFAFA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.relawan-tanpa-fp{
+    width: 150px;
+    height: 150px;
+    background: #CBD5E1;
+    border-radius: 75px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relawan-tanpa-fp > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #A1A1AA;
+ }
+
+.data-relawan-kiri{
+    display:flex;
+    flex-direction: column;
+    width: 128px;
+    height: 154px;
+}
+
+.titik-dua-relawan{
+    display:flex;
+    flex-direction: column;
+    width: 10px;
+    height: 154px;
+}
+
+.data-relawan-kanan{
+    display:flex;
+    flex-direction: column;
+    height: 154px;
+}

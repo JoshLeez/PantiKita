@@ -4,6 +4,7 @@ import {
   IconMapPin,
   IconPhone,
   IconMail,
+  IconHeartHandshake,
   IconBrandTwitter,
   IconBrandFacebook,
   IconBrandInstagram,
@@ -19,9 +20,7 @@ import { Link } from "react-router-dom";
 import berandaasuh from "../images/beranda_asuh.png";
 import berandabackground from "../images/beranda_background.png";
 import rectangleword from "../images/rectangle_word.png";
-import tentangkami from "../images/tentang_kami_img.png";
 import linetentangkami from "../images/line_tentang_kami_img.png";
-import dottentangkami from "../images/dot_tentang_kami_img.svg";
 import ListPantiAsuhan from "../components/ListPantiAsuhan";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -95,7 +94,7 @@ function Beranda() {
           </div>
           <div className="the-option">
             <div className="option-icon">
-              <IconFileDescription />
+              <IconHeartHandshake />
             </div>
             <div className="option-word">
               <h5>Menjadi Relawan</h5>
@@ -193,9 +192,9 @@ function Beranda() {
             alt="line-tentang-kami"
             className="line-tentang-kami"
           />
-          <img src={tentangkami} alt="tentang-kami" />
+          <img src="./assets/tentang_kami_img.svg" alt="tentang-kami" />
           <img
-            src={dottentangkami}
+            src="./assets/dot_tentang_kami_img.svg"
             alt="dot-tentang-kami"
             className="dot-tentang-kami"
           />

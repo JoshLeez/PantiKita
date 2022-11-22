@@ -18,7 +18,7 @@ const DetailProfilePanti = () => {
             <div className="data-lokasi-panti">
               <div className="alamat-profile-panti">
                 <div className="word-alamat-panti">
-                  <IconMapPin size={120} />
+                  <IconMapPin/>
                   <p>{state.data.alamat}</p>
                 </div>
                 <div className="word-alamat-panti">

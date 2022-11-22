@@ -3,7 +3,7 @@ import Beranda from "./pages/Beranda";
 import HubungiKami from "./pages/HubungKami";
 import PantiAsuhanKita from "./pages/PantiAsuhanKita";
 import Dashboard from "./pages/Dashboard";
-import { BERANDA, HUBUNGI_KAMI, PANTI_ASUHAN_KITA, DASHBOARD, TENTANG_KAMI,KELOLA_PROFILE_DETAIL_PROFILE, KELOLA_PROFILE_DONASI,KELOLA_PROFILE_JADI_RELAWAN, KELOLA_DATA_ANAK_ASUH, KELOLA_DATA_PENGURUS, KELOLA_DATA_KEUANGAN, KELOLA_DATA_DONASI, DATA_RELAWAN} from "./pages/Router";
+import { BERANDA,DONASI_KITA, HUBUNGI_KAMI, PANTI_ASUHAN_KITA, DASHBOARD, TENTANG_KAMI,KELOLA_PROFILE_DETAIL_PROFILE, KELOLA_PROFILE_DONASI,KELOLA_PROFILE_JADI_RELAWAN, KELOLA_DATA_ANAK_ASUH, KELOLA_DATA_PENGURUS, KELOLA_DATA_KEUANGAN, KELOLA_DATA_DONASI, DATA_RELAWAN, JADI_RELAWAN} from "./pages/Router";
 import TentangKami from "./pages/TentangKami";
 import KelolaProfileDetailProfile from "./pages/KelolaProfileDetailProfile";
 import KelolaProfileDonasi from "./pages/KelolaProfileDonasi";
@@ -15,6 +15,7 @@ import KelolaDataPengurus from "./pages/KelolaDataPengurus";
 import KelolaDataKeuangan from "./pages/KelolaDataKeuangan";
 import KelolaDataDonasi from "./pages/KelolaDataDonasi";
 import DataRelawan from "./pages/DataRelawan";
+import Jadi_Relawan from "./pages/Jadi_Relawan";
 
 function App() {
 	return (
@@ -24,7 +25,8 @@ function App() {
             <Route path={HUBUNGI_KAMI} element={<HubungiKami />} />
             <Route path={PANTI_ASUHAN_KITA} element={<PantiAsuhanKita />} />
             <Route path={TENTANG_KAMI} element={<TentangKami />} />
-            <Route path="/donasi-kita" element={<DonasiKita/>}/>
+            <Route path={DONASI_KITA} element={<DonasiKita/>}/>
+            <Route path={JADI_RELAWAN} element={<Jadi_Relawan/>}/>   
             <Route path="/detail-profile-panti/:string" element={<DetailProfilePanti/>}/>
             <Route path={DASHBOARD} element={<Dashboard />} />
             <Route path={KELOLA_PROFILE_DETAIL_PROFILE} element={<KelolaProfileDetailProfile />} />

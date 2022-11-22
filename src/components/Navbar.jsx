@@ -6,6 +6,7 @@ import logo_panti_kita_light from '../images/Logo-X-Light-Panti-Kita.png'
 import { IconArrowLeft, IconHomeDollar, IconHeartHandshake } from '@tabler/icons';
 import { Bell,ChevronUp, FileDescription, HomeDollar, HeartHandshake, DeviceFloppy } from "tabler-icons-react";
 import Button from "./Button";
+import { BERANDA, DONASI_KITA, JADI_RELAWAN } from '../pages/Router'
 
 function Navbar() {
   const [fix, setFix] = useState(true)
@@ -47,7 +48,7 @@ function Navbar() {
         </div>
         <div className="right-navbar">
             <Link className={fixed ? "" : "fixed-color"}>Masuk</Link>
-            <Link className="tombol-daftar">Daftar</Link>
+            <Link className="tombol-daftar"><Button type="SECONDARY">Daftar</Button></Link>
         </div>
       </nav>
     </header>
@@ -70,7 +71,7 @@ export const Navbars = () => {
       </div>
       <div className="right-navbar">
           <Link className={"fixed-color"}>Masuk</Link>
-          <Link className="tombol-daftar">Daftar</Link>
+          <Link className="tombol-daftar"><Button type="SECONDARY">Daftar</Button></Link>
       </div>
     </nav>
   </header>
@@ -137,18 +138,18 @@ export const NavbarDetailProfilePanti = ({state}) => {
   return (
     <header className='wrapper-navbar-detail-profile-panti'>
       <nav className='navbar-detail-profile-panti-container'>
-        <Link to="/">
+        <Link to={BERANDA}>
           <IconArrowLeft color='#004BAE' size={48}/>   
         </Link>
         <NavLink to={`/detail-profile-panti`} className='detail-profile-panti-link'>
           <FileDescription/>
           <p>Detail Profile Panti Asuhan</p>
         </NavLink>
-        <NavLink to='/donasi-kita' className='detail-profile-panti-link'>
+        <NavLink to={DONASI_KITA} className='detail-profile-panti-link'>
           <IconHomeDollar/>
           <p>Donasi Kita</p>
         </NavLink>
-        <NavLink to="/beranda" className='detail-profile-panti-link'>
+        <NavLink to={JADI_RELAWAN} className='detail-profile-panti-link'>
           <IconHeartHandshake />
           <p>Jadi Relawan</p>
         </NavLink>

@@ -49,9 +49,12 @@
 
 .word-alamat-panti > .icon-tabler{
     color:#3AB7FE;  
+    width: 24px;
+    height:24px;
 }
 
 .word-alamat-panti > p{
+    width: 190px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
