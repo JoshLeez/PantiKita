@@ -2,7 +2,7 @@ import '../pages/styles/panti_asuhan_kita.css'
 
 export const CariPantiAsuhan = () => {
   return (
-    <div className="left-panti-asuhan-kita-search-filter">
+<div className="left-panti-asuhan-kita-search-filter">
     <h2>Panti Asuhan Kita</h2>
     <p>
     Memaksimalkan layanan panti asuhan yang sudah terdaftar  yang  bekerjasama 

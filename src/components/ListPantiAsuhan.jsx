@@ -88,11 +88,11 @@ function ListPantiAsuhan() {
                 <div className="nama-alamat-panti">
                       <h6>{datas.nama_panti}</h6>
                       <div className='alamat-panti'>
-                            <IconMapPin size={48} color="#3AB7FE"/>
+                            <IconMapPin size={24} color="#3AB7FE"/>
                           <p>{datas.alamat}</p>
                       </div>
                       <div className="jumlah-anak-asuh">
-                        <IconFriends size={16} color="#3AB7FE"/>
+                        <IconFriends size={24} color="#3AB7FE"/>
                         <p>{datas.jumlah_anak} anak</p>
                       </div>
                       <p>Pendiri : {datas.pendiri}</p>
@@ -135,11 +135,11 @@ function ListPantiAsuhan() {
                 <div className="nama-alamat-panti">
                       <h6>{datas.nama_panti}</h6>
                       <div className='alamat-panti'>
-                            <IconMapPin size={48} color="#3AB7FE"/>
+                            <IconMapPin size={24} color="#3AB7FE"/>
                           <p>{datas.alamat}</p>
                       </div>
                       <div className="jumlah-anak-asuh">
-                        <IconFriends size={16} color="#3AB7FE"/>
+                        <IconFriends size={24} color="#3AB7FE"/>
                         <p>{datas.jumlah_anak} anak</p>
                       </div>
                       <p>Pendiri : {datas.pendiri}</p>

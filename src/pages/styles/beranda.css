@@ -373,6 +373,12 @@
 }
 
 
+.list-panti-navbar-right > button:hover{
+    opacity:0.8;
+}
+
+
+
 
 .container-data-panti-asuhan{
     width:100%;
@@ -383,21 +389,8 @@
     background: #FDFDFD;
     box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    animation: search-pop-up .3s ease-in-out
 }
 
-@keyframes search-pop-up{
-    0%{
-        width:0%;
-    }
-    50%{
-       width:50%;
-    }
-    100%{
-      
-        width:100%;
-    }
-}
 
 .left-data-panti-asuhan{
     width:50%;
@@ -457,6 +450,8 @@
 }
 
 .alamat-panti > p{
+    max-width: 297px;
+    max-height: 76px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;

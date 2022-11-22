@@ -135,8 +135,10 @@
 }
 
 .laporan-terbaru-donasi > h3{
+    text-align: center;
     font-weight: 500;
     font-size: 30px;
+    margin-bottom:16px;
     line-height: 36px;
     color: #18181B;
 }
@@ -195,9 +197,7 @@
 .left-side-progress-donasi{
     width: 233px;
     height: 410px;
-    border:2px solid black;
     display: flex;
-    flex-direction: column;
 }   
 
 .progress-bola-garis{
@@ -213,12 +213,53 @@
     background: #3AB7FE;
     border: 4px solid #3AB7FE;
     border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bola-progress-donasi > .bola-capaian-progress{
+    width: 14px;
+    height: 14px;
+    background: #0185D0;
+    border-radius: 30px;
 }
 
 .garis-progress-donasi{
     width: 3px;
     height: 90px;
     border: 4px solid #3AB7FE;
+}
+
+.progressbar-right-side{
+    display: flex;
+    flex-direction: column;
+    gap:57px;
+    margin-left:10px;
+}
+
+
+
+.inside-progressbar-right > h6{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #004BAE;
+}
+
+.inside-progressbar-right > .progress-word{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.inside-progressbar-right > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #71717A;
 }
 
 .right-side-pendidikan-anak-asuh{
@@ -253,4 +294,239 @@
     line-height: 19px;
     text-align: justify;
     color: #71717A;
+}
+
+.riwayat-donatur-panti-kita{
+    width: 1200px;
+    height: 768px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:32px auto;
+}
+
+.riwayat-donatur-panti-kita > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #18181B;
+    margin-bottom: 16px;
+}
+
+.riwayat-donatur-panti-kita >.section-data-donatur{
+    width: 1200px;
+    height: 716px;
+    background: #FDFDFD;
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-data-donatur > nav{
+    width: 1136px;
+    height: 48px;
+    display:flex;
+    margin:32px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-data-donatur > nav > h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #004BAE;
+}
+
+.filter-data-donatur{
+    width: 150px;
+    height: 48px;
+    display:flex;
+    border: 2px solid #004BAE;
+    filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+    color: #004BAE;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filter-data-donatur > h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #004BAE;
+}
+
+.tiga-donatur{
+    width: 1135px;
+    height: 578px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.riwayat-tabel-donatur{
+    width: 365px;
+    height: 100%;
+}
+
+.riwayat-tabel-donatur >h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #18181B;
+}
+
+/* color pertama: #F2F3F6; color kedua: #FDFDFD; */
+.riwayat-tabel-donatur > .tabel-donatur{
+    width: 365px;
+    height: 545px;
+    background: #F2F3F6;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.box-profile-donatur{
+    height: 68px;
+    display:flex;
+    padding:0 5px; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDFDFD;
+}
+
+.box-profile-donatur:nth-child(odd){
+    background-color:#F2F3F6;
+}
+
+.gambar-and-profile{
+    display:flex;
+    width: 152px;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gambar-profile-donatur{
+    width: 48px;
+    height: 48px;
+    border-radius: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #CBD5E1;
+}
+
+.gambar-profile-donatur >h6{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #A1A1AA;
+}
+
+.nama-hari-donatur{
+    width: 96px;
+    height: 36px;
+}
+
+.nama-hari-donatur > p{
+    font-weight: 400;
+    width: 114px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.nama-hari-donatur > .p-small-hari{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #71717A;
+}
+
+.gambar-profile-donatur > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.komentar-donatur{
+    width: 365px;
+    height: 66px;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    background: #FDFDFD;
+    padding:0 10px;
+}
+
+.komentar-donatur > .nama-komentar{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #71717A;
+}
+
+.komentar-donatur > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.progressbar-right-side-membantu{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin-left:10px;
+}
+
+.right-side-pendidikan-anak-asuh > .p-bottom-membantu-kami{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.kontak-kami-membantu{
+    width: 401px;
+    height: 153px;
+    align-self: flex-start;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 20px;
+}
+
+.kontak-kami-membantu > h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #18181B;
+}
+
+.membantu-kami-lokasi{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.membantu-kami-lokasi > p{
+    width: 369px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.membantu-kami-lokasi > .icon-tabler{
+    color:#3AB7FE;
 }

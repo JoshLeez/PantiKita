@@ -1,10 +1,19 @@
 import HOC from '../components/HOC'
+import {useState} from 'react'
+import FormDonasi from '../components/FormDonasi'
 import './styles/donasi_panti_asuhan.css'
 import { NavbarDetailProfilePanti } from '../components/Navbar'
-import { IconMapPin, IconFriends, IconPhone, IconChevronUp  } from '@tabler/icons';
+import { IconMapPin, IconFriends, IconPhone,IconAdjustmentsHorizontal ,IconChevronUp  } from '@tabler/icons';
 import Button from '../components/Button';
+import Perorangan from '../components/Perorangan'
+import Organisasi from '../components/Organisasi'
+import Instansi from '../components/Instansi'
+import BagiamanKamuBisaMembantu from '../components/BagiamanKamuBisaMembantu'
+import Footer from '../components/Footer';
 
 const DonasiKita = () => {
+  const [donateToggle, setDonateToggle] = useState(false) 
+
   return (
     <HOC title='Panti Kita - Donasi'>
       <NavbarDetailProfilePanti/>
@@ -50,7 +59,7 @@ const DonasiKita = () => {
                 </div>
               </div>
           </div>
-          <Button type="DONASI">Donasi</Button>
+          <Button  onClick={()=>setDonateToggle(!donateToggle)} type="DONASI">Donasi</Button>
         </div>
       </div>
       <section className='laporan-terbaru-donasi'>
@@ -73,12 +82,37 @@ const DonasiKita = () => {
                   <div className='garis-progress-donasi'>
                   </div>
                   <div className="bola-progress-donasi">
+                  <div className="bola-progress-donasi">
+                    <div className="bola-capaian-progress"></div>
+                  </div>
                   </div>
                   <div className='garis-progress-donasi'>
                   </div>
                   <div className="bola-progress-donasi">
                   </div>
                 </div>
+                  <div className='progressbar-right-side'>
+                    <div className='inside-progressbar-right'>
+                      <p>7-11-2022</p>
+                      <h6>Rp. 20.000,-</h6>
+                      <p className='progress-word'>Uang Transpot</p>
+                    </div>
+                    <div className='inside-progressbar-right'>
+                      <p>7-11-2022</p>
+                      <h6>Rp. 180.000,-</h6>
+                      <p className='progress-word'>SPP</p>
+                    </div>
+                    <div className='inside-progressbar-right'>
+                      <p>7-11-2022</p>
+                      <h6>Rp. 300.000,-</h6>
+                      <p className='progress-word'>Pendidikan Anak Asuh</p>
+                    </div>
+                    <div className='inside-progressbar-right'>
+                      <p>7-11-2022</p>
+                      <h6>Rp. 500.000,-</h6>
+                      <p className='progress-word'>Biaya Makan</p>
+                    </div>
+                  </div>
               </div>
             </aside>
             <div className='right-side-pendidikan-anak-asuh'>
@@ -96,7 +130,27 @@ const DonasiKita = () => {
             </div>
         </div>
       </section>
+      <section className='riwayat-donatur-panti-kita'>
+        <h3>Riwayat Donatur Panti Kita</h3>
+        <div className='section-data-donatur'>
+            <nav>
+              <h3>Donatur</h3>
+              <div className='filter-data-donatur'>
+                <IconAdjustmentsHorizontal />
+                <h5>Filter</h5>
+              </div>
+            </nav>
+            <div className='tiga-donatur'>
+              <Perorangan/>
+              <Organisasi/>
+              <Instansi/>
+            </div>
+        </div>
+      </section>
+        <BagiamanKamuBisaMembantu/>
+      {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle} />}
      </div>
+     <Footer/>
     </HOC>
  
   )
