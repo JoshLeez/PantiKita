@@ -21,7 +21,7 @@ const SideBar = (props)=> {
             </div>
             <div className={"nav-side-twoline " + props.activeSideManagePopulation + " " + props.activeBgManagePopulation}>
                <Users className="icon-nav" />
-               <NavLink to="/kelola-data-anak-asuh-dan-pengurus" className={"side-bar-link " + props.activeSideManagePopulation}>Kelola Data Anak Asuh & Pengurus</NavLink>
+               <NavLink to="/kelola-data-anak-asuh" className={"side-bar-link " + props.activeSideManagePopulation}>Kelola Data Anak Asuh & Pengurus</NavLink>
             </div>
             <div className={"nav-side " + props.activeSideManageFinancial + " " + props.activeBgManageFinancial}>
                <ReportMoney className="icon-nav" />

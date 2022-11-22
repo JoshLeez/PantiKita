@@ -1,0 +1,173 @@
+.wrapper-header-table-data {
+   display: flex;
+   margin: 0 32px;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.wrapper-select-data {
+   display: flex;
+}
+
+.wrapper-select-data button {
+   outline: none;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px 5px 0px 0px;
+   background: none;
+   width: 150px;
+   height: 32px;
+   font-weight: 500;
+   font-size: 18px;
+   color: var(--text-bgDark-3);
+   cursor: pointer;
+}
+
+.wrapper-select-data .active-select-data {
+   background-color: var(--pr-color30);
+   color: var(--text-bgDark-1);
+}
+
+.wrapper-data-search {
+   display: flex;
+   gap: 32px;
+   align-items: center;
+}
+
+.search-data {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+}
+
+.search-data input {
+   width: 150px;
+   height: 100%;
+   font-size: 16px;
+   color: var(--text-bgLight-1);
+   background: none;
+   border: none;
+   outline: none;
+}
+
+.search-data input::placeholder {
+   font-size: 16px;
+   color: var(--text-bgLight-3);
+}
+
+.filter-data {
+   position: relative;
+}
+
+.title-menu-filter-data {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+   color: var(--sc2-color10);
+   cursor: pointer;
+}
+
+.filter-data .menu-filter-data {
+   display: none;
+}
+
+.bg-table-data-children, .bg-table-data-caretaker {
+   background: #FDFDFD;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   padding: 0 32px;
+   height: 596px;
+   position: relative;
+}
+
+.wrapper-heading-table {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 24px 0;
+}
+
+.wrapper-action-button-table {
+   display: flex;
+   gap: 16px;
+}
+
+.wrapper-heading-table p {
+   font-weight: 500;
+   font-size: 16px;
+   color: var(--text-bgLight-1);
+}
+
+.wrapper-table-data {
+   display: flex;
+   flex-direction: column;
+}
+
+.table-file-content {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+table tr td {
+   overflow: hidden;
+   position: relative;
+}
+
+table tr td:first-child, table tr th:first-child {
+   width: 40px;
+}
+
+.table-data-children tr td:last-child, .table-data-caretaker tr td:last-child, .table-data-financial tr td:last-child{
+   width: 89px;
+}
+
+.footer-table {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding-top: 24px;
+}
+
+.footer-table span {
+   font-weight: 400;
+   font-size: 12px;
+   color: var(--text-bgLight-2);
+}
+
+.wrapper-next-and-previous-table {
+   display: flex;
+   align-items: center;
+}
+
+.wrapper-next-and-previous-table button {
+   background: #0185D0;
+   border: none;
+   height: 32px;
+   padding: 0 10px;
+   font-weight: 500;
+   font-size: 16px;
+   color: var(--text-bgDark-1);
+   cursor: pointer;
+}
+
+.wrapper-next-and-previous-table span {
+   line-height: 32px;
+   text-align: center;
+   width: 32px;
+   height: 32px;
+   font-weight: 500;
+   font-size: 16px;
+   color: var(--text-bgLight-1);
+   background: var(--bg-ac2);
+}
+
+.wrapper-next-and-previous-table button:first-child {
+   border-radius: 5px 0px 0px 5px;
+}
+
+.wrapper-next-and-previous-table button:last-child {
+   border-radius: 0px 5px 5px 0px;
+}

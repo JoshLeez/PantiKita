@@ -1,0 +1,53 @@
+/* kelola data keuangan */
+.bg-table-data-financial, .bg-table-data-donate, .bg-table-data-volunteer {
+   background: #FDFDFD;
+   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   padding: 0 32px;
+   height: 596px;
+   position: relative;
+}
+
+.bg-table-data-financial .wrapper-heading-table {
+   padding: 18px 0 16px 0;
+   align-items: center;
+}
+
+.wrapper-table-explanation {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   text-align: end;
+}
+
+.table-data-donate .wrapper-table-name,  .table-data-volunteer .wrapper-table-name{
+   display: flex;
+   gap: 4px;
+}
+
+.table-data-donate .wrapper-table-name span:last-child{
+   color: var(--pr-color30);
+}
+
+.table-data-volunteer .wrapper-table-name span:last-child {
+   color: #14AE00;
+}
+
+.wrapper-footer-table-right {
+   display: flex;
+   gap: 32px;
+   align-items: flex-start;
+}
+
+.wrapper-footer-table-right p {
+   font-weight: 500;
+   font-size: 16px;
+   color: var(--text-bgLight-1);
+}
+
+
+/* data relawan */
+#wrapper-header-table-data-volunteer {
+   height: 32px;
+   justify-content: end;
+}

@@ -78,7 +78,7 @@ const KelolaProfileDonasi = () => {
                                  <Button type="SM_CREATE"><Plus />Tambah</Button>
                               </div>
                               <table className="table-report-donate">
-                                 <tr className="table-title-report-donate">
+                                 <tr className="table-title table-title-report-donate">
                                     <th>Tanggal</th>
                                     <th>Keterangan</th>
                                     <th>Pengeluaran</th>
