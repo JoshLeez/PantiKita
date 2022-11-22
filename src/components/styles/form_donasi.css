@@ -18,6 +18,8 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     animation: pop-up .3s ease-in-out;
 }
 
@@ -35,7 +37,6 @@
     display:flex;
     width: 100%;
     height: 45px;
-    border:2px solid black;
     align-items: center;
 }
 
@@ -44,8 +45,10 @@
     flex:50%;
 }
 
-.donasi-title-container > .icon-tabler{
-    margin-left:auto;
+.donasi-title-container >.icon-tabler{
+    position: absolute;
+    top:13%;
+    left:82.5%;
 }
 
 .donasi-title-container > .icon-tabler:hover{
@@ -67,4 +70,289 @@
     font-size: 14px;
     line-height: 17px;
     color: #71717A;
+}
+
+.form-pengisian-donasi{
+    width: 875px;
+    height: 406px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.form-pengisian-kiri{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    gap:10px;
+}
+
+
+.donatur-radio-button{
+    width: 327px;
+    height: 59px;
+    display:flex;
+    gap:13px;
+    flex-direction: column;
+
+}
+
+.donatur-radio-button > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.container-pilihan-donatur{
+    display:flex;
+    gap:20px;
+}
+
+.pilihan-donatur{
+    max-width: 111px;
+    height: 24px;
+    display:flex;
+    gap:5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pilihan-donatur > input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2e83f2;
+}
+
+.donatur-upload-gambar{
+    width: 373px;
+    height: 64px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.donatur-gambar-default{
+    width: 64px;
+    height: 64px;
+    background: #CBD5E1;
+    border-radius: 30px;
+    color:#3AB7FE;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donatur-gambar-default > .icon-tabler{
+    width: 48px;
+    height: 48px;
+}
+
+
+.right-side-donatur-upload{
+    width: 293px;
+    height: 54px;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.upload-button-container{
+    width: 293px;
+    height: 32px;
+    display:flex;
+    gap:5px;
+    align-items: center;
+}
+
+.upload-button{
+    width: 150px;
+    height: 32px;
+    background: #3AB7FE;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-button:hover{
+    opacity:0.8;
+
+}
+
+.upload-button > p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FAFAFA;
+}
+
+.upload-button-container > p{
+    width: 145px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A1A1AA;
+}
+
+.upload-button > input{
+        display: inline-block;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
+    }
+
+.upload-button > .icon-tabler{
+    color:white;
+}
+
+.right-side-donatur-upload > p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #18181B;
+}
+
+.input-form-donasi{
+    width: 400px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form-donasi > p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.sembunyikan-identitas{
+    width: 243px;
+    height: 66px;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.checkbox-sembunyikan{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+.checkbox-sembunyikan > input{
+    width: 24px;
+    height: 24px;
+}
+
+.checkbox-sembunyikan > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.sembunyikan-identitas > p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A1A1AA;
+}
+
+.form-pengisian-kanan{
+    width: 435px;
+    height: 406px;
+    display:flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.top-profile-panti-form{
+    width: 435px;
+    height: 224px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F2F3F6;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.top-profile-panti-form > h6{
+    align-self: flex-start;
+    margin-left: 20px   ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #004BAE;
+}
+
+.detail-profile-panti-form{
+    width: 370px;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+}
+
+.detail-profile-panti-form > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.detail-profile-panti-form > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.form-profile-alamat > .icon-tabler{
+    color: #3AB7FE;
+}
+
+.form-profile-alamat{
+    display:flex;
+    align-items: center;
+    gap:7px;
+}
+
+.form-profile-alamat > p{
+    width: 338px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #18181B;
+}
+
+.bottom-tulis-komentar{
+    width: 435px;
+    height: 158px;
+    display:flex;
+    flex-direction: column;
+    gap:3px;
+}
+
+.bottom-tulis-komentar > p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.bottom-tulis-komentar > textarea{
+    padding: 10px;
+    width: 435px;
+    height: 131px;
+    outline: none;
+    resize: none;
 }
