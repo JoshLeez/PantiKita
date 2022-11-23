@@ -93,7 +93,7 @@
 .mid-navbar > a{
     color: #A1A1AA;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     display:flex;
     align-items: center;
     text-decoration:none;
@@ -135,9 +135,9 @@
 .rectangle-word-bottom{
     position: absolute;
     width: 191px;
-    height: 152px;
-    left: 615px;
-    top: 385px;
+    height: 175px;
+    left: 600px;
+    top: 280px;
     background: rgba(217, 217, 217, 0.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15), inset 8.33333px -8.33333px 8.33333px rgba(165, 165, 165, 0.1), inset -8.33333px 8.33333px 8.33333px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(50px);

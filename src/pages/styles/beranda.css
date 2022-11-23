@@ -6,6 +6,9 @@
 .beranda-parent{
    height: 611px;
    display:flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
 }
 
 .beranda-background{
@@ -20,12 +23,9 @@
 .cari-panti-section{
     display: flex;
     flex-direction: column;
-    margin:0;
     width: 424px;
-    height: 267px;
-    left: 84px;
-    top: 179px;
-    position:absolute;
+    margin-top: -80px;
+    margin-left: 40px;
 }
 
 .cari-panti-section >h1{
@@ -33,22 +33,24 @@
     font-weight: 600;
     font-size: 48px;
     color: #FAFAFA;
-    margin:0;
+    margin-bottom:8px;
 }
 
 .cari-panti-section > p{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    color: #A1A1AA;
-    padding-bottom:1em;
+    color: #FAFAFA;
+    margin-bottom:40px;
 }
 
+.image-hero-section {
+   z-index:5;
+}
 
 .right-side-section{
-    left: 747px;
-    top: 107px;
+    left: 750px;
+    top: 32px;
     width: 393px;
     height: 500px;
     z-index:-1;
@@ -57,8 +59,8 @@
 
 
 .rectangle-word-left{
-    left: 748px;
-    top: 79px;
+    left: 700px;
+    top: 16px;
     position:absolute;
     display:flex;
     width: 168px;
@@ -91,8 +93,8 @@
 }
 
 .rectangle-word-right{
-    left: 1075px;
-    top: 257px;
+    left: 1050px;
+    top: 224px;
     position:absolute;
     display:flex;
     width: 168px;
@@ -125,7 +127,6 @@
     margin:0;
 }
 
-
 .tiga-logo{
     display:flex;
     gap:80px;
@@ -146,6 +147,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+}
+
+.opsi-beranda::after{
+   content: "";
+   background: rgba(0, 75, 174, 0.1);
+   filter: blur(25px);
+   z-index: -1;
+   width: 38px;
+   height: 340px;
+   position: absolute;
+   right: -19px;
+   top: 16px;
+}
+
+.opsi-beranda::before{
+   content: "";
+   background: rgba(0, 75, 174, 0.1);
+   filter: blur(25px);
+   z-index: -1;
+   width: 38px;
+   height: 340px;
+   position: absolute;
+   left: -19px;
+   top: 16px;
 }
 
 .opsi-beranda > h3{
@@ -238,6 +264,39 @@
     flex-direction:column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+}
+
+.layanan-tersedia::after {
+   content: "";
+   width: 32px;
+   height: 100%;
+   background: linear-gradient(90deg, #FDFDFD 0%, #F2F3F6 100%);
+   border-radius: 0px 10px 10px 0px;
+   position: absolute;
+   right: -16px;
+}
+
+.layanan-tersedia::before {
+   content: "";
+   width: 32px;
+   height: 100%;
+   background: linear-gradient(90deg, #FDFDFD 0%, #F2F3F6 100%);
+   border-radius: 0px 10px 10px 0px;
+   transform: rotate(180deg);
+   position: absolute;
+   left: -16px;
+}
+
+.shadow-bottom-layanan {
+   position: absolute;
+   width: 100%;
+   height: 40px;
+   background: rgba(0, 75, 174, 0.1);
+   filter: blur(25px);
+   transform: rotate(180deg);
+   bottom: -20px;
+   z-index: -1;
 }
 
 .layanan-content-swiper{
