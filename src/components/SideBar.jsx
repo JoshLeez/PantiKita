@@ -34,7 +34,7 @@ const SideBar = (props)=> {
          </nav>
          <div className={"logout " + props.activeSideLogout + " " + props.activeBgLogout}>
             <Logout className="icon-nav"/>
-            <NavLink to="" className={"side-bar-link " + props.activeSideLogout}>Keluar</NavLink>
+            <NavLink to="/masuk" className={"side-bar-link " + props.activeSideLogout}>Keluar</NavLink>
          </div>
       </aside>
    </>

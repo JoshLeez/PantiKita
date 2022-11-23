@@ -5,6 +5,7 @@ import '../pages/styles/beranda.css'
 import Button from './Button';
 import FormDonasi, { FormDonasi2, FormDonasi3 } from './FormDonasi';
 import FormRelawan, { FormRelawan2, Popupchoice } from './FormRelawan';
+import { AdjustmentsHorizontal } from 'tabler-icons-react';
 
 
 
@@ -77,13 +78,14 @@ function ListPantiAsuhan() {
         <header className="list-panti-navbar">
           <h2>Panti Asuhan Kita</h2>
           <nav className="list-panti-navbar-right">
-            <input value ={searchTerm} onChange={(e) =>setSearchTerm(e.target.value)} placeholder="cari panti asuhan"/>
-            <button onClick={searchHandler}>Cari</button>
-            <select>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </select>
+            <div className='search-input-navbar'>
+              <input value ={searchTerm} onChange={(e) =>setSearchTerm(e.target.value)} placeholder="cari panti asuhan"/>
+              <button onClick={searchHandler}>Cari</button>
+            </div>
+            <div className='filter-button'>
+              <AdjustmentsHorizontal/>
+              <p>Filter</p>
+            </div>
           </nav>
         </header>
         {data.searchUser.length === 0 

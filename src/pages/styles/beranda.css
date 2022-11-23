@@ -227,6 +227,10 @@
     border-radius: 5px;
 }
 
+.the-option:hover .option-icon > .icon-tabler{
+    color:white;
+}
+
 .option-word{
     display: flex;
     flex-direction: column;
@@ -235,12 +239,17 @@
     gap: 8px;
 }
 
+.option-icon > .icon-tabler{
+    color:#18181B;
+}
+
 .option-word > h5{
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     margin:0;
+    color:#18181B;
 }
 
 .option-word > p{
@@ -393,11 +402,16 @@
     margin-left:auto;
     display:flex;
     justify-content: flex-end;
-    width:36%;
+    width:55%;
     height:100%;
+    gap:15px;
 }
 
-.list-panti-navbar-right > input{
+.search-input-navbar{
+    display:flex;
+}
+
+.search-input-navbar > input{
     width: 300px;
     background: #CBD5E1;
     border-radius: 5px 0px 0px 5px;
@@ -407,7 +421,7 @@
     transition: .3s ease-in-out
 }
 
-.list-panti-navbar-right > input:focus{ 
+.search-input-navbar > input:focus{ 
     border:2px solid #004BAE;
     transition: .3s ease-in-out;
     background-color:whitesmoke;
@@ -417,7 +431,7 @@
 
 
 
-.list-panti-navbar-right > button{
+.search-input-navbar > button{
     display: flex;
     width:100px;
     justify-content: center;
@@ -432,7 +446,7 @@
 }
 
 
-.list-panti-navbar-right > button:hover{
+.search-input-navbar > button:hover{
     opacity:0.8;
 }
 
@@ -775,5 +789,25 @@
     font-weight: 400;
     font-size: 16px;
     color: #A1A1AA;
+}
+
+.filter-button{
+    width: 150px;
+    height: 48px;
+    border: 2px solid #004BAE;
+    filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+    display: flex;
+    padding:0 10px;
+    gap:20px;
+    align-items: center;
+
+}
+
+.filter-button:hover{
+    background: #004BAE;
+    cursor:pointer;
+    color: #FAFAFA;
+    transition: .3s ease-in;
 }
 

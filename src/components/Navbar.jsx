@@ -38,7 +38,9 @@ function Navbar() {
     <header className={fix ? "navbar-container" : fixed ? "navbar-container fixed" : "navbar-container fixed bottom"}>
       <nav className="navbar">
         <div className="left-navbar">
+        <Link to="/">
         <img src={fixed ? logo_panti_kita_dark : logo_panti_kita_light } className={fixed ? "" : "logo-kecil"} alt="logo-panti-kita"/>
+        </Link>
         </div> 
         <div className={fixed ? "mid-navbar" : "mid-navbar fixed"}>
             <NavLink to="/" end>Beranda</NavLink>
@@ -47,7 +49,7 @@ function Navbar() {
             <NavLink to="/hubungi-kami">Hubungan Kami</NavLink>
         </div>
         <div className="right-navbar">
-            <Link className={fixed ? "" : "fixed-color"}>Masuk</Link>
+            <Link to="/masuk" className={fixed ? "" : "fixed-color"}>Masuk</Link>
             <Link className="tombol-daftar"><Button type="SECONDARY">Daftar</Button></Link>
         </div>
       </nav>
@@ -61,7 +63,9 @@ export const Navbars = () => {
     <header className="navbars-container">
     <nav className="navbars">
       <div className="left-navbar">
-      <img src={logo_panti_kita_light} alt="logo-panti-kita"/>
+      <Link to="/">
+      <img src={logo_panti_kita_light}  className="logo-kecil" alt="logo-panti-kita"/>
+      </Link>
       </div> 
       <div className="mid-navbar fixed">
         <NavLink to="/" end>Beranda</NavLink>
@@ -70,7 +74,7 @@ export const Navbars = () => {
         <NavLink to="/hubungi-kami">Hubungan Kami</NavLink>
       </div>
       <div className="right-navbar">
-          <Link className={"fixed-color"}>Masuk</Link>
+          <Link className={"fixed-color"} to="/masuk" >Masuk</Link>
           <Link className="tombol-daftar"><Button type="SECONDARY">Daftar</Button></Link>
       </div>
     </nav>

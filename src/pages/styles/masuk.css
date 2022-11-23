@@ -1,0 +1,202 @@
+.container-halaman-masuk{
+    display:flex;
+}
+
+.left-side-register{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+    box-shadow: 7px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.left-side-register > a >img{
+    position: absolute;
+    left: 41px;
+    top: 24px;
+}
+
+
+
+.wrapper-login{
+    width: 400px;
+    height: 499px;
+    display:flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+.login-title{
+    height: 74px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+}
+
+.login-title > h4{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #18181B;
+}
+
+.login-title > p{
+    height: 38px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #71717A;
+}
+
+.login-input-section{
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.wrapper-login-section{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.wrapper-login-section > p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.input-login{
+    width: 400px;
+    height: 49px;
+    border: 1px solid #004BAE;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+
+.password-check{
+    color:#3AB7FE;
+    cursor:pointer;
+}
+
+
+.input-login > .icon-tabler{
+    color:#3AB7FE;
+}
+
+.input-login > input{
+    width:330px;
+    height: 30px;
+    border:none;
+    outline: none;
+    background:none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.remember-me-wrapper{
+    height: 24px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-remember{
+    display:flex;
+    width: 138px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-remember > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.remember-me-wrapper >  p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.checkbox-remember > input{
+    width: 24px;
+    height:24px;
+}
+
+.register-bottom-section{
+    height: 73px;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.register-bottom-section > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #18181B;
+}
+
+.right-side-login{
+    display:flex;
+    flex-direction: column;
+}
+
+.right-side-login > img{
+    width: 106vh;
+    position: absolute;
+    height:100vh;
+    z-index: -1;
+}
+
+.right-top-login{
+    position: absolute;
+    width: 243px;
+    height: 21px;
+    left: 83%;
+    top: 22px;
+    display:flex;
+    color:white;
+    justify-content: space-between;
+
+}
+
+.right-top-login > a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FAFAFA;
+}
+
+.right-top-login > a:hover{
+    color:#71717A;
+    transition: .3s ease-in;
+}
+
+.right-side-login > p{
+    position: absolute;
+    left: 78%;
+    top: 95%;
+    width: 316px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FAFAFA;
+}
+

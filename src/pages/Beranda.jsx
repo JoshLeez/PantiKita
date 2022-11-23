@@ -80,7 +80,7 @@ function Beranda() {
 				<section className="opsi-beranda">
 					<h3>Peduli Panti Asuhan Kita</h3>
 					<div className="hasil-opsi">
-						<div className="the-option">
+						<Link to="/panti-asuhan-kita" className="the-option">
 							<div className="option-icon">
 								<IconHomeDollar />
 							</div>
@@ -91,8 +91,8 @@ function Beranda() {
 									meningkatkan kualitas panti asuhan
 								</p>
 							</div>
-						</div>
-						<div className="the-option">
+						</Link>
+						<Link to="/panti-asuhan-kita" className="the-option">
 							<div className="option-icon">
 								<IconHeartHandshake />
 							</div>
@@ -103,8 +103,8 @@ function Beranda() {
 									untuk perkembangan anak-anak di panti asuhan{" "}
 								</p>
 							</div>
-						</div>
-						<div className="the-option">
+						</Link>
+						<Link to="/panti-asuhan-kita" className="the-option">
 							<div className="option-icon">
 								<IconFileDescription />
 							</div>
@@ -115,7 +115,7 @@ function Beranda() {
 									yang ada di Panti Asuhan
 								</p>
 							</div>
-						</div>
+						</Link>
 					</div>
 				</section>
 				<section className="layanan-tersedia">
@@ -190,7 +190,7 @@ function Beranda() {
           <IconChevronRight size={48} color="#3AB7FE"/>
         </div> */}
 					</div>
-					<Link>
+					<Link to="/daftar">
 						<Button>Mulai Daftar</Button>
 					</Link>
                <div className="shadow-bottom-layanan"></div>

@@ -15,7 +15,7 @@
 }
 
 
-.left-navbar > .logo-kecil{
+.left-navbar > a > .logo-kecil{
     height:40px;
 }
 
@@ -50,7 +50,7 @@
     align-content: center;
 }
 
-.left-navbar > img{
+.left-navbar > a > img{
     margin:0 12%;
     width: 120.65px;
     height: 48px;

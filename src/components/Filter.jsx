@@ -2,7 +2,7 @@ import '../pages/styles/panti_asuhan_kita.css';
 import { IconAdjustmentsHorizontal,IconReload ,IconHeartHandshake, IconFriends, IconKey, IconCoin, IconBuildingSkyscraper, IconBuildingCommunity  } from '@tabler/icons';
 import Button from './Button';
 
-const Filter = () => {
+const   Filter = () => {
   return (
 <form className="right-panti-asuhan-kita-search-filter">
     <div className="right-panti-asuhan-filter-judul">
