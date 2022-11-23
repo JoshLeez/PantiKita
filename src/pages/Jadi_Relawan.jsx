@@ -5,8 +5,15 @@ import { IconMapPin } from "@tabler/icons";
 import { Phone, Mail } from "tabler-icons-react";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
+import FormRelawan , {Popupchoice, FormRelawan2} from "../components/FormRelawan";
+import { useState } from "react";
 
 const Jadi_Relawan = () => {
+  
+  const [relawanToggle, setRelawanToggle] = useState(false)
+  const [iyaTidakToggle, setIyaTidakToggle] = useState(false);
+  const [formRelawan2, setFormRelawan2] = useState(false);
+
   return (
     <HOC title="Panti Kita - Jadi Relawan">
       <NavbarDetailProfilePanti />
@@ -39,7 +46,7 @@ const Jadi_Relawan = () => {
                   <p>agussalim01@gmail.com</p>
                 </div>
               </div>
-              <Button type="RELAWAN">Menjadi Relawan</Button>
+              <Button type="RELAWAN" onClick={()=>{setRelawanToggle(!relawanToggle)}}>Menjadi Relawan</Button>
             </div>
             <img src="./assets/foto_jadi_relawan.svg" alt="foto-jadi-relawan"/>
           </div>
@@ -146,6 +153,16 @@ const Jadi_Relawan = () => {
                     </div>
                 </div>
             </div>
+            {relawanToggle && <FormRelawan   setIyaTidakToggle={setIyaTidakToggle} iyaTidakToggle={iyaTidakToggle} setRelawanToggle={setRelawanToggle} relawanToggle={relawanToggle}/> }
+        {iyaTidakToggle && <Popupchoice
+            relawanToggle={relawanToggle}
+            setRelawanToggle={setRelawanToggle}
+            setIyaTidakToggle={setIyaTidakToggle}
+            iyaTidakToggle={iyaTidakToggle}
+            setFormRelawan2={setFormRelawan2}
+            formRelawan2={formRelawan2}
+          />}
+        {formRelawan2 && <FormRelawan2 formRelawan2={formRelawan2} setFormRelawan2={setFormRelawan2}/>}
         </section>
       </div>
       <Footer/>
