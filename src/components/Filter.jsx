@@ -21,21 +21,21 @@ const Filter = () => {
                 <h6>Range Donasi Terkumpul</h6>
                 <div className="input-layout-filter">
                     <IconCoin  color="#3AB7FE"/>
-                    <input/>
+                    <input placeholder='range donasi terkumpul'/>
                 </div>		
             </div>
             <div className="input-filter-panti">
                 <h6>Provinsi</h6>
                 <div className="input-layout-filter">
                     <IconBuildingSkyscraper  color="#3AB7FE"/>
-                    <input/>
+                    <input placeholder='provinsi'/>
                 </div>		
             </div>
             <div className="input-filter-panti">
                 <h6>Kabupaten/Kota</h6>
                 <div className="input-layout-filter">
                     <IconBuildingCommunity color="#3AB7FE"/>
-                    <input/>
+                    <input placeholder='kabupaten/kota'/>
                 </div>		
             </div>
     </div>

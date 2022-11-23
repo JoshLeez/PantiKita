@@ -266,7 +266,7 @@ export const FormDonasi3 = (props) => {
         </div>    
       </div>
       <Link to={PANTI_ASUHAN_KITA}>
-      <Button type="PRIMARY">Lihat Panti Asuhan Lainnya</Button>
+      <Button type="PRIMARY" onClick={()=>props.setFormDonasi3(!props.formDonasi3)}>Lihat Panti Asuhan Lainnya</Button>
       </Link>
     </div>
     </div>

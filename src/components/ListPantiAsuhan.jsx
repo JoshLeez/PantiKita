@@ -4,12 +4,18 @@ import { IconMapPin, IconFriends} from '@tabler/icons';
 import '../pages/styles/beranda.css'
 import Button from './Button';
 import FormDonasi, { FormDonasi2, FormDonasi3 } from './FormDonasi';
+import FormRelawan, { FormRelawan2, Popupchoice } from './FormRelawan';
+
+
 
 function ListPantiAsuhan() {
     const [searchTerm, setSearchTerm] = useState('');  
     const [donateToggle, setDonateToggle] = useState(false) 
     const [formDonasi2, setFormDonasi2] = useState(false)
     const [formDonasi3, setFormDonasi3] = useState(false)
+    const [relawanToggle, setRelawanToggle] = useState(false)
+    const [iyaTidakToggle, setIyaTidakToggle] = useState(false);
+    const [formRelawan2, setFormRelawan2] = useState(false);
 
     const [data, setData]= useState(
       {
@@ -122,7 +128,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                    <Button  type="RELAWAN">Menjadi Relawan</Button>
+                    <Button  type="RELAWAN" onClick={()=>setRelawanToggle(!relawanToggle)}>Menjadi Relawan</Button>
                 </div>
             </div>      
         </article>
@@ -169,7 +175,7 @@ function ListPantiAsuhan() {
                     <h5 className="data-angka-donasi-relawan">{datas.relawan} Orang</h5>
                     <h5 className="data-angka-donasi-relawan">{datas.no_tlp}</h5>
                     </div>
-                     <Button  type="RELAWAN" >Menjadi Relawan</Button>
+                     <Button  type="RELAWAN" onClick={()=>setRelawanToggle(!relawanToggle)}>Menjadi Relawan</Button>
                 </div>
             </div>      
         </article>
@@ -192,6 +198,16 @@ function ListPantiAsuhan() {
         {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle}  formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2}/>}
         {formDonasi2 && <FormDonasi2 setDonateToggle={setDonateToggle} donateToggle={donateToggle}  formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2} setFormDonasi3={setFormDonasi3} formDonasi3={formDonasi3}/>}
         {formDonasi3 && <FormDonasi3 formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2} setFormDonasi3={setFormDonasi3} formDonasi3={formDonasi3}/>}
+        {relawanToggle && <FormRelawan   setIyaTidakToggle={setIyaTidakToggle} iyaTidakToggle={iyaTidakToggle} setRelawanToggle={setRelawanToggle} relawanToggle={relawanToggle}/> }
+        {iyaTidakToggle && <Popupchoice
+            relawanToggle={relawanToggle}
+            setRelawanToggle={setRelawanToggle}
+            setIyaTidakToggle={setIyaTidakToggle}
+            iyaTidakToggle={iyaTidakToggle}
+            setFormRelawan2={setFormRelawan2}
+            formRelawan2={formRelawan2}
+          />}
+        {formRelawan2 && <FormRelawan2 formRelawan2={formRelawan2} setFormRelawan2={setFormRelawan2}/>}
     </section>
   )
 }

@@ -1,0 +1,88 @@
+.background-popup{
+    position:fixed;
+    background: rgba(24, 24, 27, 0.5);
+    width:100%;
+    height:100%;
+    z-index: 100;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ya-dan-tidak{
+    width: 362px;
+    height: 210px;
+    background: #F2F3F6;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-iya-tidak{
+    width: 258px;
+    height: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
+}
+
+.judul-top-iya-tidak{
+    height: 71px;
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.judul-top-iya-tidak > h6{
+         text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #18181B;
+}
+
+.judul-top-iya-tidak > p{
+    height: 34px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #18181B;
+}
+
+.button-wrapper-ya-tidak{
+    display:flex;
+    gap: 40px;
+    width: 240px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper-ya-tidak > button{
+    width: 100px;
+    height: 48px;
+    border-radius: 5px;
+    border:none;
+    background: none;
+    cursor:pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #18181B;
+}
+
+
+.button-wrapper-ya-tidak > button:hover{
+    transition: .2s ease-in;
+    background: #0185D0;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: #FAFAFA;
+}

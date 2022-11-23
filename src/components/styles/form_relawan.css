@@ -1,0 +1,310 @@
+.menjadi-relawan-first-container{
+    width: 989px;
+    height: 440px;
+    display:flex;
+    gap:41px;
+}
+
+.left-side-menjadi-relawan{
+    width: 624px;   
+    display:flex;
+    gap:12px;
+    flex-direction: column;
+}
+
+.top-menjadi-relawan-upload{
+    display:flex;
+}
+
+.mengisi-input-data-relawan{
+    width: 624px;
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.wrapper-input-relawan{
+    display:flex;
+    gap:24px;
+}
+
+.pilihan-gender{
+    display:flex;
+    height: 48px;
+    align-items: center;
+    gap:5px;
+}
+
+.pilihan-gender > input{
+    width:18px;
+    height:18px;
+}
+
+.right-side-jadi-relawan{
+    width: 320px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.top-card-lengkapi-profile{
+    height: 165px;
+    background: #F2F3F6;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding:11px 14px 15px 13px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.top-lengkapi-profile{
+    width: 293px;
+    height: 72px;
+    display:flex;
+    flex-direction: column;
+    gap:7.5px;
+}
+
+.progress-daftar-relawan{
+    display:flex;
+    height: 28px;
+    justify-content: space-between;
+}
+
+.progress-daftar-relawan > h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: #004BAE;
+}
+
+.progress-daftar-relawan > h4{
+    font-weight: 500;
+    font-size: 24px;
+    color: #18181B;
+}
+
+.top-bottom-lengkapi-profile{
+    height: 36px;
+}
+
+.progressbar-lengkapi-relawan{
+    height: 8px;
+    background: #3AB7FE;
+    border-radius: 4px;
+}
+
+.top-bottom-lengkapi-profile > p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A1A1AA;  
+}
+
+.bottom-lengkapi-profile{
+    width: 293px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
+
+.bottom-lengkapi-profile > .icon-tabler{
+    color:#3AB7FE;
+}
+
+.bottom-lengkapi-profile > p{
+    width: 261px;
+    height: 51px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.bottom-kontak-kami-relawan{
+    padding: 10px;
+    height: 179px;
+    background: #F2F3F6;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.bottom-kontak-kami-relawan > h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: #004BAE;
+}
+
+.alamat-model-relawan{
+    width: 299px;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.icon-dan-lokasi-model-relawan{
+    display:flex;
+    gap:5px;
+    align-items: center;
+}
+
+.icon-dan-lokasi-model-relawan > .icon-tabler{
+    color:#3AB7FE;
+}
+
+.icon-dan-lokasi-model-relawan > p{
+    width: 267px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.button-relawan-model{
+    outline: none;
+    border:none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FAFAFA;
+    width: 300px;
+    height: 48px;
+    background: #004BAE;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    align-self: center;
+ }
+
+ .button-relawan-model:hover{
+    opacity:0.8;
+    cursor: pointer;
+ }
+
+.donasi-form > .bottom-word-relawan{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.donasi-form > .bottom-word-relawan > span{
+    color: #004BAE;
+    font-weight: 500;
+}
+
+.container-relawan-kedua{
+    width: 952px;
+    height: 387px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.left-relawan-kedua{
+    width: 579px;
+    height: 381px;
+    display:flex;
+    flex-direction: column;
+    gap:32px;
+    align-items: center;
+}
+
+.center-left-word-relawan{
+    height: 301px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-left-word-relawan > img{
+    width:200px;
+    height:200px;
+}
+
+.center-left-word-relawan > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #18181B;
+}
+
+ p > .panti-word{
+    color: #004BAE;
+    font-weight: 400;
+}
+
+p .kita-word{
+    color: #3AB7FE;
+    font-weight: 400;
+}
+
+.right-relawan-kedua{
+    width: 333px;
+    height: 387px;
+    background: #F2F3F6;
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding:19px;
+    gap:12px;
+}
+
+.right-relawan-kedua > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #004BAE;
+}
+
+.right-relawan-kedua > img{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+.data-form-relawan{
+    display:flex;
+    gap:8px;
+    width: 293px;
+    height: 208px;
+    margin:0 auto;
+}
+
+.form-relawan-kanan, .form-relawan-kiri, .titik-dua-form-relawan{
+    color: #18181B;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.form-relawan-kiri{
+    display:flex;
+    flex-direction: column;
+    width: 128px;
+    height: 154px;
+    gap:8px;
+}
+
+.titik-dua-form-relawan{
+    display:flex;
+    flex-direction: column;
+    width: 10px;
+    height: 154px;
+    gap:8px;
+}
+
+.form-relawan-kanan{
+    display:flex;
+    flex-direction: column;
+    height: 154px;
+    gap:8px;
+}
