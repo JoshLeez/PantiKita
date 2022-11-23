@@ -3,12 +3,14 @@ import {Link} from 'react-router-dom';
 import { IconMapPin, IconFriends} from '@tabler/icons';
 import '../pages/styles/beranda.css'
 import Button from './Button';
-import FormDonasi from './FormDonasi';
+import FormDonasi, { FormDonasi2, FormDonasi3 } from './FormDonasi';
 
 function ListPantiAsuhan() {
     const [searchTerm, setSearchTerm] = useState('');  
     const [donateToggle, setDonateToggle] = useState(false) 
-    
+    const [formDonasi2, setFormDonasi2] = useState(false)
+    const [formDonasi3, setFormDonasi3] = useState(false)
+
     const [data, setData]= useState(
       {
       searchUser: [],
@@ -187,7 +189,9 @@ function ListPantiAsuhan() {
             <Link>9</Link>
             <Link>10</Link>
         </div>
-        {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle} />}
+        {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle}  formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2}/>}
+        {formDonasi2 && <FormDonasi2 setDonateToggle={setDonateToggle} donateToggle={donateToggle}  formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2} setFormDonasi3={setFormDonasi3} formDonasi3={formDonasi3}/>}
+        {formDonasi3 && <FormDonasi3 formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2} setFormDonasi3={setFormDonasi3} formDonasi3={formDonasi3}/>}
     </section>
   )
 }

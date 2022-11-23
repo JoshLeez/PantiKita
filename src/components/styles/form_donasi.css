@@ -35,6 +35,7 @@
 
 .donasi-title-container{
     display:flex;
+    flex-direction: column;
     width: 100%;
     height: 45px;
     align-items: center;
@@ -45,13 +46,25 @@
     flex:50%;
 }
 
-.donasi-title-container >.icon-tabler{
+.donasi-title-container >.form-donasi-cancel{
     position: absolute;
     top:13%;
     left:82.5%;
 }
 
-.donasi-title-container > .icon-tabler:hover{
+.donasi-title-container > .form-donasi-back{
+    position: absolute;
+    top:13%;
+    left:15.5%;
+}
+
+.donasi-title-container > .form-donasi-back:hover{
+    color:#3AB7FE;
+    cursor:pointer;
+    transition: .3s ease-in-out;
+}
+
+.donasi-title-container > .form-donasi-cancel:hover{
     color:red;
     cursor:pointer;
     transition: .3s ease-in-out;
@@ -356,3 +369,327 @@
     outline: none;
     resize: none;
 }
+
+.second-container-input-jumlah{
+    width: 833px;
+    height: 337px;
+    display:flex;
+  justify-content: space-between;
+}
+
+.isi-nominal-container{
+    width: 429px;
+    height: 337px;
+    display:flex;
+    flex-direction: column;
+    gap:16.5px;
+}
+
+.judul-isi-nominal{
+    height: 63px;
+}
+
+.judul-isi-nominal > h6{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #18181B;
+}
+
+.judul-isi-nominal > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #71717A;
+}
+
+.option-nominal-donasi{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    height: 176px;
+    gap:12px;
+}
+
+
+.option-nominal-donasi > button{
+    width: 200px;
+    height: 48px;
+    border: 1px solid #004BAE;
+    border-radius: 5px;
+    background: none;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:10px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #18181B;
+}
+
+.option-nominal-donasi > button:focus{
+    border: 3px solid #3AB7FE;
+}
+
+.masukan-jumlah-inginkan{
+    height: 74px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.masukan-jumlah-inginkan > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #71717A;
+}
+
+.right-side-input-jumlah{
+    width: 364px;
+    height: 301px;
+    display: flex;
+    gap:22px;
+    flex-direction: column;
+}
+
+.kontak-nomor-email{
+    width: 319px;
+    height: 103px;
+    background: #F2F3F6;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:7px;
+}
+
+.kontak-nomor-email > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #004BAE;
+}
+
+.icon-and-data{
+    display:flex;
+    align-items: center ;
+    gap:7px;
+}
+
+.icon-and-data > p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #18181B;
+}
+
+.icon-and-data > .icon-tabler{
+    color:#3AB7FE;
+}
+
+.metode-pembayaran{
+    height: 75px;
+}
+
+.selection-pembayaran{
+    display:flex;
+    height: 48px;
+    gap:10px;
+}
+
+.selection-pembayaran > .icon-tabler{
+    width: 48px;
+    height: 48px;
+    color:#3AB7FE;    
+}
+
+.metode-pembayaran > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.selection-pembayaran > select{
+    width: 300px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #004BAE;
+    border-radius: 5px;
+    height: 48px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../../../public/assets/chevron-up.svg) 96% / 15% no-repeat #FDFDFD;
+}
+
+
+.form-donasi-ketiga{
+    width: 625px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.form-donasi-ketiga > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B; 
+}
+
+.form-donasi-ketiga > h6 > span{
+    color: #004BAE;
+}
+
+.id-dan-nominal{
+    display:flex;
+    height: 75px;
+    gap:20px;
+}
+
+.id-pembayaran-container{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.id-pembayaran-container > p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.data-pembayaran-id{
+    width: 300px;
+    height: 48px;
+    border: 1px solid #004BAE;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    padding:0 10px;
+    border-radius: 5px;
+}
+
+.data-pembayaran-id > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.data-pembayaran-id > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #3AB7FE;
+    margin-left: auto;
+}
+
+.center-form-donasi-ketiga{
+    height: 116px;
+    display:flex;
+    gap:16px;
+    flex-direction: column;
+}
+
+.container-pembayaran-ke{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-pembayaran-ke > p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.data-pembayaran-ke{
+    width:278px;
+    height: 46px;
+    display:flex;
+    gap:5px;
+    flex-direction: column;
+}
+
+.data-pembayaran-ke > p{
+    margin-left:auto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #18181B;
+}
+
+.data-pembayaran-ke > p > span{
+    font-weight: 400;
+    font-size: 16px;
+    color: #18181B;
+}
+
+.no-invoice{
+    height: 19px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.no-invoice > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #18181B;
+}
+
+.no-invoice > p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #71717A;
+}
+
+.wrapper-status-pembayaran{
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-status-pembayaran > p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #18181B;
+}
+
+.center-form-donasi-ketiga > p{
+    height: 57px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #71717A;
+}
+
+.center-form-donasi-ketiga > button{
+    width: 150px;
+    height: 32px;
+    display:flex;
+    align-items:center;
+    border:#3AB7FE 2px solid;
+    color:#FDFDFD;
+    background-color: #3AB7FE;
+    justify-content: center;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.center-form-donasi-ketiga > button:hover{
+    cursor: pointer;
+    opacity:0.9;
+}
+

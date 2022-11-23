@@ -1,6 +1,6 @@
 import HOC from '../components/HOC'
 import {useState} from 'react'
-import FormDonasi from '../components/FormDonasi'
+import FormDonasi,  { FormDonasi2, FormDonasi3 } from '../components/FormDonasi'
 import './styles/donasi_panti_asuhan.css'
 import { NavbarDetailProfilePanti } from '../components/Navbar'
 import { IconMapPin, IconFriends, IconPhone,IconAdjustmentsHorizontal ,IconChevronUp  } from '@tabler/icons';
@@ -13,6 +13,8 @@ import Footer from '../components/Footer';
 
 const DonasiKita = () => {
   const [donateToggle, setDonateToggle] = useState(false) 
+  const [formDonasi2, setFormDonasi2] = useState(false)
+  const [formDonasi3, setFormDonasi3] = useState(false)
 
   return (
     <HOC title='Panti Kita - Donasi'>
@@ -148,7 +150,9 @@ const DonasiKita = () => {
         </div>
       </section>
         <BagiamanKamuBisaMembantu/>
-      {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle} />}
+        {donateToggle && <FormDonasi setDonateToggle={setDonateToggle} donateToggle={donateToggle}  formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2}/>}
+        {formDonasi2 && <FormDonasi2 setDonateToggle={setDonateToggle} donateToggle={donateToggle}  formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2} setFormDonasi3={setFormDonasi3} formDonasi3={formDonasi3}/>}
+        {formDonasi3 && <FormDonasi3 formDonasi2={formDonasi2} setFormDonasi2={setFormDonasi2} setFormDonasi3={setFormDonasi3} formDonasi3={formDonasi3}/>}
      </div>
      <Footer/>
     </HOC>
