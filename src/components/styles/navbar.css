@@ -300,6 +300,16 @@
     border-radius: 5px;
 }
 
+.hover-for-navbar-detail-profile{
+    color:#004BAE;
+    width: 56px;
+    height: 56px;
+}
+
+.hover-for-navbar-detail-profile:hover{
+    transition: .3s ease-in;
+    color:#0e364d;
+}
 
 .detail-profile-panti-link{
     display:flex;

@@ -143,7 +143,7 @@ export const NavbarDetailProfilePanti = ({state}) => {
     <header className='wrapper-navbar-detail-profile-panti'>
       <nav className='navbar-detail-profile-panti-container'>
         <Link to={BERANDA}>
-          <IconArrowLeft color='#004BAE' size={48}/>   
+          <IconArrowLeft className="hover-for-navbar-detail-profile"/>   
         </Link>
         <NavLink to={`/detail-profile-panti`} className='detail-profile-panti-link'>
           <FileDescription/>
