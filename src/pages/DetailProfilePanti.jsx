@@ -4,6 +4,7 @@ import "./styles/detail_profile_panti.css";
 import { IconMapPin, IconFriends, IconPhone } from "@tabler/icons";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
+import { ChevronLeft, ChevronRight } from "tabler-icons-react";
 
 const DetailProfilePanti = () => {
   const { state } = useLocation();
@@ -32,9 +33,13 @@ const DetailProfilePanti = () => {
                 <p>Pendiri : Muhammad Sumbul</p>
               </div>
               <div className="data-gambar-panti">
-                <h3>Swiper</h3>
+              <div className="the-swiper-program">
+                <ChevronLeft/>
+              </div>
                 <img src={state.data.image} alt={state.data.nama_panti} />
-                <h3>Swiper</h3>
+                <div className="the-swiper-program">
+                <ChevronRight/>
+              </div>
               </div>
             </div>
             <p>
@@ -50,9 +55,13 @@ const DetailProfilePanti = () => {
           <div className="program-kami">
             <h3>Program Kami</h3>
             <div className="program-kami-swiper">
-              <h3>Swiper</h3>
+              <div className="the-swiper-program">
+                <ChevronLeft/>
+              </div>
               <img src="./assets/program_kami.svg" alt="Program-Panti-Asuhan" />
-              <h3>Swiper</h3>
+              <div className="the-swiper-program">
+                <ChevronRight/>
+              </div>
             </div>
             <div className="program-kami-artikel">
               <h6>Pengembangan Potensi Anak</h6>

@@ -74,7 +74,6 @@
     justify-content:space-evenly;
     width: 719px;
     height: 100%;
-    border:2px solid red;
 }
 
 .data-awal-panti > p{
@@ -101,14 +100,35 @@
 }
 
 .program-kami-swiper{
-    width: 719px;
+    width: 800px;
     display: flex;
     align-items: center;
+    gap:10px;
+    margin:0 auto;
 }
 
 .program-kami-artikel{
     width:100%;
     margin:20px 0;
+}
+
+.the-swiper-program{
+    width: 48px;
+    height: 48px;
+    background: rgba(217, 217, 217, 0.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2), inset 8.33333px -8.33333px 8.33333px rgba(165, 165, 165, 0.1), inset -8.33333px 8.33333px 8.33333px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer
+}
+
+.the-swiper-program > .icon-tabler{
+    width: 32px;
+    height: 32px;
+    color:#3AB7FE;
 }
 
 .program-kami-artikel > h6{
